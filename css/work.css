@@ -1,0 +1,427 @@
+.work-content {
+  min-height: 95vh;
+  background-image: url("../images/work-page/bkb-bg-transparent.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#work-header {
+  font-family: "CooperHewitt Bold";
+  color: white;
+  font-size: 70px;
+  position: static;
+  text-align: center;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#work-subhead {
+  font-family: "Courier";
+  color: #FFE600;
+  font-size: 21px;
+  position: static;
+  text-align: center;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.work-grid-item {
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  width: 600px;
+  height: 400px;
+  margin: 10px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.work-grid-item:hover {
+  border-color: #FFE600;
+}
+
+.centered-text {
+  text-align: center;
+  font-family: "CooperHewitt Bold";
+  color: white;
+  font-size: 40px;
+  line-height: 400px;
+}
+
+.centered-text:hover {
+  transition: 1s;
+  font-size: 50px;
+}
+
+.work-cat-header {
+  font-family: "CooperHewitt Bold";
+  color: white;
+  font-size: 50px;
+  position: static;
+  text-align: center;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work-cat-subhead {
+  font-family: "Courier";
+  color: #FFE600;
+  font-size: 20px;
+  position: static;
+  text-align: center;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#work1 {
+  background-color: #0E0E0E;
+  background-image: url("");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#work1:hover {
+  transition: 1s;
+  background-color: #dbc600;
+}
+
+#projectalone-tab {
+  background-color: #0E0E0E;
+  background-image: url("../images/work-page/PROJECT-Alone/tabprev.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#projectalone-tab:hover {
+  transition: 1s;
+  background-color: #595959;
+}
+
+#slashmc-tab {
+  background-color: #0E0E0E;
+  background-image: url("../images/work-page/slashMC/tabprev.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#slashmc-tab:hover {
+  transition: 1s;
+  background-color: #595959;
+}
+
+#audiokast-tab {
+  background-color: #0E0E0E;
+  background-image: url("../images/work-page/Audiokast/tabprev.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#audiokast-tab:hover {
+  transition: 1s;
+  background-color: #595959;
+}
+
+#collabapp-tab {
+  background-color: #0E0E0E;
+  background-image: url("../images/work-page/CollabApp/tabprev.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#collabapp-tab:hover {
+  transition: 1s;
+  background-color: #595959;
+}
+
+#contact-tab {
+  background-color: #0E0E0E;
+  background-image: url("../images/work-page/CONTACT/tabprev.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#contact-tab:hover {
+  transition: 1s;
+  background-color: #595959;
+}
+
+#becca-tab {
+  background-color: #0E0E0E;
+  background-image: url("../images/work-page/Becca/tabprev.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#becca-tab:hover {
+  transition: 1s;
+  background-color: #595959;
+}
+
+#keyforms-tab {
+  background-color: #0E0E0E;
+  background-image: url("../images/work-page/Keyforms/tabprev.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#keyforms-tab:hover {
+  transition: 1s;
+  background-color: #595959;
+}
+
+#cayuse-tab {
+  background-color: #0E0E0E;
+  background-image: url("../images/work-page/Cayuse x HP Reveal/tabprev.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#cayuse-tab:hover {
+  transition: 1s;
+  background-color: #595959;
+}
+
+#projectnightwalk-tab {
+  background-color: #0E0E0E;
+  background-image: url("../images/work-page/PROJECT-Nightwalk/tabprev.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#projectnightwalk-tab:hover {
+  transition: 1s;
+  background-color: #595959;
+}
+
+#bkbridge-tab {
+  background-color: #0E0E0E;
+  background-image: url("../images/work-page/People of the Bridge/tabprev.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#bkbridge-tab:hover {
+  transition: 1s;
+  background-color: #595959;
+}
+
+#photonightwalk-tab {
+  background-color: #0E0E0E;
+  background-image: url("../images/work-page/Photo-Nightwalk/tabprev.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#photonightwalk-tab:hover {
+  transition: 1s;
+  background-color: #595959;
+}
+
+#smith9th-tab {
+  background-color: #0E0E0E;
+  background-image: url("../images/work-page/Smith-9th/tabprev.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#smith9th-tab:hover {
+  transition: 1s;
+  background-color: #595959;
+}
+
+@media only screen and (max-width: 1200px) {
+  .work-content {
+    background-image: url("../images/work-page/bkb-bg-transparent-1200.png");
+  }
+
+  #work-header {
+    font-size: 50px;
+    width: 900px;
+  }
+
+  #work-subhead {
+    font-size: 22px;
+    width: 900px;
+  }
+
+  .work-grid {
+    grid-template-columns: auto;
+  }
+
+  .work-grid-item {
+    width: 900px;
+    height: 400px;
+  }
+
+  .centered-text {
+    font-size: 60px;
+    line-height: 400px;
+  }
+
+  .centered-text:hover {
+    font-size: 70px;
+    line-height: 400px;
+  }
+
+  .work-cat-header {
+    font-size: 40px;
+    width: 900px;
+  }
+
+  .work-cat-subhead {
+    font-size: 16px;
+    width: 900px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #work-header {
+    font-size: 40px;
+    width: 750px;
+  }
+
+  #work-subhead {
+    font-size: 18px;
+    width: 700px;
+  }
+
+  .work-grid {
+    grid-template-columns: auto;
+  }
+
+  .work-grid-item {
+    width: 600px;
+    height: 350px;
+  }
+
+  .centered-text {
+    font-size: 40px;
+    line-height: 350px;
+  }
+
+  .centered-text:hover {
+    transition: 1s;
+    font-size: 50px;
+  }
+
+  .work-cat-header {
+    font-size: 30px;
+    width: 700px;
+  }
+
+  .work-cat-subhead {
+    font-size: 16px;
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .work-content {
+    background-image: url("../images/work-page/bkb-bg-transparent-500.png");
+  }
+
+  #work-header {
+    font-size: 30px;
+    width: 400px;
+  }
+
+  #work-subhead {
+    font-size: 18px;
+    width: 400px;
+  }
+
+  .work-grid {
+    grid-template-columns: auto;
+  }
+
+  .work-grid-item {
+    width: 400px;
+    height: 250px;
+  }
+
+  .centered-text {
+    font-size: 25px;
+    line-height: 250px;
+  }
+
+  .centered-text:hover {
+    font-size: 40px;
+    line-height: 250px;
+  }
+
+  .work-cat-header {
+    font-size: 25px;
+    width: 400px;
+  }
+
+  .work-cat-subhead {
+    font-size: 16px;
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #work-header {
+    font-size: 30px;
+    width: 340px;
+  }
+
+  #work-subhead {
+    font-size: 18px;
+    width: 340px;
+  }
+
+  .work-grid {
+    grid-template-columns: auto;
+  }
+
+  .work-grid-item {
+    width: 340px;
+    height: 250px;
+  }
+
+  .centered-text {
+    font-size: 25px;
+    line-height: 250px;
+  }
+
+  .centered-text:hover {
+    transition: 1s;
+    font-size: 32px;
+  }
+
+  .work-cat-header {
+    font-size: 25px;
+    width: 340px;
+  }
+
+  .work-cat-subhead {
+    font-size: 18px;
+    width: 340px;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}

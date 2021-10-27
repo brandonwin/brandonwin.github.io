@@ -1,0 +1,155 @@
+.home-content {
+  height: 95vh;
+  background-image: url("../images/colorpop-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1200px) {
+  .home-content {
+    background-image: url("../images/colorpop-bg-1200.png");
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home-content {
+    background-image: url("../images/colorpop-bg-500.png");
+  }
+}
+
+.home-greeting {
+  font-family: "CooperHewitt Bold";
+  color: white;
+  font-size: 70px;
+  position: static;
+  text-align: left;
+  margin-left: 40%;
+  padding-top: 200px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .home-greeting {
+    text-align: center;
+    margin-left: 35%;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home-greeting {
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 200px;
+  }
+}
+
+#home-position {
+  font-family: "Courier";
+  color: #FFE600;
+  font-size: 21px;
+  position: static;
+  text-align: left;
+  margin-left: 55vw;
+}
+
+#contact-footer {
+  font-family: "Courier";
+  color: white;
+  font-size: 18px;
+  position: static;
+  text-align: left;
+  width: 600px;
+  margin-left: 50vw;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  #home-position {
+    font-size: 25px;
+    position: static;
+    text-align: center;
+    margin-left: 460px;
+    margin-right: auto;
+    top: 300px;
+    width: 450px;
+  }
+
+  #home-contact-breaker {
+    display: none;
+  }
+
+  #contact-footer {
+    font-size: 20px;
+    position: static;
+    text-align: center;
+    width: 450px;
+    margin-left: 460px;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #home-position {
+    font-size: 25px;
+    position: static;
+    text-align: center;
+    margin-left: 290px;
+    margin-right: auto;
+    top: 300px;
+    width: 450px;
+
+  }
+
+  #home-contact-breaker {
+    display: none;
+  }
+
+  #contact-footer {
+    font-size: 20px;
+    position: static;
+    text-align: center;
+    width: 450px;
+    margin-top: 40vh;
+    margin-left: 30vh;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #home-position {
+    font-size: 18px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    width: 350px;
+  }
+
+  #home-contact-breaker {
+    display: none;
+  }
+
+  #contact-footer {
+    font-size: 18px;
+    position: static;
+    text-align: center;
+    width: 350px;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0E0E0E;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: bold;
+}
