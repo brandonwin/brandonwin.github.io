@@ -1,6 +1,7 @@
 .home-content {
   display: grid;
   grid-template-columns: auto auto;
+  justify-content: space-around;
   margin-left: 7.5vw;
   margin-right: 7.5vw;
 }
@@ -17,7 +18,7 @@
 }
 
 #home-position {
-  font-family: "Courier";
+  font-family: "Courier Bold";
   color: #4285f4;
   font-size: 22px;
   text-align: center;
@@ -25,7 +26,6 @@
 
 #home-content-text {
   padding-top: 30vh;
-  padding-bottom: 30vh;
 }
 
 #contact-footer {
@@ -43,16 +43,16 @@
   margin-top: 20px;
   margin-left: 25vw;
   margin-right: 25vw;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 1200px) {
   .home-content {
     display: grid;
     grid-template-columns: auto;
+    justify-content: space-around;
     margin-left: 5vw;
     margin-right: 5vw;
-    justify-content: center;
   }
 
   .home-greeting {
@@ -83,9 +83,9 @@
   .home-content {
     display: grid;
     grid-template-columns: auto;
+    justify-content: space-around;
     margin-left: 5vw;
     margin-right: 5vw;
-    justify-content: center;
   }
 
   .home-greeting {
@@ -105,7 +105,7 @@
 
 @media only screen and (max-width: 500px) {
   .home-content {
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .home-greeting {
