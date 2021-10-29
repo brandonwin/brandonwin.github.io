@@ -73,13 +73,14 @@
   text-align: center;
   font-family: "Courier";
   font-size: 25px;
-  color: #FFE600;
+  color: #007bff;
   line-height: 30px;
 }
 
 .project-layout {
   display: grid;
-  grid-template-columns: 25% 55% 20%;
+  grid-template-columns: 55% 20%;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -123,38 +124,30 @@
 .copy-subhead {
   font-family: "Courier";
   font-size: 30px;
-  color: #FFE600;
+  color: #4285f4;
 }
 
 .copy-body {
   font-family: "CooperHewitt";
   font-size: 18px;
-  color: white;
+  color: black;
   letter-spacing: 0.5px;
   line-height: 225%;
 }
 
 .copy-link {
-  color: #FFE600;
+  color: #4285f4;
 }
 
 .skills-header {
   font-family: "Courier";
   font-size: 25px;
-  color: #FFE600;
+  color: #4285f4;
 }
 
 .skills-list-items {
   font-family: "Courier";
-  color: white;
-}
-
-.image-showcase-headline {
-  font-family: "CooperHewitt Bold";
-  font-size: 60px;
-  line-height: 60px;
-  color: white;
-  text-align: center;
+  color: black;
 }
 
 .image-showcase {

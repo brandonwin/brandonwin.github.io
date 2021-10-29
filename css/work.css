@@ -1,17 +1,14 @@
 .work-content {
-  min-height: 95vh;
-  background-image: url("../images/work-page/bkb-bg-transparent.png");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #work-header {
   font-family: "CooperHewitt Bold";
-  color: white;
+  color: #007bff;
   font-size: 70px;
   position: static;
   text-align: center;
   width: 900px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -29,18 +26,15 @@
 
 .work-grid {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
 }
 
 .work-grid-item {
-  border-style: solid;
-  border-width: 5px;
-  border-color: white;
-  width: 600px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   margin: 10px;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -49,26 +43,24 @@
   user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
-.work-grid-item:hover {
-  border-color: #FFE600;
-}
-
 .centered-text {
   text-align: center;
-  font-family: "CooperHewitt Bold";
+  font-family: "CooperHewitt";
+  opacity: 0;
   color: white;
-  font-size: 40px;
-  line-height: 400px;
+  font-size: 20px;
+  line-height: 300px;
 }
 
 .centered-text:hover {
   transition: 1s;
-  font-size: 50px;
+  font-size: 30px;
+  opacity: 1;
 }
 
 .work-cat-header {
   font-family: "CooperHewitt Bold";
-  color: white;
+  color: black;
   font-size: 50px;
   position: static;
   text-align: center;
@@ -79,7 +71,7 @@
 
 .work-cat-subhead {
   font-family: "Courier";
-  color: #FFE600;
+  color: #007bff;
   font-size: 20px;
   position: static;
   text-align: center;
@@ -245,9 +237,6 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  .work-content {
-    background-image: url("../images/work-page/bkb-bg-transparent-1200.png");
-  }
 
   #work-header {
     font-size: 50px;
@@ -260,22 +249,22 @@
   }
 
   .work-grid {
-    grid-template-columns: auto;
+    grid-template-columns: auto auto auto;
   }
 
   .work-grid-item {
-    width: 900px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
   }
 
   .centered-text {
-    font-size: 60px;
-    line-height: 400px;
+    font-size: 10px;
+    line-height: 250px;
   }
 
   .centered-text:hover {
-    font-size: 70px;
-    line-height: 400px;
+    font-size: 20px;
+    line-height: 250px;
   }
 
   .work-cat-header {
@@ -292,7 +281,7 @@
 @media only screen and (max-width: 900px) {
   #work-header {
     font-size: 40px;
-    width: 750px;
+    width: 400px;
   }
 
   #work-subhead {
@@ -301,22 +290,23 @@
   }
 
   .work-grid {
-    grid-template-columns: auto;
+    grid-template-columns: auto auto auto;
   }
 
   .work-grid-item {
-    width: 600px;
-    height: 350px;
+    width: 200px;
+    height: 200px;
   }
 
   .centered-text {
-    font-size: 40px;
-    line-height: 350px;
+    font-size: 10px;
+    line-height: 200px;
   }
 
   .centered-text:hover {
     transition: 1s;
-    font-size: 50px;
+    font-size: 20px;
+    line-height: 200px;
   }
 
   .work-cat-header {
@@ -331,9 +321,6 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .work-content {
-    background-image: url("../images/work-page/bkb-bg-transparent-500.png");
-  }
 
   #work-header {
     font-size: 30px;
@@ -346,22 +333,22 @@
   }
 
   .work-grid {
-    grid-template-columns: auto;
+    grid-template-columns: auto auto auto;
   }
 
   .work-grid-item {
-    width: 400px;
-    height: 250px;
+    width: 125px;
+    height: 125px;
   }
 
   .centered-text {
-    font-size: 25px;
-    line-height: 250px;
+    font-size: 5px;
+    line-height: 125px;
   }
 
   .centered-text:hover {
-    font-size: 40px;
-    line-height: 250px;
+    font-size: 10px;
+    line-height: 125px;
   }
 
   .work-cat-header {

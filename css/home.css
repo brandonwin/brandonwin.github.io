@@ -1,146 +1,121 @@
 .home-content {
-  height: 95vh;
-  background-image: url("../images/colorpop-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media only screen and (max-width: 1200px) {
-  .home-content {
-    background-image: url("../images/colorpop-bg-1200.png");
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .home-content {
-    background-image: url("../images/colorpop-bg-500.png");
-  }
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: 7.5vw;
+  margin-right: 7.5vw;
 }
 
 .home-greeting {
   font-family: "CooperHewitt Bold";
-  color: white;
-  font-size: 70px;
-  position: static;
-  text-align: left;
-  margin-left: 40%;
-  padding-top: 200px;
+  color: black;
+  font-size: 45px;
+  text-align: center;
 }
 
-@media only screen and (max-width: 1200px) {
-  .home-greeting {
-    text-align: center;
-    margin-left: 35%;
-    margin-right: auto;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .home-greeting {
-    font-size: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 200px;
-  }
+#home-image {
+  width: 550px;
 }
 
 #home-position {
   font-family: "Courier";
-  color: #FFE600;
-  font-size: 21px;
-  position: static;
-  text-align: left;
-  margin-left: 55vw;
+  color: #4285f4;
+  font-size: 22px;
+  text-align: center;
+}
+
+#home-content-text {
+  padding-top: 30vh;
+  padding-bottom: 30vh;
 }
 
 #contact-footer {
   font-family: "Courier";
-  color: white;
+  color: black;
   font-size: 18px;
-  position: static;
-  text-align: left;
-  width: 600px;
-  margin-left: 50vw;
-  margin-right: auto;
+  text-align: center;
+}
+
+.home-about-me{
+  font-family: "CooperHewitt";
+  color: black;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 20px;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  margin-bottom: 100px;
 }
 
 @media only screen and (max-width: 1200px) {
+  .home-content {
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    justify-content: center;
+  }
+
+  .home-greeting {
+    font-size: 40px;
+  }
+
+  #home-image {
+    width: 400px;
+  }
+
   #home-position {
-    font-size: 25px;
-    position: static;
-    text-align: center;
-    margin-left: 460px;
-    margin-right: auto;
-    top: 300px;
-    width: 450px;
+    font-size: 22px;
   }
 
-  #home-contact-breaker {
-    display: none;
+  #home-content-text {
+    padding-top: 50px;
+    padding-bottom: 0px;
   }
 
-  #contact-footer {
-    font-size: 20px;
-    position: static;
-    text-align: center;
-    width: 450px;
-    margin-left: 460px;
-    margin-right: auto;
+  .home-about-me{
+    margin-left: 20vw;
+    margin-right: 20vw;
   }
+
 }
 
 @media only screen and (max-width: 900px) {
+  .home-content {
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    justify-content: center;
+  }
+
+  .home-greeting {
+    font-size: 40px;
+  }
+
   #home-position {
-    font-size: 25px;
-    position: static;
-    text-align: center;
-    margin-left: 290px;
-    margin-right: auto;
-    top: 300px;
-    width: 450px;
-
-  }
-
-  #home-contact-breaker {
-    display: none;
-  }
-
-  #contact-footer {
     font-size: 20px;
-    position: static;
-    text-align: center;
-    width: 450px;
-    margin-top: 40vh;
-    margin-left: 30vh;
-    margin-right: auto;
   }
+
+  .home-about-me{
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
 }
 
 @media only screen and (max-width: 500px) {
+  .home-content {
+    justify-content: center;
+  }
+
+  .home-greeting {
+    font-size: 30px;
+  }
+
   #home-position {
-    font-size: 18px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 90px;
-    width: 350px;
+    font-size: 20px;
   }
 
-  #home-contact-breaker {
-    display: none;
-  }
-
-  #contact-footer {
-    font-size: 18px;
-    position: static;
-    text-align: center;
-    width: 350px;
-    margin-top: 5vh;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #0E0E0E;
-  }
 }
 
 a {

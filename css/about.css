@@ -1,58 +1,58 @@
 .about-content {
-  height: 95vh;
-  background-image: url("../images/about-page/nycpixel-bg-transparent.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   display: grid;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media only screen and (max-width: 1200px) {
-  .about-content {
-    background-image: url("../images/about-page/nycpixel-bg-transparent-1200.png");
-  }
-}
-
 .about-card {
   display: grid;
-  grid-template-columns: 30vw 50vw;
+  grid-template-columns: 400px 800px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
 }
 
 .card-image {
-  height: 60vh;
+  height: 400px;
   background-image: url("../images/about-page/card-image.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-style: solid;
-  border-width: 5px;
-  border-color: white;
 }
 
 .card-body-header {
   font-family: "Courier";
-  color: #FFE600;
+  color: #007bff;
   font-size: 40px;
 }
 
 .card-body {
   font-family: "CooperHewitt";
   font-size: 20px;
-  color: white;
+  color: black;
   letter-spacing: 0.5px;
   line-height: 225%;
-  background-color: #0E0E0E;
-  padding: 50px;
+  padding-left: 50px;
 }
 
 @media only screen and (max-width: 1200px) {
   .about-card {
     display: grid;
-    grid-template-columns: 80vw;
+    grid-template-columns: 35vw 50vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .card-body-header {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .about-card {
+    display: grid;
+    grid-template-columns: 70vw;
     margin-top: 50px;
     margin-bottom: 50px;
   }
@@ -60,7 +60,7 @@
 
 @media only screen and (max-width: 500px) {
   .about-card {
-    grid-template-columns: 95vw;
+    grid-template-columns: 70vw;
     margin-top: 15px;
   }
 
@@ -70,6 +70,5 @@
 
   .card-body {
     font-size: 18px;
-    padding: 30px;
   }
 }

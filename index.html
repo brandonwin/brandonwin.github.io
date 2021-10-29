@@ -14,6 +14,7 @@
 
   <!-- MY OWN CSS SHEETS -->
   <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/work.css" />
   <link rel="stylesheet" href="./css/global.css" />
 
   <!-- CSS ANIMATE IT SHEET -->
@@ -25,28 +26,136 @@
 <body>
   <div class="top-nav">
     <div>
-      <h1 class="cat-header" id="name-header"><a href="./index.html">//Brandon_Win</a></h1>
+      <h1 class="selected-cat-header" id="name-header"><a href="#home-section-nav">home</a></h1>
     </div>
     <div>
-      <h1 class="cat-header"><a href="./work.html">/work</a></h1>
+      <h1 class="cat-header"><a href="#about-section-nav">about</a></h1>
     </div>
     <div>
-      <h1 class="cat-header"><a href="./about.html">/about_me</a></h1>
+      <h1 class="cat-header"><a href="#work-section-nav">work</a></h1>
     </div>
+
+  </div>
+
+  <div id="home-section-nav">
+  </div>
+
+  <br>
+
+  <div class="home-content animatedParent animateOnce">
     <div>
-      <h1 class="cat-header"><a href="./contact.html">/contact_me</a></h1>
+      <img class="animated fadeInUpShort" id="home-image" src="./images/home-page/home-page-01.png">
+    </div>
+    <div id="home-content-text">
+      <h1 class="home-greeting">Hey, I'm Brandon Win! 🤠</h1>
+      <br>
+      <h1 id="home-position"></h1>
+      <br>
+
     </div>
   </div>
 
-  <div class="home-content">
-    <br />
-    <br />
-    <br />
-    <h1 class="home-greeting">Hey! I'm Brandon.</h1>
+  <br  id="about-section-nav">
+  <h1 id="work-header">about me</h1>
 
-    <h1 id="home-position"></h1>
-    <br id="home-contact-breaker"/>
-    <h1 id="contact-footer">(909)908-5907 // <a href="https://www.linkedin.com/in/brandon-win-829602199/">LinkedIn</a> // brandon.noel.win@gmail.com</h1>
+  <div class="home-about-me">
+    <p>
+      I'm a Brooklyn-based UI/UX designer studying at NYU in Integrated Design & Media, a major focused on the intersection of media, design and technology.
+    </p>
+    <p>
+      My primary focus as a designer is to create products to solve unique problems, broaden user accessibility and encourage user retention. I thrive in structurally designing applications and flourish in aesthetically designing products.
+    </p>
+    <p>
+      In my free time, I enjoy analyzing music production, studying game design, practicing my photography, and finding the next song to add to my playlist. 🤠 🎧
+    </p>
+    <br>
+    <h1 id="contact-footer"><a href="https://www.linkedin.com/in/brandon-win-829602199/">LinkedIn</a> // brandon.noel.win@gmail.com</h1>
+  </div>
+
+  <br id="work-section-nav">
+
+  <div class="work-content">
+    <h1 id="work-header">projects</h1>
+
+    <br />
+
+    <div class="work-grid">
+      <a href="./projects/project-alone.html">
+        <div class="work-grid-item" id="projectalone-tab">
+          <h1 class="centered-text">PROJECT: Alone</h1>
+        </div>
+      </a>
+
+      <a href="./projects/slashMC.html">
+        <div class="work-grid-item" id="slashmc-tab">
+          <h1 class="centered-text">slashMC</h1>
+        </div>
+      </a>
+
+      <a href="./projects/audiokast.html">
+        <div class="work-grid-item" id="audiokast-tab">
+          <h1 class="centered-text">Audiokast</h1>
+        </div>
+      </a>
+
+      <a href="./projects/collabapp.html">
+        <div class="work-grid-item" id="collabapp-tab">
+          <h1 class="centered-text">CollabApp</h1>
+        </div>
+      </a>
+
+      <a href="./projects/contact.html">
+        <div class="work-grid-item" id="contact-tab">
+          <h1 class="centered-text">CONTACT</h1>
+        </div>
+      </a>
+
+      <a href="./projects/becca.html">
+        <div class="work-grid-item" id="becca-tab">
+          <h1 class="centered-text">Becca</h1>
+        </div>
+      </a>
+
+      <a href="./projects/keyforms.html">
+        <div class="work-grid-item" id="keyforms-tab">
+          <h1 class="centered-text">Keyforms</h1>
+        </div>
+      </a>
+
+      <a href="./projects/cayuse.html">
+        <div class="work-grid-item" id="cayuse-tab">
+          <h1 class="centered-text">Cayuse x HP Reveal</h1>
+        </div>
+      </a>
+
+      <a href="./projects/project-nightwalk.html">
+        <div class="work-grid-item" id="projectnightwalk-tab">
+          <h1 class="centered-text">PROJECT: Nightwalk</h1>
+        </div>
+      </a>
+
+      <a href="./projects/peopleofthebridge.html">
+        <div class="work-grid-item" id="bkbridge-tab">
+          <h1 class="centered-text">People of the Bridge</h1>
+        </div>
+      </a>
+
+      <a href="./projects/photo-nightwalk.html">
+        <div class="work-grid-item" id="photonightwalk-tab">
+          <h1 class="centered-text">Photo: Nightwalk</h1>
+        </div>
+      </a>
+
+      <a href="./projects/smith-9th.html">
+        <div class="work-grid-item" id="smith9th-tab">
+          <h1 class="centered-text">Smith-9th</h1>
+        </div>
+      </a>
+    </div>
+
+    <br />
+    <br />
+
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
