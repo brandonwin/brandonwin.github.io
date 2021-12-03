@@ -7,7 +7,7 @@ var typewriter = new Typewriter(app, {
 
 typewriter
   .pauseFor(1000)
-  .typeString('UI/UX designer')
+  .typeString('UX/UI designer')
   .pauseFor(1000)
   .deleteChars(14)
   .pauseFor(500)

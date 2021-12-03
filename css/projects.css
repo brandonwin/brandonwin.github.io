@@ -33,6 +33,15 @@
   background-image: url("../images/work-page/CollabApp/mockup.png");
 }
 
+#projectnightwalk-header {
+  background-image: url("../images/work-page/PROJECT-Nightwalk/tabprev-noop.png");
+}
+
+#nightwalk-vid {
+  width: 50vw;
+  height: 50vh;
+}
+
 .project-headline {
   background-color: rgb(0, 123, 255, 0.2);
   font-family: "CooperHewitt Bold";
@@ -83,8 +92,11 @@
 }
 
 .copy-link {
-  color: #4285f4;
-  font-family: "Courier Bold";
+  color: #F59B5B;
+  font-family: "CooperHewitt Bold";
+  letter-spacing: .1rem;
+  font-size: 22px;
+  text-align: center;
 }
 
 .skills-header {
@@ -266,10 +278,6 @@ a:active {
   background-image: url("../images/work-page/Cayuse x HP Reveal/tabprev.png");
 }
 
-#projectnightwalk-header {
-  background-image: url("../images/work-page/PROJECT-Nightwalk/tabprev.png");
-}
-
 #bkbridge-header {
   background-image: url("../images/work-page/People of the Bridge/tabprev.png");
 }
@@ -333,9 +341,4 @@ a:active {
 .showcase-mobile-item {
   height: 600px;
   margin: 10px;
-}
-
-#nightwalk-vid {
-  width: 854px;
-  height: 480px;
 } */

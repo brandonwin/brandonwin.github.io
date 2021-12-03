@@ -172,6 +172,19 @@
   background-color: #595959;
 }
 
+#projectnightwalk-tab {
+  background-color: #0E0E0E;
+  background-image: url("../images/work-page/PROJECT-Nightwalk/tabprev-noop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#projectnightwalk-tab:hover {
+  transition: 1s;
+  background-color: #595959;
+}
+
 /* #contact-tab {
   background-color: #0E0E0E;
   background-image: url("../images/work-page/CONTACT/tabprev.png");
@@ -220,19 +233,6 @@
 }
 
 #cayuse-tab:hover {
-  transition: 1s;
-  background-color: #595959;
-}
-
-#projectnightwalk-tab {
-  background-color: #0E0E0E;
-  background-image: url("../images/work-page/PROJECT-Nightwalk/tabprev.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-#projectnightwalk-tab:hover {
   transition: 1s;
   background-color: #595959;
 }
