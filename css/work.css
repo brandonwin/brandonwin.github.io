@@ -1,6 +1,10 @@
 .work-content {
 }
 
+#work-section-nav {
+  height: 1px;
+}
+
 #work-header {
   font-family: "CooperHewitt Bold";
   color: #007bff;
