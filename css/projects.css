@@ -108,6 +108,7 @@
 .skills-list-items {
   font-family: "Courier";
   color: black;
+  font-weight: 600;
 }
 
 a:link {
