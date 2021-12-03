@@ -3,7 +3,7 @@
 }
 
 .image-header {
-  height: 150px;
+  min-height: 150px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -13,20 +13,241 @@
   background-position: center;
 }
 
+#heebiekeebies-header {
+  background-image: url("../images/work-page/heebiekeebies/mockup.png");
+}
+
 #projectalone-header {
-  background-image: url("../images/work-page/PROJECT-Alone/page-header.jpg");
+  background-image: url("../images/work-page/PROJECT-Alone/mockup.png");
 }
 
 #slashmc-header {
-  background-image: url("../images/work-page/slashMC/page-header.png");
+  background-image: url("../images/work-page/slashMC/mockup.png");
 }
 
 #audiokast-header {
-  background-image: url("../images/work-page/Audiokast/tabprev.png");
+  background-image: url("../images/work-page/Audiokast/mockup.png");
 }
 
 #collabapp-header {
-  background-image: url("../images/work-page/CollabApp/tabprev.png");
+  background-image: url("../images/work-page/CollabApp/mockup.png");
+}
+
+.project-headline {
+  background-color: rgb(0, 123, 255, 0.2);
+  font-family: "CooperHewitt Bold";
+  font-size: 60px;
+  line-height: 150px;
+  color: white;
+}
+
+.project-subhead {
+  padding: 40px;
+  text-align: center;
+  font-family: "Courier";
+  font-size: 25px;
+  color: #007bff;
+  line-height: 30px;
+}
+
+.project-layout {
+  display: grid;
+  grid-template-columns: 55% 20%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-layout-item {
+  margin: 30px;
+}
+
+.copy-subhead {
+  font-family: "Courier";
+  font-size: 30px;
+  color: #4285f4;
+}
+
+.copy-image {
+  width:100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.copy-body {
+  font-family: "CooperHewitt";
+  font-size: 18px;
+  color: black;
+  letter-spacing: 0.5px;
+  line-height: 225%;
+}
+
+.copy-link {
+  color: #4285f4;
+  font-family: "Courier Bold";
+}
+
+.skills-header {
+  font-family: "Courier";
+  font-size: 25px;
+  color: #4285f4;
+}
+
+.skills-list-items {
+  font-family: "Courier";
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1200px) {
+  .project-layout {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-layout-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .copy-subhead {
+    font-size: 25px;
+  }
+
+  /* .image-list {
+    flex-flow: row wrap;
+    width: 1000px;
+    justify-content: center;
+  }
+
+  .image-list-item {
+    width: 310px;
+  }
+
+  .mobile-image-list-item {
+    display: none;
+  }
+
+  .large-showcase-item {
+    width: 90vw;
+  }
+
+  .showcase-item {
+    width: 90vw;
+  }
+
+  #keyforms-gif {
+    width: 90vw;
+    margin: 20px;
+  } */
+}
+
+@media only screen and (max-width: 900px) {
+  .project-layout {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-layout-item {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  /* .image-list {
+    width: auto;
+  }
+
+  .image-list-item {
+    width: 200px;
+    margin: 10px;
+  } */
+}
+
+@media only screen and (max-width: 500px) {
+  .project-layout {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-layout-item {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .project-headline {
+    font-size: 35px;
+  }
+
+  .copy-subhead {
+    font-size: 25px;
+  }
+
+  /* #keyforms-layout {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .image-showcase-headline {
+    font-size: 40px;
+  }
+
+  .image-list {
+    display: none;
+  }
+
+  .image-list-item {
+    width: 200px;
+    margin: 10px;
+  }
+
+  #nightwalk-vid {
+    width: 300px;
+    height: 240px;
+  }
+
+  .showcase-mobile-item {
+    width: 300px;
+    height: 100%;
+  } */
+}
+
+/* #keyforms-gif {
+  width: 80vh;
+  margin: 20px;
+}
+
+#keyforms-layout {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#keyforms-image {
+  width: 450px;
 }
 
 #contact-header {
@@ -61,44 +282,6 @@
   background-image: url("../images/work-page/Smith-9th/tabprev.png");
 }
 
-.project-headline {
-  font-family: "CooperHewitt Bold";
-  font-size: 60px;
-  line-height: 150px;
-  color: white;
-}
-
-.project-subhead {
-  padding: 40px;
-  text-align: center;
-  font-family: "Courier";
-  font-size: 25px;
-  color: #007bff;
-  line-height: 30px;
-}
-
-.project-layout {
-  display: grid;
-  grid-template-columns: 55% 20%;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#keyforms-gif {
-  width: 80vh;
-  margin: 20px;
-}
-
-#keyforms-layout {
-  display: grid;
-  grid-template-columns: auto auto;
-}
-
-.project-layout-item {
-  margin: 30px;
-}
-
 .image-list {
   display: flex;
   flex-flow: column wrap;
@@ -112,42 +295,9 @@
   margin: 10px;
 }
 
-#keyforms-image {
-  width: 450px;
-}
-
 .mobile-image-list-item {
   width: 350px;
   margin: 10px;
-}
-
-.copy-subhead {
-  font-family: "Courier";
-  font-size: 30px;
-  color: #4285f4;
-}
-
-.copy-body {
-  font-family: "CooperHewitt";
-  font-size: 18px;
-  color: black;
-  letter-spacing: 0.5px;
-  line-height: 225%;
-}
-
-.copy-link {
-  color: #4285f4;
-}
-
-.skills-header {
-  font-family: "Courier";
-  font-size: 25px;
-  color: #4285f4;
-}
-
-.skills-list-items {
-  font-family: "Courier";
-  color: black;
 }
 
 .image-showcase {
@@ -188,119 +338,4 @@
 #nightwalk-vid {
   width: 854px;
   height: 480px;
-}
-
-@media only screen and (max-width: 1200px) {
-  .project-layout {
-    display: grid;
-    grid-template-columns: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .project-layout-item {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-
-  #keyforms-gif {
-    width: 90vw;
-    margin: 20px;
-  }
-
-  .image-list {
-    flex-flow: row wrap;
-    width: 1000px;
-    justify-content: center;
-  }
-
-  .image-list-item {
-    width: 310px;
-  }
-
-  .mobile-image-list-item {
-    display: none;
-  }
-
-  .large-showcase-item {
-    width: 90vw;
-  }
-
-  .showcase-item {
-    width: 90vw;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .project-layout {
-    display: grid;
-    grid-template-columns: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .project-layout-item {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-
-  .image-list {
-    width: auto;
-  }
-
-  .image-list-item {
-    width: 200px;
-    margin: 10px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .project-layout {
-    display: grid;
-    grid-template-columns: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #keyforms-layout {
-    display: grid;
-    grid-template-columns: auto;
-  }
-
-  .project-layout-item {
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  .project-headline {
-    font-size: 35px;
-  }
-
-  .image-showcase-headline {
-    font-size: 40px;
-  }
-
-  .image-list {
-    display: none;
-  }
-
-  .image-list-item {
-    width: 200px;
-    margin: 10px;
-  }
-
-  #nightwalk-vid {
-    width: 300px;
-    height: 240px;
-  }
-
-  .showcase-mobile-item {
-    width: 300px;
-    height: 100%;
-  }
-
-}
+} */

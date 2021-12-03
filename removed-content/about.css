@@ -1,0 +1,74 @@
+.about-content {
+  display: grid;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-card {
+  display: grid;
+  grid-template-columns: 400px 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.card-image {
+  height: 400px;
+  background-image: url("../images/about-page/card-image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-body-header {
+  font-family: "Courier";
+  color: #007bff;
+  font-size: 40px;
+}
+
+.card-body {
+  font-family: "CooperHewitt";
+  font-size: 20px;
+  color: black;
+  letter-spacing: 0.5px;
+  line-height: 225%;
+  padding-left: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-card {
+    display: grid;
+    grid-template-columns: 35vw 50vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .card-body-header {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .about-card {
+    display: grid;
+    grid-template-columns: 70vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about-card {
+    grid-template-columns: 70vw;
+    margin-top: 15px;
+  }
+
+  .card-body-header {
+    font-size: 30px;
+  }
+
+  .card-body {
+    font-size: 18px;
+  }
+}

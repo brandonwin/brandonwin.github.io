@@ -1,4 +1,4 @@
-var app = document.getElementById('home-position');
+var app = document.getElementById('tw-subhead');
 
 var typewriter = new Typewriter(app, {
   loop: true,

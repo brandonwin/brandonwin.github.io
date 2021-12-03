@@ -36,6 +36,18 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4285f4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #356ecc;
+}
+
 /* NAVIGATION BAR */
 .top-nav {
   display: flex;
@@ -95,6 +107,14 @@ body {
 .selected-cat-header a {
   color: inherit;
   text-decoration: none;
+}
+
+.footer {
+  min-height: 150px;
+  padding-top: 30px;
+  padding-left: 20vw;
+  background-color: #dedede;
+  font-family: "CooperHewitt";
 }
 
 @media (max-width: 1200px) {
