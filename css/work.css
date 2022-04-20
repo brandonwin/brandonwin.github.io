@@ -113,6 +113,19 @@
   background-color: #595959;
 } */
 
+#furnishstore-tab {
+  background-color: #0E0E0E;
+  background-image: url("../images/work-page/heebiekeebies/tabprev-noop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#furnishstore-tab:hover {
+  transition: 1s;
+  background-color: #595959;
+}
+
 #heebiekeebies-tab {
   background-color: #0E0E0E;
   background-image: url("../images/work-page/heebiekeebies/tabprev-noop.png");

@@ -13,6 +13,10 @@
   background-position: center;
 }
 
+#furnishstore-header {
+  background-image: url("../images/work-page/heebiekeebies/mockup.png");
+}
+
 #heebiekeebies-header {
   background-image: url("../images/work-page/heebiekeebies/mockup.png");
 }
