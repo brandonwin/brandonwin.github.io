@@ -12,9 +12,9 @@
   background-position: center;
   background-size: contain;
   width: fit-content;
-  height: fit-content;
   margin: auto;
   margin-bottom: 30px;
+  transition: all 1s;
 }
 
 #briefcase-container:hover {
@@ -142,8 +142,7 @@
 
 @media only screen and (max-width: 1200px) {
   #work-header {
-    font-size: 50px;
-    width: 900px;
+    font-size: 40px;
   }
 
   #work-subhead {
@@ -167,7 +166,6 @@
 @media only screen and (max-width: 900px) {
   #work-header {
     font-size: 40px;
-    width: 400px;
   }
 
   #work-subhead {
@@ -198,12 +196,6 @@
 @media only screen and (max-width: 500px) {
   #work-header {
     font-size: 30px;
-    width: 400px;
-  }
-
-  #work-subhead {
-    font-size: 18px;
-    width: 400px;
   }
 
   .work-grid {
@@ -229,7 +221,6 @@
 @media only screen and (max-width: 390px) {
   #work-header {
     font-size: 30px;
-    width: 340px;
   }
 
   #work-subhead {
