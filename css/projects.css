@@ -17,14 +17,28 @@
 
 #furnishstore-header {
   background-image: url("../images/work-page/furnishstore/mockup.png");
+  transition: all 1s;
+}
+
+#furnishstore-header:hover {
+  background-image: url("../images/work-page/furnishstore/app.gif");
 }
 
 #heebiekeebies-header {
   background-image: url("../images/work-page/heebiekeebies/mockup.png");
+  transition: all 1s;
+}
+
+#heebiekeebies-header:hover {
+  background-image: url("../images/work-page/heebiekeebies/site.gif");
 }
 
 #projectalone-header {
   background-image: url("../images/work-page/PROJECT-Alone/mockup.png");
+}
+
+#projectalone-header:hover {
+  background-image: url("../images/work-page/PROJECT-Alone/site.gif");
 }
 
 #slashmc-header {
@@ -54,6 +68,7 @@
   font-size: 60px;
   line-height: 200px;
   color: white;
+  text-shadow: 2px 5px 20px #000000;
   transition: all 1s;
 }
 
@@ -61,7 +76,7 @@
   font-size: 80px;
   line-height: 70vh;
   background-color: transparent;
-  color: rgb(0, 123, 255);
+  /* color: rgb(0, 123, 255); */
 }
 
 .project-subhead {

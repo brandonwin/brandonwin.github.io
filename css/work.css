@@ -98,14 +98,29 @@
 
 #furnishstore-tab {
   background-image: url("../images/work-page/furnishstore/thumbnail.png");
+  transition: all 1s;
+}
+
+#furnishstore-tab:hover {
+  background-image: url("../images/work-page/furnishstore/app.gif");
 }
 
 #heebiekeebies-tab {
   background-image: url("../images/work-page/heebiekeebies/tabprev-noop.png");
+  transition: all 1s;
+}
+
+#heebiekeebies-tab:hover {
+  background-image: url("../images/work-page/heebiekeebies/thumbnail_anim.gif");
 }
 
 #projectalone-tab {
   background-image: url("../images/work-page/PROJECT-Alone/tabprev-noop.png");
+  transition: all 1s;
+}
+
+#projectalone-tab:hover {
+  background-image: url("../images/work-page/PROJECT-Alone/thumbnail_anim.gif");
 }
 
 #slashmc-tab {
