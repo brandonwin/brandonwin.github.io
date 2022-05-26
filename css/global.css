@@ -58,9 +58,8 @@ body {
 }
 
 /* NAVIGATION BAR */
-
 .newtopnav {
-  background-color: rgb(250, 244, 232,.9);
+  background-color: rgb(250, 244, 232, .9);
   overflow: hidden;
   position: -webkit-sticky;
   position: sticky;
@@ -68,14 +67,19 @@ body {
   z-index: 100;
   padding-left: 15vw;
   padding-right: 15vw;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
-.newtopnav a{
+.newtopnav a {
   float: left;
   color: #757575;
   text-align: center;
@@ -84,7 +88,6 @@ body {
   font-family: "Courier Bold";
   height: 100%;
   padding: 18px;
-
 }
 
 .newtopnav a {
@@ -103,11 +106,11 @@ body {
   float: right;
 }
 
-.newtopnav-right a{
+.newtopnav-right a {
   color: #007bff;
 }
 
-.newtopnav-right a:hover{
+.newtopnav-right a:hover {
   filter: brightness(80%);
 }
 
@@ -156,7 +159,7 @@ body {
     padding-right: 2vw;
   }
 
-  .newtopnav a{
+  .newtopnav a {
     padding: 7px 10px;
     font-size: 18px;
   }

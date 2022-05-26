@@ -17,7 +17,7 @@
   margin-bottom: 30px;
 }
 
-#briefcase-container:hover{
+#briefcase-container:hover {
   background-image: url("../images/home-page/briefcase.png");
 }
 
@@ -46,18 +46,23 @@
   height: 20vw;
   margin: 10px;
   border-radius: 10px;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   transition: all 1s;
 }
 
-.work-grid-item:hover{
+.work-grid-item:hover {
   background-size: 110%;
 }
 
@@ -91,11 +96,9 @@
   background-color: #dbc600;
 }
 
-
 #furnishstore-tab {
   background-image: url("../images/work-page/furnishstore/thumbnail.png");
 }
-
 
 #heebiekeebies-tab {
   background-image: url("../images/work-page/heebiekeebies/tabprev-noop.png");
@@ -122,7 +125,6 @@
 }
 
 @media only screen and (max-width: 1200px) {
-
   #work-header {
     font-size: 50px;
     width: 900px;
@@ -178,7 +180,6 @@
 }
 
 @media only screen and (max-width: 500px) {
-
   #work-header {
     font-size: 30px;
     width: 400px;

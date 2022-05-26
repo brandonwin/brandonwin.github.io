@@ -18,7 +18,7 @@
   margin: auto;
 }
 
-#home-content-text:hover{
+#home-content-text:hover {
   background-image: url("../images/home-page/cowboy.png");
 }
 
@@ -29,7 +29,7 @@
   text-align: center;
 }
 
-.home-greeting:hover{
+.home-greeting:hover {
   color: rgb(0, 0, 0, 0.025);
   transition: all .2s;
 }
@@ -102,7 +102,7 @@
   font-size: 18px;
 }
 
-.home-section{
+.home-section {
   margin-top: 30px;
   padding-top: 30px;
   padding-bottom: 10px;
@@ -139,11 +139,11 @@
   margin: auto;
 }
 
-#brain-container:hover{
+#brain-container:hover {
   background-image: url("../images/home-page/light-bulb.png");
 }
 
-.home-about-me{
+.home-about-me {
   font-family: "CooperHewitt";
   color: black;
   font-size: 18px;
@@ -155,19 +155,19 @@
 }
 
 a:link {
-text-decoration: none;
+  text-decoration: none;
 }
 
 a:visited {
-text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 a:active {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -196,11 +196,10 @@ text-decoration: underline;
     padding-bottom: 0px;
   }
 
-  .home-about-me{
+  .home-about-me {
     margin-left: 20vw;
     margin-right: 20vw;
   }
-
 }
 
 @media only screen and (max-width: 900px) {
@@ -219,15 +218,13 @@ text-decoration: underline;
     font-size: 20px;
   }
 
-  .home-about-me{
+  .home-about-me {
     margin-left: 10vw;
     margin-right: 10vw;
   }
-
 }
 
 @media only screen and (max-width: 500px) {
-
   #home-image {
     width: 90vw;
   }
@@ -235,9 +232,6 @@ text-decoration: underline;
   .home-greeting {
     font-size: 30px;
   }
-
 }
 
-@media only screen and (max-width: 375px) {
-
-}
+@media only screen and (max-width: 375px) {}
