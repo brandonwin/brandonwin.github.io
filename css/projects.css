@@ -17,11 +17,11 @@
 }
 
 #furnishstore-header {
-  background-image: url("../images/work-page/furnishstore/mockup.png");
+  background-image: url("../images/work-page/furnishstore/full_header.png");
 }
 
 #furnishstore-header:hover {
-  background-image: url("../images/work-page/furnishstore/app.gif");
+  background-image: url("../images/work-page/furnishstore/fullpage_anim.gif");
 }
 
 #heebiekeebies-header {
