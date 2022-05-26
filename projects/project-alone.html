@@ -9,8 +9,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
 <!-- FAVICONS -->
-<link rel="shortcut icon" href="../favicon.ico">
-<link rel="apple-touch-icon" href="../favicon.ico">
+<link rel="shortcut icon" href="../cowboy.ico">
+<link rel="apple-touch-icon" href="../cowboy.ico">
 
 <!-- MY OWN CSS SHEETS -->
 <link rel="stylesheet" href="../css/home.css" />
@@ -19,22 +19,31 @@
 
 <!-- CSS ANIMATE IT SHEET -->
 <link rel="stylesheet" href="../css/animations.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <title>Brandon Win | PROJECT: Alone</title>
 </head>
 
 <body>
-<div class="top-nav">
-  <div>
-    <h1 class="cat-header"><a href="../index.html">home</a></h1>
+  <div class="newtopnav">
+    <a href="../index.html">Home</a>
+    <a href="../index.html#about-section-nav">About Me</a>
+    <a href="../index.html#work-section-nav">My Work</a>
+    <div class="newtopnav-right">
+      <a href="https://www.linkedin.com/in/brnwin/">
+        <span class="fa-stack fa-med">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-linkedin fa-stack-1x" style=" color:white"></i>
+        </span>
+      </a>
+      <a id="last-nav" href="https://mail.google.com/mail/?view=cm&source=mailto&to=brandon.noel.win@gmail.com">
+        <span class="fa-stack fa-med">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    </div>
   </div>
-  <div>
-    <h1 class="cat-header"><a href="../index.html#about-section-nav">about</a></h1>
-  </div>
-  <div>
-    <h1 class="selected-cat-header"><a href="../index.html#work-section-nav">work</a></h1>
-  </div>
-</div>
 
 <div class="projects-content">
 
@@ -44,11 +53,14 @@
 
   <div class="project-layout">
     <div class="project-layout-item main-copy">
-      <h1 class="copy-subhead">A web x music experience designed from the ground up.</h1>
+      <p class="copy-body"><span style="font-family:'CooperHewitt Bold'">Problem:</span> Create a website with a curated list of music with details behind the music's meaning and origin.</p>
+      <p class="copy-body"><span style="font-family:'CooperHewitt Bold'; color:#4285f4;">Solution:</span> I developed PROJECT: Alone, a website containing curated music surrounding feelings of being alone that people experienced during quarantine. I designed PROJECT: Alone utilizing handwritten HTML, CSS and JavaScript with the Bootstrap JS library. I also wrote copy detailing the origin of each chosen song and the meanings behind their lyrics.</p>
       <img class="copy-image" src="../images/work-page/PROJECT-Alone/copy-image.png">
-      <p class="copy-body copy-link">
-        <a href="https://bwin-nyu.github.io/alone/index.html#landing" style="color: #F59B5B;">Click this to go to PROJECT:Alone.</a>
-      </p>
+      <div style="display: flex; justify-content: center;">
+        <a class="button-link" href="https://bwin-nyu.github.io/alone/index.html#landing" target="_blank" style="align: center;">
+          <button class="project-button">View PROJECT: Alone</button>
+        </a>
+      </div>
       <p class="copy-body">
         PROJECT: Alone is an online music curation experience that I created in my Web Design class at NYU. PROJECT: Alone is a music collection that centers around the meaning of the word "alone" in different contexts. These contexts include being alienated by surrounding cultures and individuals, feeling lonely in your regret from your past experiences, or simply feeling alone after the loss of a loved one.
       </p>
@@ -65,18 +77,18 @@
     </div>
 
     <div class="project-layout-item">
-      <h1 class="skills-header">Industries:</h1>
-      <ul class="skills-list-items">
-        <li>Web Design</li>
-        <li>UI/UX Design</li>
-        <li>Music Curation</li>
-      </ul>
-      <h1 class="skills-header">Apps/Skills Used:</h1>
+      <h1 class="skills-header">Skills Used:</h1>
       <ul class="skills-list-items">
         <li>HTML/CSS</li>
         <li>JavaScript</li>
         <li>Bootstrap JS</li>
         <li>Copywriting</li>
+      </ul>
+      <h1 class="skills-header">Roles:</h1>
+      <ul class="skills-list-items">
+        <li>Web Designer</li>
+        <li>UI/UX Designer</li>
+        <li>Music Curator</li>
       </ul>
       <h1 class="skills-header">Details:</h1>
       <ul class="skills-list-items">
@@ -90,8 +102,19 @@
 </div>
 
 <div class="footer">
-  <p>Copyright © 2021 Brandon Win - All Rights Reserved</p>
-  <p><a href="https://www.linkedin.com/in/brandon-win-829602199" style="color: #F59B5B; letter-spacing: .1rem; font-family: 'CooperHewitt Bold';">LinkedIn</a> | brandon.noel.win@gmail.com</p>
+  <p>Built by Brandon Win - All Rights Reserved</p>
+  <a class="footer-icon" href="https://www.linkedin.com/in/brnwin/" target="_blank">
+    <span class="fa-stack fa-med">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-linkedin fa-stack-1x" style=" color:white"></i>
+    </span>
+  </a>
+  <a class="footer-icon" href="https://mail.google.com/mail/?view=cm&source=mailto&to=brandon.noel.win@gmail.com" target="_blank">
+    <span class="fa-stack fa-med">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+    </span>
+  </a>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

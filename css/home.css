@@ -2,15 +2,36 @@
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-around;
+  align-items: center;
   margin-left: 7.5vw;
   margin-right: 7.5vw;
+}
+
+#home-content-text {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: fit-content;
+  margin: auto;
+}
+
+#home-content-text:hover{
+  background-image: url("../images/home-page/cowboy.png");
 }
 
 .home-greeting {
   font-family: "CooperHewitt Bold";
   color: black;
-  font-size: 45px;
+  font-size: 65px;
   text-align: center;
+}
+
+.home-greeting:hover{
+  color: rgb(0, 0, 0, 0.025);
+  transition: all .2s;
 }
 
 #home-image {
@@ -20,17 +41,106 @@
 #tw-subhead {
   font-family: "Courier Bold";
   color: #4285f4;
-  font-size: 22px;
+  font-size: 24px;
   text-align: center;
 }
 
-#home-content-text {
-  padding-top: 30vh;
+.contact-button-link {
+  text-decoration: none;
+}
+
+.contact-button {
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "CooperHewitt";
+  border-radius: 10px;
+  padding: 10px 14px 10px 14px;
+  margin-right: 10px;
+}
+
+#linkedin-button {
+  border: 2px;
+  border-style: solid;
+  border-color: transparent;
+  background-color: #007bff;
+  color: white;
+}
+
+#linkedin-button:hover {
+  transition: 1s;
+  background-color: #005dc2;
+}
+
+#linkedin-button:active {
+  background-color: #005dc2;
+  transform: translateY(3px);
+}
+
+#email-button {
+  background-color: transparent;
+  color: #007bff;
+  border: 2px;
+  border-style: solid;
+  border-color: #007bff;
+}
+
+#email-button:hover {
+  transition: 1s;
+  background-color: #005dc2;
+  color: white;
+  border-color: transparent;
+}
+
+#email-button:active {
+  background-color: #005dc2;
+  transform: translateY(3px);
 }
 
 #contact-footer {
   font-family: "CooperHewitt";
   font-size: 18px;
+}
+
+.home-section{
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background-color: rgb(250, 244, 232);
+}
+
+#about-header {
+  font-family: "CooperHewitt Bold";
+  color: #007bff;
+  font-size: 60px;
+  text-align: center;
+}
+
+#about-header:hover {
+  color: rgb(0, 123, 255, 0.025);
+  transition: all .2s;
+}
+
+.about-subhead {
+  font-family: "CooperHewitt MedBold";
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+#brain-container {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: fit-content;
+  margin: auto;
+}
+
+#brain-container:hover{
+  background-image: url("../images/home-page/light-bulb.png");
 }
 
 .home-about-me{
@@ -97,7 +207,6 @@ text-decoration: underline;
   .home-content {
     display: grid;
     grid-template-columns: auto;
-    justify-content: space-around;
     margin-left: 5vw;
     margin-right: 5vw;
   }
@@ -118,9 +227,6 @@ text-decoration: underline;
 }
 
 @media only screen and (max-width: 500px) {
-  .home-content {
-    justify-content: space-around;
-  }
 
   #home-image {
     width: 90vw;
@@ -128,29 +234,10 @@ text-decoration: underline;
 
   .home-greeting {
     font-size: 30px;
-  }
-
-  #tw-subhead {
-    font-size: 20px;
   }
 
 }
 
 @media only screen and (max-width: 375px) {
-  .home-content {
-    justify-content: space-around;
-  }
-
-  #home-image {
-    width: 90vw;
-  }
-
-  .home-greeting {
-    font-size: 30px;
-  }
-
-  #tw-subhead {
-    font-size: 20px;
-  }
 
 }
