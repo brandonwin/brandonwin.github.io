@@ -9,6 +9,7 @@
   background-position: center;
   color: rgb(0, 123, 255, 0.4);
   transition: all 1s;
+  transition-delay: 0.5s;
 }
 
 .image-header:hover {
@@ -17,7 +18,6 @@
 
 #furnishstore-header {
   background-image: url("../images/work-page/furnishstore/mockup.png");
-  transition: all 1s;
 }
 
 #furnishstore-header:hover {
@@ -26,7 +26,6 @@
 
 #heebiekeebies-header {
   background-image: url("../images/work-page/heebiekeebies/mockup.png");
-  transition: all 1s;
 }
 
 #heebiekeebies-header:hover {
@@ -70,6 +69,7 @@
   color: white;
   text-shadow: 2px 5px 20px #000000;
   transition: all 1s;
+  transition-delay: 0.5s;
 }
 
 .project-headline:hover {
