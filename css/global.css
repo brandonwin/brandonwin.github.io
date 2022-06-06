@@ -1,15 +1,20 @@
 @font-face {
-  font-family: "CooperHewitt Bold";
+  font-family: "CooperHewitt Heavy";
   src: url("../fonts/cooperh-heavy.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "CooperHewitt MedBold";
+  font-family: "CooperHewitt Bold";
   src: url("../fonts/cooperh-bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "CooperHewitt";
+  src: url("../fonts/cooperh.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "CooperHewitt Book";
   src: url("../fonts/cooperh-book.otf") format("opentype");
 }
 
@@ -23,6 +28,12 @@
   src: url("../fonts/courbd.ttf") format("truetype");
 }
 
+:root {
+  --iconblue: #007bff;
+  --bgtan: #fffaf0;
+  --darktan: #faf4e8;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -34,7 +45,6 @@ html {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-  transition: all 1s;
 }
 
 body {
@@ -44,6 +54,7 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  transition: all 1s;
 }
 
 ::-webkit-scrollbar {
@@ -125,15 +136,11 @@ body {
   padding-left: 15vw;
   padding-right: 15vw;
   background-color: rgb(250, 244, 232);
-  font-family: "CooperHewitt";
+  font-family: "CooperHewitt Book";
 }
 
 .footer-icon {
   padding-right: 10px;
-}
-
-.carousel {
-  margin-bottom: 30px;
 }
 
 @media (max-width: 900px) {
@@ -149,16 +156,18 @@ body {
 }
 
 @media (max-width: 538px) {
+  .newtopnav {
+    margin: auto;
+    padding: auto;
+  }
+
+
   .newtopnav-right {
     display: none;
   }
 }
 
 @media (max-width: 500px) {
-  .newtopnav {
-    padding-left: 2vw;
-    padding-right: 2vw;
-  }
 
   .newtopnav a {
     padding: 7px 10px;

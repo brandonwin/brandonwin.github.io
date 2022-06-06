@@ -1,33 +1,64 @@
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.quickbold {
+  font-family: "CooperHewitt Bold";
+}
+
 .home-content {
   display: grid;
   grid-template-columns: auto auto;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  gap: 50px;
   align-items: center;
-  margin-left: 7.5vw;
-  margin-right: 7.5vw;
 }
 
-#home-content-text {
+.animated-box {
+  background-image: none;
   display: flex;
   justify-content: center;
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: contain;
   width: fit-content;
   margin: auto;
   transition: all 1s;
 }
 
-#home-content-text:hover {
+.animated-header {
+  font-size: 65px;
+  font-family: "CooperHewitt Heavy";
+  text-align: center;
+}
+
+.home-content {
+  margin-top: 10px;
+}
+
+.cowboy-emoji-container {
+    margin-bottom: 20px;
+}
+
+.cowboy-emoji-container:hover {
   background-image: url("../images/home-page/cowboy.png");
 }
 
 .home-greeting {
-  font-family: "CooperHewitt Bold";
   color: black;
-  font-size: 65px;
-  text-align: center;
   transition: all .2s;
 }
 
@@ -98,11 +129,6 @@
   transform: translateY(3px);
 }
 
-#contact-footer {
-  font-family: "CooperHewitt";
-  font-size: 18px;
-}
-
 .home-section {
   margin-top: 30px;
   padding-top: 30px;
@@ -113,8 +139,8 @@
 #about-header {
   font-family: "CooperHewitt Bold";
   color: #007bff;
-  font-size: 60px;
-  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
   transition: all .2s;
 }
 
@@ -123,10 +149,10 @@
 }
 
 .about-subhead {
-  font-family: "CooperHewitt MedBold";
+  font-family: "CooperHewitt Bold";
   font-size: 24px;
   line-height: 1.6;
-  margin-bottom: 10px;
+  margin: 20px 0px 30px 0px;
 }
 
 #brain-container {
@@ -138,7 +164,6 @@
   background-size: contain;
   width: fit-content;
   margin: auto;
-  transition: all 1s;
 }
 
 #brain-container:hover {
@@ -146,7 +171,7 @@
 }
 
 .home-about-me {
-  font-family: "CooperHewitt";
+  font-family: "CooperHewitt Book";
   color: black;
   font-size: 18px;
   line-height: 1.6;
@@ -156,33 +181,176 @@
   margin-bottom: 50px;
 }
 
-a:link {
+.work-section {
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+#briefcase-container {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+#briefcase-container:hover {
+  background-image: url("../images/home-page/briefcase.png");
+}
+
+#work-header {
+  font-family: "CooperHewitt Bold";
+  color: #007bff;
+  transition: color .2s;
+}
+
+#work-header:hover {
+  color: rgb(0, 123, 255, 0.025);
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  justify-content: center;
+}
+
+.work-grid a {
   text-decoration: none;
 }
 
-a:visited {
-  text-decoration: none;
+.work-grid-item {
+  width: 20vw;
+  height: 20vw;
+  margin: .5vw;
+  border-radius: 10px;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 1s;
 }
 
-a:hover {
-  text-decoration: underline;
+.work-grid-item:hover {
+  background-size: 110%;
 }
 
-a:active {
-  text-decoration: underline;
+.projecttab {
+  height: inherit;
+  background-color: rgb(0, 123, 255, 0.8);
+  text-align: center;
+  opacity: 0;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: opacity 1s;
+}
+
+.projecttab:hover {
+  opacity: 1;
+}
+
+.pt-header {
+  font-size: 26px;
+  font-family: "CooperHewitt Bold";
+}
+
+.projecttab:hover > .pt-header{
+  font-size: 30px;
+  transition: 1s;
+}
+
+.pt-subhead {
+  font-size: 18px;
+  font-family: "CooperHewitt";
+}
+
+.projecttab:hover > .pt-subhead{
+  font-size: 22px;
+  transition: 1s;
+}
+
+#work1 {
+  background-image: url("");
+}
+
+#work1:hover {
+  transition: 1s;
+}
+
+#furnishstore-tab {
+  background-image: url("../images/work-page/furnishstore/thumbnail.png");
+  transition: all 1s;
+}
+
+#furnishstore-tab:hover {
+  background-image: url("../images/work-page/furnishstore/app.gif");
+}
+
+#heebiekeebies-tab {
+  background-image: url("../images/work-page/heebiekeebies/tabprev-noop.png");
+  transition: all 1s;
+}
+
+#heebiekeebies-tab:hover {
+  background-image: url("../images/work-page/heebiekeebies/thumbnail_anim.gif");
+}
+
+#projectalone-tab {
+  background-image: url("../images/work-page/PROJECT-Alone/tabprev-noop.png");
+  transition: all 1s;
+}
+
+#projectalone-tab:hover {
+  background-image: url("../images/work-page/PROJECT-Alone/thumbnail_anim.gif");
+}
+
+#slashmc-tab {
+  background-image: url("../images/work-page/slashMC/tabprev-noop.png");
+}
+
+#audiokast-tab {
+  background-image: url("../images/work-page/Audiokast/tabprev-noop.png");
+}
+
+#collabapp-tab {
+  background-image: url("../images/work-page/CollabApp/tabprev-noop.png");
+}
+
+#projectnightwalk-tab {
+  background-image: url("../images/work-page/PROJECT-Nightwalk/thumbnail.png");
 }
 
 @media only screen and (max-width: 1200px) {
+  .animated-header {
+    font-size: 45px;
+  }
+
   .home-content {
     display: grid;
     grid-template-columns: auto;
     justify-content: space-around;
     margin-left: 5vw;
     margin-right: 5vw;
-  }
-
-  .home-greeting {
-    font-size: 40px;
   }
 
   #home-image {
@@ -202,9 +370,37 @@ a:active {
     margin-left: 20vw;
     margin-right: 20vw;
   }
+
+  .work-grid {
+    grid-template-columns: auto auto auto;
+  }
+
+  .pt-header {
+    font-size: 20px;
+  }
+
+  .projecttab:hover > .pt-header{
+    font-size: 24px;
+  }
+
+  .pt-subhead {
+    font-size: 16px;
+  }
+
+  .projecttab:hover > .pt-subhead{
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
+  .animated-header {
+    font-size: 45px;
+  }
+
+  #tw-subhead {
+    font-size: 26px;
+  }
+
   .home-content {
     display: grid;
     grid-template-columns: auto;
@@ -212,35 +408,49 @@ a:active {
     margin-right: 5vw;
   }
 
-  .home-greeting {
-    font-size: 40px;
-  }
-
-  #about-header {
-    font-size: 40px;
-  }
-
-  #tw-subhead {
-    font-size: 20px;
-  }
-
   .home-about-me {
     margin-left: 10vw;
     margin-right: 10vw;
   }
+
+  .work-grid {
+    grid-template-columns: auto auto;
+  }
+
+  .work-grid-item {
+    width: 40vw;
+    height: 40vw;
+    margin: 5px;
+  }
+
+  .pt-header {
+    font-size: 26px;
+  }
+
+  .projecttab:hover > .pt-header{
+    font-size: 30px;
+  }
+
+  .pt-subhead {
+    font-size: 18px;
+  }
+
+  .projecttab:hover > .pt-subhead{
+    font-size: 22px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
+  .animated-header {
+    font-size: 45px;
+  }
+
+  #tw-subhead {
+    font-size: 26px;
+  }
+
   #home-image {
     width: 90vw;
-  }
-
-  .home-greeting {
-    font-size: 30px;
-  }
-
-  #about-header {
-    font-size: 30px;
   }
 
   .about-subhead {
@@ -250,11 +460,29 @@ a:active {
   .home-about-me {
     font-size: 16px;
   }
-}
 
-@media only screen and (max-width: 375px) {
+  .work-grid {
+    grid-template-columns: auto;
+  }
 
-  #about-header {
-    font-size: 28px;
+  .work-grid-item {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .pt-header {
+    font-size: 30px;
+  }
+
+  .projecttab:hover > .pt-header{
+    font-size: 34px;
+  }
+
+  .pt-subhead {
+    font-size: 20px;
+  }
+
+  .projecttab:hover > .pt-subhead{
+    font-size: 24px;
   }
 }

@@ -14,7 +14,6 @@
 
     <!-- MY OWN CSS SHEETS -->
     <link rel="stylesheet" href="./css/home.css" />
-    <link rel="stylesheet" href="./css/work.css" />
     <link rel="stylesheet" href="./css/global.css" />
 
     <!-- CSS ANIMATE IT SHEET -->
@@ -45,20 +44,14 @@
       </div>
     </div>
 
-    <div id="home-section-nav">
-    </div>
-
-    <br>
-
-    <div class="home-content animatedParent animateOnce">
+    <div class="home-content">
       <div>
         <img id="home-image" src="./images/home-page/home-page-01.png">
       </div>
       <div>
-        <div id="home-content-text">
-          <h1 class="home-greeting">Hey, I'm Brandon!</h1>
+        <div class="animated-box cowboy-emoji-container">
+          <h1 class="animated-header home-greeting">Hey, I'm Brandon!</h1>
         </div>
-        <br>
         <h1 id="tw-subhead"></h1>
       </div>
     </div>
@@ -66,87 +59,104 @@
 
     <br>
     <div class="home-section">
-      <div id="brain-container">
-        <h1 id="about-header">I'm a problem solver.</h1>
+      <div class="animated-box" id="brain-container">
+        <h1 class="animated-header" id="about-header">I'm a problem solver.</h1>
       </div>
       <div class="home-about-me">
         <h1 class="about-subhead">I solve user issues through identifying core needs, reestablishing product identity, and building creative and intuitive user interfaces, because the best designs go unnoticed.</h1>
         <p>
-          Hello, I'm Brandon Win! I'm a New York-based UX/UI designer that loves to get down to the nitty-gritty. I've worked as a <span style="font-family:'CooperHewitt MedBold'">designer in several startups</span> and a <span
-            style="font-family:'CooperHewitt MedBold'">social media marketer at New York University</span> and other companies. I recently graduated from NYU with a B.S. in Integrated Design & Media, a major focused on the intersection of media,
+          Hello, I'm Brandon Win! I'm a UX/UI designer that loves to get down to the nitty-gritty. I've worked as a <span style="font-family:'CooperHewitt Bold'">designer in several startups</span> and a <span
+            style="font-family:'CooperHewitt Bold'">social media marketer at New York University</span> and other companies. I recently graduated from NYU with a B.S. in Integrated Design & Media, a major focused on the intersection of media,
           design and technology.
         </p>
         <p>
-          My primary focus as a designer is to create products <span style="font-family:'CooperHewitt MedBold'">to solve unique problems, broaden user accessibility and encourage user retention</span>. I have a myriad of experience in the UI/UX
-          field, ranging from rapidly designing marketing materials to
-          fully conceptualizing and actualizing brand vision. I thrive in structurally designing applications and flourish in aesthetically designing products.
+          My primary focus as a designer is to create products <span style="font-family:'CooperHewitt Bold'">to solve unique problems, broaden user accessibility and encourage user retention</span>. I have a myriad of experience in the UX/UI
+          field, ranging from rapidly designing marketing materials to fully conceptualizing and actualizing brand vision. I thrive in structurally designing applications and flourish in aesthetically designing products.
         </p>
         <p>
           In my free time, I enjoy analyzing music production, studying game design, practicing my photography, and finding the next song to add to my playlist. 🎵
         </p>
-        <p>
-          Feel free to contact me at my LinkedIn below or my email at <span style="font-family:'CooperHewitt MedBold'">brandon.noel.win (at) gmail.com</span>.
+        <p style="margin-bottom: 40px;">
+          Feel free to contact me at my LinkedIn below or my email at <span style="font-family:'CooperHewitt Bold'">brandon.noel.win (at) gmail.com</span>.
         </p>
-        <div id="work-section-nav"></div>
         <a class="contact-button-link" href="https://www.linkedin.com/in/brnwin/" target="_blank">
           <button class="contact-button" id="linkedin-button">LinkedIn</button>
         </a>
         <a class="contact-button-link" href="https://mail.google.com/mail/?view=cm&source=mailto&to=brandon.noel.win@gmail.com" target="_blank">
           <button class="contact-button" id="email-button">Email me</button>
         </a>
+        <div id="work-section-nav"></div>
       </div>
     </div>
     <div class="work-section">
-      <div id="briefcase-container">
-        <h1 id="work-header">My Work</h1>
+      <div class="animated-box" id="briefcase-container">
+        <h1 class="animated-header" id="work-header">My Work</h1>
       </div>
       <div class="work-grid">
 
         <a href="./projects/furnishstore.html">
           <div class="work-grid-item" id="furnishstore-tab">
-            <h1 class="centered-text">FurnishStore</h1>
+            <div class="projecttab">
+              <h1 class="pt-header">FurnishStore</h1>
+              <h2 class="pt-subhead">Mobile UX Design</h1>
+            </div>
           </div>
         </a>
 
         <a href="./projects/heebiekeebies.html">
           <div class="work-grid-item" id="heebiekeebies-tab">
-            <h1 class="centered-text">heebiekeebies</h1>
-          </div>
-        </a>
-
-        <a href="./projects/project-alone.html">
-          <div class="work-grid-item" id="projectalone-tab">
-            <h1 class="centered-text">PROJECT: Alone</h1>
+            <div class="projecttab">
+              <h1 class="pt-header">heebiekeebies</h1>
+              <h2 class="pt-subhead">UX and Web Design</h1>
+            </div>
           </div>
         </a>
 
         <a href="./projects/slashMC.html">
           <div class="work-grid-item" id="slashmc-tab">
-            <h1 class="centered-text">slashMC</h1>
+            <div class="projecttab">
+              <h1 class="pt-header">slashMC</h1>
+              <h2 class="pt-subhead">Desktop/Mobile UX Design</h1>
+            </div>
           </div>
         </a>
 
-        <a href="./projects/audiokast.html">
+        <a href="./projects/project-alone.html">
+          <div class="work-grid-item" id="projectalone-tab">
+            <div class="projecttab">
+              <h1 class="pt-header">PROJECT: Alone</h1>
+              <h2 class="pt-subhead">Web Design</h1>
+            </div>
+          </div>
+        </a>
+
+        <!-- <a href="./projects/audiokast.html">
           <div class="work-grid-item" id="audiokast-tab">
-            <h1 class="centered-text">Audiokast</h1>
+            <div class="projecttab">
+              <h1 class="pt-header">Audiokast</h1>
+              <h2 class="pt-subhead">Mobile UX Design</h1>
+            </div>
           </div>
-        </a>
+        </a> -->
 
-        <a href="./projects/collabapp.html">
+        <!-- <a href="./projects/collabapp.html">
           <div class="work-grid-item" id="collabapp-tab">
-            <h1 class="centered-text">CollabApp</h1>
+            <div class="projecttab">
+              <h1 class="pt-header">CollabApp</h1>
+              <h2 class="pt-subhead">Tablet UX Design</h1>
+            </div>
           </div>
-        </a>
+        </a> -->
 
         <a href="./projects/project-nightwalk.html">
           <div class="work-grid-item" id="projectnightwalk-tab">
-            <h1 class="centered-text">PROJECT: Nightwalk</h1>
+            <div class="projecttab">
+              <h1 class="pt-header">PROJECT: Nightwalk</h1>
+              <h2 class="pt-subhead">Video Essay</h1>
+            </div>
           </div>
         </a>
       </div>
-
-      <br />
-      <br />
 
     </div>
 
