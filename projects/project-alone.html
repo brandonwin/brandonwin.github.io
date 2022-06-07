@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- BOOTSTRAP CODE, DO NOT MOVE -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
   <!-- FAVICONS -->
   <link rel="shortcut icon" href="../cowboy.ico">
@@ -15,7 +15,7 @@
   <!-- MY OWN CSS SHEETS -->
   <link rel="stylesheet" href="../css/home.css" />
   <link rel="stylesheet" href="../css/global.css" />
-  <link rel="stylesheet" href="../css/projects.css" />
+  <link rel="stylesheet" href="../css/projects-new.css" />
 
   <!-- CSS ANIMATE IT SHEET -->
   <link rel="stylesheet" href="../css/animations.css" />
@@ -45,68 +45,170 @@
     </div>
   </div>
 
-  <div class="projects-content">
+  <div class="image-header" id="projectalone-header">
+    <h1 class="project-headline">PROJECT: Alone</h1>
+  </div>
 
-    <div class="image-header" id="projectalone-header">
-      <h1 class="project-headline">PROJECT: Alone</h1>
+  <h1 class="pj-subhead">A curated Web x Music experience.</h1>
+  <h2 class="pj-synop">PROJECT: Alone is an online website that contains a curated list of music relating to the feelings of loneliness, heartbreak, death and more that many people may have related to during the COVID-19 pandemic.</h2>
+
+  <img class="copy-image" src="../images/work-page/PROJECT-Alone/mockup.png">
+
+  <div class="intro-grid">
+    <div class="intro-grid-item">
+      <h4 class="info-head">Product</h4>
+      <hr>
+      <h3 class="info-des">Website</h3>
     </div>
+    <div class="intro-grid-item">
+      <h4 class="info-head">Technologies</h4>
+      <hr>
+      <h3 class="info-des"> HTML, CSS, JavaScript, Bootstrap</h3>
+    </div>
+    <div class="intro-grid-item">
+      <h4 class="info-head">Key Services</h4>
+      <hr>
+      <h3 class="info-des">Web Design, UI Design, Responsive Design, Scripting, Front-End Development, Wireframing</h3>
+    </div>
+  </div>
 
-    <div class="project-layout">
-      <div class="project-layout-item main-copy">
-        <p class="copy-body"><span style="font-family:'CooperHewitt Bold'">Problem:</span> Create a website with a curated list of music with details behind the music's meaning and origin.</p>
-        <p class="copy-body"><span style="font-family:'CooperHewitt Bold'; color:#4285f4;">Solution:</span> I developed PROJECT: Alone, a website containing curated music surrounding feelings of being alone that people experienced during quarantine.
-          I designed PROJECT: Alone utilizing handwritten HTML, CSS and JavaScript with the Bootstrap JS library. I also wrote copy detailing the origin of each chosen song and the meanings behind their lyrics.</p>
-        <img class="copy-image" src="../images/work-page/PROJECT-Alone/copy-image.png">
-        <div style="display: flex; justify-content: center;">
-          <a class="button-link" href="https://bwin-nyu.github.io/alone/index.html#landing" target="_blank" style="align: center;">
-            <button class="project-button">View PROJECT: Alone</button>
-          </a>
-        </div>
-        <p class="copy-body">
-          PROJECT: Alone is an online music curation experience that I created in my Web Design class at NYU. PROJECT: Alone is a music collection that centers around the meaning of the word "alone" in different contexts. These contexts include being
-          alienated by surrounding cultures and individuals, feeling lonely in your regret from your past experiences, or simply feeling alone after the loss of a loved one.
-        </p>
-        <p class="copy-body">
-          PROJECT: Alone features a wide selection of choices ranging from popular rappers such as Eminem and Logic to music icons such as the Beatles and Eels. I chose each song to be part of the collection for the song's instrumentation, lyrical
-          meaning and/or energy.
-        </p>
-        <div style="display:flex; justify-content: center; margin: 10px 0px 10px 0px;">
-          <img src="../images/work-page/PROJECT-Alone/site.gif" style="width: 100%;">
-        </div>
-        <p class="copy-body">
-          I wanted to make an art piece of some sort that was able to express and share my love for lyrical analysis in music. In the midst of quarantine and social distancing across the nation, I wanted to make a timely piece that would be relatable
-          to listeners and viewers anywhere.
-        </p>
-        <p class="copy-body">
-          The website took a week to develop in my own code after a few days of planning and curating the songs selected. I coded the project myself in HTML, CSS and Javascript. I also utilized the Bootstrap JS library to quickly iterate the cards
-          that would display each individual song. At the end of the project, I also linked a Spotify playlist with a few additional songs that listeners could navigate to.
-        </p>
+  <img class="copy-image" src="../images/work-page/PROJECT-Alone/site.gif">
 
+  <div class="group-box">
+    <div class="copy-block">
+      <h1 class="copy-block-head">The Problem</h1>
+      <hr>
+      <p class="copy-block-body">Being heavily interested in music analysis, I wanted to create some form of online project that would be able to show a variety of emotions and relate them to curated songs.
+      </p>
+    </div>
+    <div class="copy-block">
+      <h1 class="copy-block-head">The Solution</h1>
+      <hr>
+      <p class="copy-block-body">I decided to create an online website that had several songs explaining their meaning and relation to an overall arcing emotion. This website would be longform, allowing the user to scroll through the curated list.
+      </p>
+    </div>
+  </div>
+
+  <div id="sections-controls" class="copy-carousel carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="6000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#sections-controls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#sections-controls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#sections-controls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../images/work-page/PROJECT-Alone/landing.png" class="d-block w-100" alt="...">
       </div>
+      <div class="carousel-item">
+        <img src="../images/work-page/PROJECT-Alone/prelude.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/work-page/PROJECT-Alone/heartbreak.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#sections-controls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#sections-controls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-      <div class="project-layout-item">
-        <h1 class="skills-header">Skills Used:</h1>
-        <ul class="skills-list-items">
-          <li>HTML/CSS</li>
-          <li>JavaScript</li>
-          <li>Bootstrap JS</li>
+  <div class="user-block">
+    <h1 class="user-title">Iteration</h1>
+    <div>
+      <div class="block-piece">
+        <h2 class="user-name">Web Design</h2>
+        <h3 class="copy-block-body">I designed the site with HTML, CSS, and JavaScript to build the layout and song modules. I primarily utilized Bootstrap and CSS3 AnimateIt to build the website layout and animations for the song modules, configuring their visuals to create a user-accessible and enjoyable listening experience.</h3>
+      </div>
+      <div class="block-piece">
+        <h2 class="user-name">Copywriting</h2>
+        <h3 class="copy-block-body">Copywriting is a large portion of the project. I wrote the copy for each section/emotion, and I found myself constantly editing and perfecting the copy to make it match the overall theme of the project.</h3>
+      </div>
+    </div>
+  </div>
+
+  <div id="sections2-controls" class="copy-carousel carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="6000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#sections2-controls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#sections2-controls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../images/work-page/PROJECT-Alone/regret.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/work-page/PROJECT-Alone/death.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#sections2-controls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#sections2-controls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="user-block">
+    <h1 class="user-title">Design Process</h1>
+    <div>
+      <div class="block-piece">
+        <h2 class="user-name">Design</h2>
+        <ul class="bullet-body">
+          <li>Website Launch</li>
+          <li>Scriptwriting</li>
+          <li>Music Curation</li>
           <li>Copywriting</li>
         </ul>
-        <h1 class="skills-header">Roles:</h1>
-        <ul class="skills-list-items">
-          <li>Web Designer</li>
-          <li>UI/UX Designer</li>
-          <li>Music Curator</li>
-        </ul>
-        <h1 class="skills-header">Details:</h1>
-        <ul class="skills-list-items">
-          <li>Date: Nov-Dec 2020</li>
-          <li>Platform: Web</li>
-        </ul>
-
       </div>
     </div>
+  </div>
 
+  <div class="group-box">
+    <h1 class="group-title">Deliverables</h1>
+    <div class="copy-block">
+      <h1 class="copy-block-head">Discovery</h1>
+      <hr>
+      <ul class="group-bullet-body">
+        <li>Website Design</li>
+        <li>Concept Design</li>
+      </ul>
+    </div>
+    <div class="copy-block">
+      <h1 class="copy-block-head">Design</h1>
+      <hr>
+      <ul class="group-bullet-body">
+        <li>Website</li>
+        <li>Music Curation</li>
+        <li>Copywriting</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="flex-button">
+    <a href="https://bwin-nyu.github.io/alone/index.html#landing" target="_blank" style="align: center;">
+      <button class="project-button">View the site</button>
+    </a>
+  </div>
+
+  <div class="user-block">
+    <h1 class="user-title">Learnings</h1>
+    <div>
+      <div class="block-piece">
+        <ol class="copy-block-body">
+          <li><span class="quickbold">Bootstrap is a powerful web development tool.</span> More than enough times I regularly found myself exploring Bootstrap's documentation to find potential new designs.</li>
+          </ul>
+      </div>
+      <div class="block-piece">
+        <ol class="copy-block-body" start="2">
+          <li><span class="quickbold">There are tons of great JavaScript libraries out there.</span> As this was my first medium-scale website design, I scoured the internet for quality JavaScript libraries to utilize in PROJECT: Alone. Finding these libraries were great at saving time and refocusing that time on other larger parts of the project.</li>
+          </ul>
+      </div>
+    </div>
   </div>
 
   <div class="footer">
@@ -128,15 +230,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./scripts/jquery.visible.min.js"></script>
   <script src="./scripts/home-typewriter.js" defer></script>
-
-
   <script src="./scripts/css3-animate-it.js"></script>
 
   <!-- TYPEWRITER SCRIPT -->
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
   <!-- BOOTSTRAP SCRIPT -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>
