@@ -298,12 +298,13 @@ a:active {
 }
 
 #fairchain-tab {
-  background-image: url("../images/work-page/fairchain/thumbnail.png");
+  background-color: white;
+  background-image: url("../images/work-page/fairchain/collection.png");
   transition: all 1s;
 }
 
 #fairchain-tab:hover {
-  background-image: url("../images/work-page/fairchain/webpage.gif");
+  background-image: url("../images/work-page/fairchain/register artwork flow.gif");
 }
 
 #furnishstore-tab {

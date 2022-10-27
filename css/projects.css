@@ -16,6 +16,14 @@
   height: 70vh;
 }
 
+#fairchain-header {
+  background-image: url("../images/work-page/fairchain/thumbnail.png");
+}
+
+#fairchain-header:hover {
+  background-image: url("../images/work-page/fairchain/webpage.gif");
+}
+
 #furnishstore-header {
   background-image: url("../images/work-page/furnishstore/full_header.png");
 }

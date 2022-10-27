@@ -50,6 +50,14 @@ a:active {
   /* color: rgb(0, 123, 255); */
 }
 
+#fairchain-header {
+  background-image: url("../images/work-page/fairchain/Collection Grid.png");
+}
+
+#fairchain-header:hover {
+  background-image: url("../images/work-page/fairchain/register artwork flow.gif");
+}
+
 #furnishstore-header {
   background-image: url("../images/work-page/furnishstore/full_header.png");
 }
@@ -147,7 +155,7 @@ a:active {
 
 .copy-image {
   display: block;
-  width: 70vw;
+  width: 60vw;
   margin: 7.5vh auto 7.5vh auto;
   border-radius: 20px;
   border-width: 2px;
@@ -156,8 +164,8 @@ a:active {
 }
 
 .wireframe-grid-item {
-  width: 30vw;
-  height: 30vw;
+  width: 27.5vw;
+  height: 27.5vw;
   margin: 1vw;
   border-radius: 20px;
   background-size: 100%;
