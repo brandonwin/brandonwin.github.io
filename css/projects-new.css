@@ -165,8 +165,7 @@ a:active {
   background-position: center center;
   background-color: #faf4e8;
   border-width: 2px;
-  border-style: solid;
-  border-color: var(--iconblue);
+  /* border-color: var(--iconblue); */
   transition: all 1s;
 }
 
@@ -202,7 +201,7 @@ a:active {
   font-family: "CooperHewitt Heavy";
   font-size: 40px;
   color: var(--iconblue);
-  text-align: left;
+  text-align: center;
   line-height: 1.6;
 }
 
@@ -227,24 +226,23 @@ a:active {
   width: 70vw;
   margin: 7.5vh auto 7.5vh auto;
   border-width: 2px;
-  border-style: solid;
-  border-color: var(--iconblue);
+  /* border-color: var(--iconblue); */
 }
 
 .user-block {
   width: 60vw;
   display: grid;
-  grid-template-columns: 15vw 45vw;
   justify-content: space-between;
   margin: 10vh auto 10vh auto;
-  gap: 7.5vw;
+  grid-template-columns: auto;
+  gap: 3vh;
 }
 
 .user-title {
   font-family: "CooperHewitt Heavy";
   font-size: 40px;
   color: var(--iconblue);
-  text-align: right;
+  text-align: left;
   line-height: 1.6;
 }
 
@@ -281,10 +279,6 @@ a:active {
   font-family: "CooperHewitt Book";
   font-size: 20px;
   line-height: 2;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto auto;
 }
 
 .group-bullet-body {
@@ -325,8 +319,6 @@ a:active {
   }
 
   .user-block {
-    grid-template-columns: auto;
-    gap: 5vh;
   }
 
   .user-title {

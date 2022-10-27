@@ -297,6 +297,15 @@ a:active {
   transition: 1s;
 }
 
+#fairchain-tab {
+  background-image: url("../images/work-page/fairchain/thumbnail.png");
+  transition: all 1s;
+}
+
+#fairchain-tab:hover {
+  background-image: url("../images/work-page/fairchain/webpage.gif");
+}
+
 #furnishstore-tab {
   background-image: url("../images/work-page/furnishstore/thumbnail.png");
   transition: all 1s;
