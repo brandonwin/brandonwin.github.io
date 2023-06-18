@@ -97,7 +97,7 @@ a:active {
   color: #252525;
 }
 
-#email {
+.footer-text {
   margin-bottom: 50px;
 }
 
@@ -111,10 +111,15 @@ a:active {
   }
 
   #home-head {
+    font-size: 48px;
     margin: 20px 0px 0px 0px;
   }
 
   #home-subhead {
     margin: 10px 0px 0px 0px;
+  }
+
+  .footer-text {
+    font-size: 24px;
   }
 }
