@@ -20,9 +20,7 @@ a:active {
 
 .landing-box {
   color: #252525;
-  width: auto;
   min-height: 300px;
-  max-width: 75vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -51,9 +49,27 @@ a:active {
 }
 
 .work-component {
-  width: auto;
-  max-width: 75vw;
-  margin: 120px auto 120px auto;
+  display: flex;
+  flex-direction: row;
+  margin: 200px auto 200px auto;
+  min-height: 300px;
+  max-height: 600px;
+}
+
+.work-imagebox {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-image {
+  height: 90%;
+}
+
+.work-textbox{
+  width: 40%;
+  margin: auto;
 }
 
 .project-desc {
@@ -121,5 +137,26 @@ a:active {
 
   .footer-text {
     font-size: 24px;
+  }
+
+  .work-component {
+    flex-direction: column;
+  }
+
+  .work-imagebox {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .work-textbox {
+    margin-top: 40px;
+  }
+
+  .work-image {
+    width: 100%;
+  }
+
+  .work-textbox {
+    width: 100%;
   }
 }

@@ -26,4 +26,13 @@ html {
 
 body {
   font-family: "Libre";
+  width: 75vw;
+  margin: auto;
+  display: block;
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
