@@ -1,0 +1,120 @@
+a {
+  color: #252525;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.landing-box {
+  color: #252525;
+  width: auto;
+  min-height: 300px;
+  max-width: 75vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10vh auto auto auto;
+}
+
+#landing-pfp {
+  min-width: 300px;
+  width: 12vw;
+  border-radius: 4vw;
+  margin-right: 20px;
+}
+
+#landing-textbox {
+  width: auto;
+  max-width: 60vw;
+  margin: auto auto auto 30px;
+}
+
+#home-head {
+  font-size: 72px;
+}
+
+#home-subhead {
+  line-height: 1.6;
+}
+
+.work-component {
+  width: auto;
+  max-width: 75vw;
+  margin: 120px auto 120px auto;
+}
+
+.project-desc {
+  line-height: 1.6;
+}
+
+.button {
+  background-color: #252525;
+  width: fit-content;
+  border-radius: 40px;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #5FBB97;
+}
+
+.button-text {
+  color: white;
+  padding: 14px 20px 14px 20px;
+}
+
+.null-button {
+  background-color: white;
+  border: 1px solid #252525;
+  width: fit-content;
+  border-radius: 40px;
+  margin-top: 20px;
+}
+
+.null-button-text {
+  color: #252525;
+  padding: 14px 20px 0px 20px;
+}
+
+.footer {
+  width: auto;
+  max-width: 75vw;
+  margin: 200px auto auto auto;
+  padding-bottom: 200px;
+  color: #252525;
+}
+
+#email {
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .landing-box {
+    flex-direction: column;
+  }
+
+  #landing-textbox {
+    margin: auto auto auto 0px;
+  }
+
+  #home-head {
+    margin: 20px 0px 0px 0px;
+  }
+
+  #home-subhead {
+    margin: 10px 0px 0px 0px;
+  }
+}
