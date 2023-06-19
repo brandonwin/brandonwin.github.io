@@ -28,7 +28,6 @@ body {
   font-family: "Libre";
   width: 75vw;
   margin: auto;
-  display: block;
 }
 
 .prevent-select {

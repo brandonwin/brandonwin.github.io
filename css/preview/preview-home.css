@@ -53,23 +53,29 @@ a:active {
   flex-direction: row;
   margin: 200px auto 200px auto;
   min-height: 300px;
-  max-height: 600px;
-}
-
-.work-imagebox {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .work-image {
-  height: 90%;
+  width: 45%;
+  margin: auto;
 }
 
-.work-textbox{
-  width: 40%;
+.work-textbox {
+  max-width: 45%;
   margin: auto;
+}
+
+.work-text {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.reversed {
+  flex-direction: row-reverse;
+}
+
+.border-rounded {
+  border-radius: 20px;
 }
 
 .project-desc {
@@ -136,27 +142,23 @@ a:active {
   }
 
   .footer-text {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .work-component {
     flex-direction: column;
   }
 
-  .work-imagebox {
-    width: 100%;
-    margin: 0px;
-  }
-
-  .work-textbox {
-    margin-top: 40px;
-  }
-
   .work-image {
-    width: 100%;
+    width: 75vw;
   }
 
   .work-textbox {
-    width: 100%;
+    max-width: 75vw;
+    margin: 40px 0px 0px 0px;
+  }
+
+  .reversed {
+    flex-direction: column;
   }
 }
