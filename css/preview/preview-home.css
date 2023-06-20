@@ -60,6 +60,14 @@ a:active {
   margin: auto;
 }
 
+.desktop-image {
+  display: initial;
+}
+
+.mobile-image {
+  display: none;
+}
+
 .work-textbox {
   max-width: 47.5%;
   margin: auto;
@@ -151,6 +159,14 @@ a:active {
 
   .work-image {
     width: 75vw;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+  
+  .mobile-image {
+    display: initial;
   }
 
   .work-textbox {
