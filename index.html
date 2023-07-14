@@ -6,197 +6,152 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- BOOTSTRAP CODE, DO NOT MOVE -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
   <!-- FAVICONS -->
-  <link rel="shortcut icon" href="./cowboy.ico">
-  <link rel="apple-touch-icon" href="./cowboy.ico">
+  <link rel="shortcut icon" href="./favicon.png">
+  <link rel="apple-touch-icon" href="./favicon.png">
 
   <!-- MY OWN CSS SHEETS -->
-  <link rel="stylesheet" href="./css/home.css" />
   <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/home.css" />
 
   <!-- CSS ANIMATE IT SHEET -->
   <link rel="stylesheet" href="./css/animations.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <title>Brandon Win | Home</title>
+  <title>Brandon Win</title>
 </head>
 
 <body>
-  <div class="newtopnav">
-    <a href="index.html">Home</a>
-    <a href="#about-section-nav">About Me</a>
-    <a href="#work-section-nav">My Work</a>
-    <div class="newtopnav-right">
-      <a href="https://www.linkedin.com/in/brnwin/" target="_blank">
-        <span class="fa-stack fa-med">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-linkedin fa-stack-1x" style=" color:white"></i>
-        </span>
-      </a>
-      <a id="last-nav" href="https://mail.google.com/mail/?view=cm&source=mailto&to=brandon.noel.win@gmail.com" target="_blank">
-        <span class="fa-stack fa-med">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-    </div>
-  </div>
 
-  <div class="home-content">
-    <div>
-      <img id="home-image" src="./images/home-page/home-page-01.png">
-    </div>
-    <div>
-      <div class="animated-box cowboy-emoji-container">
-        <h1 class="animated-header home-greeting">Hey, I'm Brandon!</h1>
+  <div class="textport">
+    <div class="landing-box">
+      <div id="pfp-box">
+        <img src="./images/home-page/pfp.jpg" class="border-rounded" id="landing-pfp">
       </div>
-      <h1 id="tw-subhead">product designer</h1>
+      <div id="landing-textbox">
+        <h1 id="home-head">Hi, I'm Brandon Win,</h1>
+        <h3 id="home-subhead">a product designer with a passion for intuitive and accessible design.</h3>
+      </div>
+    </div>
+
+    <div class="work-component reversed">
+      <img class="work-image desktop-image" src="./images/work-page/fairchain/collection.png">
+      <img class="work-image mobile-image" src="./images/work-page/fairchain/Landing-2.png">
+      <div class="work-textbox">
+        <p class="work-category">Design Systems & Web Design</p>
+        <h1 class="work-title">Fairchain — Ethical revenue streams for artists</h1>
+        <h5 class="lh">Fairchain is a Web3 application that grants artists royalties on future sales
+          of their art and utilizes blockchain to certify works of art. I led as product designer on feature releases,
+          developing the
+          marketing site, and responsive design systems for web/mobile parity.</h5>
+        <div class="button active"><a href="./projects/fairchain.html">
+            <p class="button-text prevent-select">Read more</p>
+          </a></div>
+      </div>
+    </div>
+
+    <div class="work-component">
+      <img class="work-image border-rounded" src="./images/work-page/surecost/project_preview.png">
+      <div class="work-textbox">
+        <p class="work-category">Design Systems</p>
+        <h1 class="work-title">SureCost — A Purchasing Solution for Pharmacies</h1>
+        <h5 class="lh">SureCost helps pharmacies save money and meet FDA compliance guidelines. I led a
+          design
+          project to visually update SureCost web and make it cohesive to its mobile counterpart.</h5>
+        <h6 class="disclaimer">This work is unavailable for public viewing.</h6>
+      </div>
+
+    </div>
+
+    <div class="work-component reversed">
+      <img class="work-image desktop-image border-rounded" src="./images/work-page/heebiekeebies/mockup.png">
+      <img class="work-image mobile-image border-rounded" src="./images/work-page/heebiekeebies/tabprev-noop.png">
+      <div class="work-textbox">
+        <p class="work-category">Brand & Web Design</p>
+        <h1 class="work-title">heebiekeebies — eCommerce for Keyboards</h1>
+        <h5 class="lh">heebiekeebies is an eCommerce site that sells parts for mechanical keyboard
+          enthusiasts.
+          I
+          built heebiekeebies's Shopify website and shape its brand vision and user experience.</h5>
+        <div class="button active"><a href="./projects/heebiekeebies.html">
+            <p class="button-text prevent-select">Read more</p>
+          </a></div>
+      </div>
+    </div>
+
+    <div class="work-component">
+      <img class="work-image" src="./images/work-page/furnishstore/home-preview.png">
+      <div class="work-textbox">
+        <p class="work-category">UX Design</p>
+        <h1 class="work-title">Local Furniture Finder and Delivery</h1>
+        <h5 class="lh">FurnishStore is a mobile app to find quality furniture from local sellers and have
+          it
+          delivered to you. I conducted user research and built user personas, wireframes and style guides as a personal
+          UX
+          project.</h5>
+        <div class="button active"><a href="./projects/furnishstore.html">
+            <p class="button-text prevent-select">Read more</p>
+          </a></div>
+      </div>
+    </div>
+
+    <div class="work-component reversed">
+      <img class="work-image desktop-image border-rounded" src="./images/work-page/slashMC/mockup.png">
+      <img class="work-image mobile-image border-rounded" src="./images/work-page/slashMC/tabprev-noop.png">
+      <div class="work-textbox">
+        <p class="work-category">UX Design</p>
+        <h1 class="work-title">GUI for Minecraft Server Management</h1>
+        <h5 class="lh">/mc is a modern graphical user interface for Minecraft servers. I designed this
+          project
+          in
+          Adobe XD to solve user frustrations with other management interfaces.</h5>
+        <div class="button active"><a href="./projects/slashMC.html">
+            <p class="button-text prevent-select">Read more</p>
+          </a></div>
+      </div>
+    </div>
+
+    <div class="work-component">
+      <img class="work-image desktop-image border-rounded" src="./images/work-page/PROJECT-Alone/mockup.png">
+      <img class="work-image mobile-image border-rounded" src="./images/work-page/PROJECT-Alone/tabprev-noop.png">
+      <div class="work-textbox">
+        <p class="work-category">Web Design</p>
+        <h1 class="work-title">Interactive Music Site</h1>
+        <h5 class="lh">PROJECT: Alone is an interactive music website and a passion project of mine driven
+          out of
+          my personal love for music. I created the website with HTML/CSS and Bootstrap in a week as part of a UX class.
+        </h5>
+        <div class="button active"><a href="./projects/project-alone.html">
+            <p class="button-text prevent-select">Read more</p>
+          </a></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h3 class="footer-text lh">Get in touch with me:
+        <a href="https://www.linkedin.com/in/brnwin/">LinkedIn</a> |
+        <a href="mailto:brandon.noel.win@gmail.com">brandon.noel.win@gmail.com</a>
+      </h3>
+      <h3 class="footer-text">© Brandon Win 2023</h3>
     </div>
   </div>
-  <div id="about-section-nav"></div>
 
-  <br>
-  <div class="home-section">
-    <div class="animated-box" id="brain-container">
-      <h1 class="animated-header" id="about-header">About Me</h1>
-    </div>
-    <div class="home-about-me">
-      <h1 class="about-subhead">I solve people problems through an iterative and methodical design process that aims to assert and improve product identity.</h1>
-      <p>
-        Hey, I’m Brandon! I’m a product design graduate with three years of experience in multiple facets of the design process. My technical skills range from identifying user needs through user research to refining minimum viable products for public release to customers.
-      </p>
-      <p>
-      For most of my life, I’ve loved working with design and technology, whether it's print design in high school or architectural design in Minecraft. I recently graduated from New York University with a Bachelor’s degree in Integrated Design and Media, and I’ve found that my career passion lies in product design.
-      </p>
-      <p>
-      I've worked as a product designer in startups, B2B and B2C companies, and my bread and butter lies in wireframing, prototyping, and managing product direction and design systems.
-      </p>
-      <p>
-      Professionally, I love working with design systems and interfaces in Figma and Adobe Creative Cloud; my hobbies include game design 👾 and music production. 🎵
-      </p>
-      <p>
-        Feel free to contact me below!
-      </p>
-      <a class="contact-button-link" href="https://www.linkedin.com/in/brnwin/" target="_blank">
-        <button class="contact-button" id="linkedin-button">LinkedIn</button>
-      </a>
-      <a class="contact-button-link" href="https://mail.google.com/mail/?view=cm&source=mailto&to=brandon.noel.win@gmail.com" target="_blank">
-        <button class="contact-button" id="email-button">Email me</button>
-      </a>
-      <div id="work-section-nav"></div>
-    </div>
-  </div>
-  <div class="work-section">
-    <div class="animated-box" id="briefcase-container">
-      <h1 class="animated-header" id="work-header">My Work</h1>
-    </div>
-    <div class="work-grid">
-
-      <a href="./projects/fairchain.html">
-        <div class="work-grid-item" id="fairchain-tab">
-          <div class="projecttab">
-            <h1 class="pt-header">Fairchain</h1>
-            <h2 class="pt-subhead">Lead Product Design</h1>
-          </div>
-        </div>
-      </a>
-
-      <a href="./projects/furnishstore.html">
-        <div class="work-grid-item" id="furnishstore-tab">
-          <div class="projecttab">
-            <h1 class="pt-header">FurnishStore</h1>
-            <h2 class="pt-subhead">Mobile UX Design</h1>
-          </div>
-        </div>
-      </a>
-
-      <a href="./projects/heebiekeebies.html">
-        <div class="work-grid-item" id="heebiekeebies-tab">
-          <div class="projecttab">
-            <h1 class="pt-header">heebiekeebies</h1>
-            <h2 class="pt-subhead">UX and Web Design</h1>
-          </div>
-        </div>
-      </a>
-
-      <a href="./projects/slashMC.html">
-        <div class="work-grid-item" id="slashmc-tab">
-          <div class="projecttab">
-            <h1 class="pt-header">slashMC</h1>
-            <h2 class="pt-subhead">Desktop/Mobile UX Design</h1>
-          </div>
-        </div>
-      </a>
-
-      <a href="./projects/project-alone.html">
-        <div class="work-grid-item" id="projectalone-tab">
-          <div class="projecttab">
-            <h1 class="pt-header">PROJECT: Alone</h1>
-            <h2 class="pt-subhead">Web Design</h1>
-          </div>
-        </div>
-      </a>
-
-      <a href="./projects/project-nightwalk.html">
-        <div class="work-grid-item" id="projectnightwalk-tab">
-          <div class="projecttab">
-            <h1 class="pt-header">PROJECT: Nightwalk</h1>
-            <h2 class="pt-subhead">Video Essay</h1>
-          </div>
-        </div>
-      </a>
-
-      <!-- <a href="./projects/audiokast.html">
-        <div class="work-grid-item" id="audiokast-tab">
-          <div class="projecttab">
-            <h1 class="pt-header">Audiokast</h1>
-            <h2 class="pt-subhead">Mobile UX Design</h1>
-          </div>
-        </div>
-      </a> -->
-
-      <!-- <a href="./projects/collabapp.html">
-        <div class="work-grid-item" id="collabapp-tab">
-          <div class="projecttab">
-            <h1 class="pt-header">CollabApp</h1>
-            <h2 class="pt-subhead">Tablet UX Design</h1>
-          </div>
-        </div>
-      </a> -->
-    </div>
-
-  </div>
-
-  <div class="footer">
-    <p>Built by Brandon Win - All Rights Reserved</p>
-    <a class="footer-icon" href="https://www.linkedin.com/in/brnwin/" target="_blank">
-      <span class="fa-stack fa-med">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-linkedin fa-stack-1x" style=" color:white"></i>
-      </span>
-    </a>
-    <a class="footer-icon" href="https://mail.google.com/mail/?view=cm&source=mailto&to=brandon.noel.win@gmail.com" target="_blank">
-      <span class="fa-stack fa-med">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./scripts/jquery.visible.min.js"></script>
   <script src="./scripts/home-typewriter.js" defer></script>
 
-
-  <script src="./scripts/css3-animate-it.js"></script>
-
   <!-- TYPEWRITER SCRIPT -->
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
   <!-- BOOTSTRAP SCRIPT -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

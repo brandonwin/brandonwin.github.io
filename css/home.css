@@ -1,498 +1,125 @@
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:active {
-  text-decoration: underline;
-}
-
-.quickbold {
-  font-family: "CooperHewitt Bold";
-}
-
-.home-content {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-evenly;
-  gap: 50px;
-  align-items: center;
-}
-
-.animated-box {
-  background-image: none;
+/* Header for home */
+.landing-box {
+  color: #252525;
+  min-height: 300px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: fit-content;
-  margin: auto;
-  transition: all 1s;
+  margin: 13vh auto auto auto;
 }
 
-.animated-header {
-  font-size: 65px;
-  font-family: "CooperHewitt Heavy";
-  text-align: center;
+#pfp-box {
+  margin-right: 20px;
 }
 
-.home-content {
-  margin-top: 10px;
+#landing-pfp {
+  min-width: 300px;
+  width: 12vw;
 }
 
-.cowboy-emoji-container {
-    margin-bottom: 20px;
+#landing-textbox {
+  width: auto;
+  max-width: 60vw;
+  margin: auto auto auto 30px;
 }
 
-.cowboy-emoji-container:hover {
-  background-image: url("../images/home-page/cowboy.png");
+#home-head {
+  font-size: 72px;
 }
 
-.home-greeting {
-  color: black;
-  transition: all .2s;
-}
-
-.home-greeting:hover {
-  color: rgb(0, 0, 0, 0.025);
-}
-
-#home-image {
-  width: 550px;
-}
-
-#tw-subhead {
-  font-family: "Courier Bold";
-  color: #4285f4;
-  font-size: 24px;
-  text-align: center;
-}
-
-.contact-button-link {
-  text-decoration: none;
-}
-
-.contact-button {
-  text-align: center;
-  cursor: pointer;
-  font-size: 18px;
-  font-family: "CooperHewitt";
-  border-radius: 10px;
-  padding: 10px 14px 10px 14px;
-  margin-right: 10px;
-}
-
-#linkedin-button {
-  border: 2px;
-  border-style: solid;
-  border-color: transparent;
-  background-color: #007bff;
-  color: white;
-}
-
-#linkedin-button:hover {
-  transition: 1s;
-  background-color: #005dc2;
-}
-
-#linkedin-button:active {
-  background-color: #005dc2;
-  transform: translateY(3px);
-}
-
-#email-button {
-  background-color: transparent;
-  color: #007bff;
-  border: 2px;
-  border-style: solid;
-  border-color: #007bff;
-}
-
-#email-button:hover {
-  transition: 1s;
-  background-color: #005dc2;
-  color: white;
-  border-color: transparent;
-}
-
-#email-button:active {
-  background-color: #005dc2;
-  transform: translateY(3px);
-}
-
-.home-section {
-  margin-top: 30px;
-  padding-top: 30px;
-  padding-bottom: 10px;
-  /* background-color: rgb(250, 244, 232); */
-}
-
-#about-header {
-  font-family: "CooperHewitt Bold";
-  color: #007bff;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  transition: all .2s;
-}
-
-#about-header:hover {
-  color: rgb(0, 123, 255, 0.025);
-}
-
-.about-subhead {
-  font-family: "CooperHewitt Bold";
-  font-size: 24px;
+#home-subhead {
   line-height: 1.6;
-  margin: 20px 0px 30px 0px;
 }
 
-#brain-container {
+/* Layout for projects on home page */
+.work-category {
+  margin-bottom: 8px;
+}
+
+.work-title {
+  margin-bottom: 16px;
+}
+
+.work-component {
   display: flex;
-  justify-content: center;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: fit-content;
+  flex-direction: row;
+  margin: 20vh auto auto auto;
+  min-height: 300px;
+}
+
+.reversed {
+  flex-direction: row-reverse;
+}
+
+.work-image {
+  width: 47.5%;
   margin: auto;
 }
 
-#brain-container:hover {
-  background-image: url("../images/home-page/light-bulb.png");
+.desktop-image {
+  display: initial;
 }
 
-.home-about-me {
-  font-family: "CooperHewitt Book";
-  color: black;
-  font-size: 18px;
-  line-height: 1.6;
+.mobile-image {
+  display: none;
+}
+
+.work-textbox {
+  max-width: 45%;
+  margin: auto;
+}
+
+.disclaimer {
   margin-top: 20px;
-  margin-left: 25vw;
-  margin-right: 25vw;
-  margin-bottom: 50px;
 }
 
-.work-section {
-  margin-top: 30px;
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
+@media only screen and (max-width: 768px) {
 
-#briefcase-container {
-  display: flex;
-  justify-content: center;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: fit-content;
-  margin: auto;
-  margin-bottom: 30px;
-}
-
-#briefcase-container:hover {
-  background-image: url("../images/home-page/briefcase.png");
-}
-
-#work-header {
-  font-family: "CooperHewitt Bold";
-  color: #007bff;
-  transition: color .2s;
-}
-
-#work-header:hover {
-  color: rgb(0, 123, 255, 0.025);
-}
-
-.work-grid {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
-  justify-content: center;
-}
-
-.work-grid a {
-  text-decoration: none;
-}
-
-.work-grid-item {
-  width: 20vw;
-  height: 20vw;
-  margin: .5vw;
-  border-radius: 10px;
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
-  /* Non-prefixed version, currently supported by Chrome and Opera */
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  transition: all 1s;
-}
-
-.work-grid-item:hover {
-  background-size: 110%;
-}
-
-.projecttab {
-  height: inherit;
-  background-color: rgb(0, 123, 255, 0.8);
-  text-align: center;
-  opacity: 0;
-  color: white;
-  border-radius: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: opacity 1s;
-}
-
-.projecttab:hover {
-  opacity: 1;
-}
-
-.pt-header {
-  font-size: 26px;
-  font-family: "CooperHewitt Bold";
-}
-
-.projecttab:hover > .pt-header{
-  font-size: 30px;
-  transition: 1s;
-}
-
-.pt-subhead {
-  font-size: 18px;
-  font-family: "CooperHewitt";
-}
-
-.projecttab:hover > .pt-subhead{
-  font-size: 22px;
-  transition: 1s;
-}
-
-#work1 {
-  background-image: url("");
-}
-
-#work1:hover {
-  transition: 1s;
-}
-
-#fairchain-tab {
-  background-color: white;
-  background-image: url("../images/work-page/fairchain/collection.png");
-  transition: all 1s;
-}
-
-#fairchain-tab:hover {
-  background-image: url("../images/work-page/fairchain/register artwork flow.gif");
-}
-
-#furnishstore-tab {
-  background-image: url("../images/work-page/furnishstore/thumbnail.png");
-  transition: all 1s;
-}
-
-#furnishstore-tab:hover {
-  background-image: url("../images/work-page/furnishstore/app.gif");
-}
-
-#heebiekeebies-tab {
-  background-image: url("../images/work-page/heebiekeebies/tabprev-noop.png");
-  transition: all 1s;
-}
-
-#heebiekeebies-tab:hover {
-  background-image: url("../images/work-page/heebiekeebies/thumbnail_anim.gif");
-}
-
-#projectalone-tab {
-  background-image: url("../images/work-page/PROJECT-Alone/tabprev-noop.png");
-  transition: all 1s;
-}
-
-#projectalone-tab:hover {
-  background-image: url("../images/work-page/PROJECT-Alone/thumbnail_anim.gif");
-}
-
-#slashmc-tab {
-  background-image: url("../images/work-page/slashMC/tabprev-noop.png");
-}
-
-#audiokast-tab {
-  background-image: url("../images/work-page/Audiokast/tabprev-noop.png");
-}
-
-#collabapp-tab {
-  background-image: url("../images/work-page/CollabApp/tabprev-noop.png");
-}
-
-#projectnightwalk-tab {
-  background-image: url("../images/work-page/PROJECT-Nightwalk/thumbnail.png");
-}
-
-@media only screen and (max-width: 1200px) {
-  .animated-header {
-    font-size: 45px;
+  /* Header for page */
+  .landing-box {
+    flex-direction: column;
   }
 
-  .home-content {
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: space-around;
-    margin-left: 5vw;
-    margin-right: 5vw;
+  #landing-pfp {
+    width: 100%;
   }
 
-  #home-image {
-    width: 400px;
+  #landing-textbox {
+    margin: auto auto auto 0px;
   }
 
-  #tw-subhead {
-    font-size: 22px;
+  #home-head {
+    font-size: 48px;
+    margin: 20px 0px 0px 0px;
   }
 
-  #home-content-text {
-    padding-top: 50px;
-    padding-bottom: 0px;
+  #home-subhead {
+    margin: 10px 0px 0px 0px;
   }
 
-  .home-about-me {
-    margin-left: 20vw;
-    margin-right: 20vw;
+  /* Layout for projects on home page */
+  .work-component {
+    flex-direction: column;
   }
 
-  .work-grid {
-    grid-template-columns: auto auto auto;
+  .work-image {
+    width: 75vw;
   }
 
-  .pt-header {
-    font-size: 20px;
+  .desktop-image {
+    display: none;
   }
 
-  .projecttab:hover > .pt-header{
-    font-size: 24px;
+  .mobile-image {
+    display: initial;
   }
 
-  .pt-subhead {
-    font-size: 16px;
+  .work-textbox {
+    max-width: 75vw;
+    margin: 40px 0px 0px 0px;
   }
 
-  .projecttab:hover > .pt-subhead{
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .animated-header {
-    font-size: 45px;
-  }
-
-  #tw-subhead {
-    font-size: 26px;
-  }
-
-  .home-content {
-    display: grid;
-    grid-template-columns: auto;
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
-
-  .home-about-me {
-    margin-left: 10vw;
-    margin-right: 10vw;
-  }
-
-  .work-grid {
-    grid-template-columns: auto auto;
-  }
-
-  .work-grid-item {
-    width: 40vw;
-    height: 40vw;
-    margin: 5px;
-  }
-
-  .pt-header {
-    font-size: 26px;
-  }
-
-  .projecttab:hover > .pt-header{
-    font-size: 30px;
-  }
-
-  .pt-subhead {
-    font-size: 18px;
-  }
-
-  .projecttab:hover > .pt-subhead{
-    font-size: 22px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .animated-header {
-    font-size: 45px;
-  }
-
-  #tw-subhead {
-    font-size: 26px;
-  }
-
-  #home-image {
-    width: 90vw;
-  }
-
-  .about-subhead {
-    font-size: 20px;
-  }
-
-  .home-about-me {
-    font-size: 16px;
-  }
-
-  .work-grid {
-    grid-template-columns: auto;
-  }
-
-  .work-grid-item {
-    width: 80vw;
-    height: 80vw;
-  }
-
-  .pt-header {
-    font-size: 30px;
-  }
-
-  .projecttab:hover > .pt-header{
-    font-size: 34px;
-  }
-
-  .pt-subhead {
-    font-size: 20px;
-  }
-
-  .projecttab:hover > .pt-subhead{
-    font-size: 24px;
+  .reversed {
+    flex-direction: column;
   }
 }
