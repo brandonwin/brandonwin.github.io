@@ -103,11 +103,12 @@
     flex-wrap: wrap;
     margin: 20vh auto auto auto;
     width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .image-grid-item {
-    width: 600px;
+    max-width: 600px;
+    max-height: 600px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 10px;
 }
