@@ -128,6 +128,7 @@ a:active {
 @media only screen and (max-width: 768px) {
     .textport {
         width: 80vw;
+        margin: auto;
     }
 
     .mobile-hide {

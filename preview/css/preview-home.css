@@ -8,11 +8,13 @@
   margin: 13vh auto auto auto;
 }
 
+#pfp-box {
+  margin-right: 20px;
+}
+
 #landing-pfp {
   min-width: 300px;
   width: 12vw;
-  border-radius: 4vw;
-  margin-right: 20px;
 }
 
 #landing-textbox {
@@ -76,6 +78,10 @@
   /* Header for page */
   .landing-box {
     flex-direction: column;
+  }
+
+  #landing-pfp {
+    width: 100%;
   }
 
   #landing-textbox {
