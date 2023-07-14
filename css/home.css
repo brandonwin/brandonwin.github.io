@@ -1,7 +1,7 @@
 /* Header for home */
 .landing-box {
   color: #252525;
-  min-height: 300px;
+  height: 350px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -13,7 +13,7 @@
 }
 
 #landing-pfp {
-  min-width: 300px;
+  min-width: 350px;
   width: 12vw;
 }
 

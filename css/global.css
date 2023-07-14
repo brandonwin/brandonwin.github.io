@@ -34,7 +34,16 @@ body {
 }
 
 a {
-  color: #252525;
+  color: #5FBB97;
+}
+
+#home-tag {
+  color: black;
+}
+
+#home-tag:hover {
+  color: #5FBB97;
+  text-decoration: none;
 }
 
 a:link {
@@ -46,6 +55,7 @@ a:visited {
 }
 
 a:hover {
+  color: #499175;
   text-decoration: none;
 }
 
@@ -67,7 +77,15 @@ a:active {
   border-radius: 20px;
 }
 
+.border-rounded-op {
+  border-radius: 20px;
+}
+
 .shadowed {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.shadowed-op {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -138,4 +156,13 @@ a:active {
   .desktop-hide {
       display: none;
   }
+
+  .border-rounded-op {
+    border-radius: 0px;
+  }
+  
+  .shadowed-op {
+    box-shadow: none;
+  }
+  
 }
