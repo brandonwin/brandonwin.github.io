@@ -77,15 +77,25 @@
 
   /* Header for page */
   .landing-box {
+    justify-content: flex-start;
     flex-direction: column;
+    margin: 50px auto auto auto;
+    height: fit-content;
+  }
+
+  #pfp-box {
+    margin: 0px;
   }
 
   #landing-pfp {
+    min-width: 100%;
     width: 100%;
   }
 
   #landing-textbox {
-    margin: auto auto auto 0px;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
   }
 
   #home-head {
@@ -100,10 +110,11 @@
   /* Layout for projects on home page */
   .work-component {
     flex-direction: column;
+    margin: 150px auto auto auto;
   }
 
   .work-image {
-    width: 75vw;
+    width: 100%;
   }
 
   .desktop-image {

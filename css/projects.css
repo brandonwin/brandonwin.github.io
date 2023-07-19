@@ -121,7 +121,16 @@
   width: 1000px;
 }
 
+#about-quote {
+  text-align: center;
+  font-style: italic;
+}
+
 @media only screen and (max-width: 768px) {
+
+  .navigation-textbox {
+    width: 85vw;
+  }
 
   .split {
       margin: 15vh auto auto auto;
@@ -169,6 +178,7 @@
 
   #about-image {
     width: 100%;
+    margin: -50px auto auto auto;
   }
 
   .image-grid {
@@ -177,9 +187,12 @@
       margin: 15vh auto auto auto;
   }
 
-
   .image-grid-item {
       width: 90%;
       margin: 10px auto 10px auto;
+  }
+
+  #about-quote {
+    text-align: left;
   }
 }
