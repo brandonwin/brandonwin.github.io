@@ -1,155 +1,178 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
 
-  <!-- BOOTSTRAP CODE, DO NOT MOVE -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" href="./favicon.ico">
 
-  <!-- FAVICONS -->
-  <link rel="shortcut icon" href="./favicon.png">
-  <link rel="apple-touch-icon" href="./favicon.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/animations.css">
 
-  <!-- MY OWN CSS SHEETS -->
-  <link rel="stylesheet" href="./css/global.css" />
-  <link rel="stylesheet" href="./css/home.css" />
-
-  <!-- CSS ANIMATE IT SHEET -->
-  <link rel="stylesheet" href="./css/animations.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <title>Brandon Win</title>
+    <title>Brandon Win</title>
 </head>
+
+<style>
+    .grid {
+        display: grid;
+        grid: auto / calc(50% - 1rem) calc(50% - 1rem);
+        gap: 4rem 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        .project-container {
+
+            .image-container {
+                aspect-ratio: 16 / 9;
+                overflow: hidden;
+                background-color: #202020;
+
+                image {
+                    object-fit: cover;
+                }
+            }
+
+            h2,
+            p {
+                color: #202020;
+                margin: 0;
+                margin-top: 1rem;
+            }
+
+            h2 {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .project-container:hover {
+
+        .image-container {
+
+            .project-image {
+                scale: 1.02;
+                opacity: 0.92;
+            }
+
+        }
+    }
+
+    @media only screen and (max-width: 1450px) {
+
+        .grid {
+            grid: auto / auto;
+            gap: 3rem 2rem;
+        }
+    }
+
+    @media only screen and (max-width: 440px) {}
+</style>
 
 <body>
 
-  <div class="textport">
-    <div class="landing-box">
-      <div id="pfp-box">
-        <img src="./images/pfp.jpg" class="border-rounded" id="landing-pfp">
-      </div>
-      <div id="landing-textbox">
-        <h1 id="home-head"><a href="./about.html">Hi, I'm Brandon Win,</a></h1>
-        <h3 id="home-subhead">a product designer with a passion for intuitive and accessible design.</h3>
-      </div>
+    <div class="navigation-container prevent-select transition-05">
+        <svg xmlns="http://www.w3.org/2000/svg" class="ham transition-05" onclick="myFunction()" width="2em" height="2em"
+            viewBox="0 0 24 24">
+            <path id="ham-path" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z" />
+        </svg>
+
+        <a class="mobile-hide transition-05" href="./index.html">
+            <p class="navigation-text no-margin transition-05" id="current-page">Home</p>
+        </a>
+        <a class="mobile-hide transition-05" href="./pages/about.html">
+            <p class="navigation-text no-margin transition-05">About Me</p>
+        </a>
+        <a class="mobile-hide transition-05" href="./pages/surecost.html">
+            <p class="navigation-text no-margin transition-05">SureCost</p>
+        </a>
+        <a class="mobile-hide transition-05" href="./pages/fairchain.html">
+            <p class="navigation-text no-margin transition-05">Fairchain</p>
+        </a>
+        <a class="mobile-hide transition-05" href="./pages/heebiekeebies.html">
+            <p class="navigation-text no-margin transition-05">heebie keebies</p>
+        </a>
     </div>
 
-    <div class="work-component reversed">
-      <img class="work-image desktop-image" src="./images/work-page/fairchain/collection.png">
-      <img class="work-image mobile-image" src="./images/work-page/fairchain/Landing-2.png">
-      <div class="work-textbox">
-        <p class="work-category">Design Systems & Web Design</p>
-        <h1 class="work-title">Fairchain — Ethical revenue streams for artists</h1>
-        <h5 class="lh">Fairchain is a Web3 application that grants artists royalties on future sales
-          of their art and utilizes blockchain to certify works of art. I led as product designer on feature releases,
-          developing the
-          marketing site, and responsive design systems for web/mobile parity.</h5>
-        <div class="button active"><a href="./projects/fairchain.html">
-            <p class="button-text prevent-select">Read more</p>
-          </a></div>
-      </div>
+    <div id="body-content">
+
+        <h1 class="no-margin">
+            <a href="./pages/about.html" class="hyperlink-text-Mont transition-05">Hi, I'm Brandon</a> — a product
+            designer with a passion for
+            intuitive, accessible and scalable design.
+        </h1>
+
+        <p>Seeking my next design role. Previously worked at SureCost, Fairchain and other small businesses.</p>
+
+        <div class="grid span-width transition-05">
+            <a class="project-container span-width transition-05" href="pages/surecost.html">
+                <div class="image-container span-width transition-05">
+                    <image class="project-image span-width transition-05" src="./images/global/home-surecost.png">
+                    </image>
+                </div>
+                <h2>SureCost</h2>
+                <p>Design Systems • Mobile/Web</p>
+            </a>
+
+            <a class="project-container span-width transition-05" href="pages/fairchain.html">
+                <div class="image-container span-width transition-05">
+                    <image class="project-image span-width transition-05" src="./images/global/home-fairchain.png">
+                    </image>
+                </div>
+                <h2>Fairchain</h2>
+                <p>Feature Design • Web3</p>
+            </a>
+
+            <a class="project-container span-width transition-05" href="pages/heebiekeebies.html">
+                <div class="image-container span-width transition-05">
+                    <image class="project-image span-width transition-05" src="./images/global/home-heebiekeebies.png">
+                    </image>
+                </div>
+                <h2>heebie keebies</h2>
+                <p>Web Design • eCommerce</p>
+            </a>
+        </div>
+
+        <div id="footer" class="span-width">
+            <h3 class="footer-item">Get in touch below or directly with me at <a
+                    href="mailto:brandon.noel.win@gmail.com"
+                    class="hyperlink-text-Mont transition-05">brandon.noel.win@gmail.com</a>!</h3>
+            <div class="footer-item footer-buttons">
+                <svg class="icon-fill no-margin transition-05" xmlns="http://www.w3.org/2000/svg" height="53" width="53"
+                    viewBox="0 0 72 72">
+                    <g id="linkedin-container">
+                        <path
+                            d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z"
+                            id="linkedin-fill" class="transition-05" />
+                        <path
+                            d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z"
+                            fill="#FFFFFF" />
+                    </g>
+                </svg>
+                <a class="button button-fill transition-05" target="_blank" href=".\resume\05202024.pdf"
+                    target="_blank">Resume</a>
+            </div>
+            <p class="footer-item" id="copyright">© Brandon Win 2024</p>
+        </div>
     </div>
 
-    <div class="work-component">
-      <img class="work-image border-rounded" src="./images/work-page/surecost/project_preview.png">
-      <div class="work-textbox">
-        <p class="work-category">Design Systems</p>
-        <h1 class="work-title">SureCost — A Purchasing Solution for Pharmacies</h1>
-        <h5 class="lh">SureCost helps pharmacies save money and meet FDA compliance guidelines. I led a
-          design
-          project to visually update SureCost web and make it cohesive to its mobile counterpart.</h5>
-        <h6 class="disclaimer">This work is unavailable for public viewing.</h6>
-      </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName("mobile-hide");
 
-    </div>
+            Array.from(x).forEach((y) => {
+                if (y.style.display === "inline") {
+                    y.style.display = "none";
+                } else {
+                    y.style.display = "inline";
+                }
+            })
 
-    <div class="work-component reversed">
-      <img class="work-image desktop-image border-rounded" src="./images/work-page/heebiekeebies/mockup.png">
-      <img class="work-image mobile-image border-rounded" src="./images/work-page/heebiekeebies/tabprev-noop.png">
-      <div class="work-textbox">
-        <p class="work-category">Brand & Web Design</p>
-        <h1 class="work-title">heebiekeebies — eCommerce for Keyboards</h1>
-        <h5 class="lh">heebiekeebies is an eCommerce site that sells parts for mechanical keyboard
-          enthusiasts.
-          I
-          built heebiekeebies's Shopify website and shaped its brand vision and user experience.</h5>
-        <div class="button active"><a href="./projects/heebiekeebies.html">
-            <p class="button-text prevent-select">Read more</p>
-          </a></div>
-      </div>
-    </div>
+        }
+    </script>
 
-    <div class="work-component">
-      <img class="work-image" src="./images/work-page/furnishstore/home-preview.png">
-      <div class="work-textbox">
-        <p class="work-category">UX Design</p>
-        <h1 class="work-title">Local Furniture Finder and Delivery</h1>
-        <h5 class="lh">FurnishStore is a mobile app to find quality furniture from local sellers and have
-          it
-          delivered to you. I conducted user research and built user personas, wireframes and style guides as a personal
-          UX
-          project.</h5>
-        <div class="button active"><a href="./projects/furnishstore.html">
-            <p class="button-text prevent-select">Read more</p>
-          </a></div>
-      </div>
-    </div>
-
-    <div class="work-component reversed">
-      <img class="work-image desktop-image border-rounded" src="./images/work-page/slashMC/mockup.png">
-      <img class="work-image mobile-image border-rounded" src="./images/work-page/slashMC/tabprev-noop.png">
-      <div class="work-textbox">
-        <p class="work-category">UX Design</p>
-        <h1 class="work-title">GUI for Minecraft Server Management</h1>
-        <h5 class="lh">/mc is a modern graphical user interface for Minecraft servers. I designed this
-          project
-          in
-          Adobe XD to solve user frustrations with other management interfaces.</h5>
-        <div class="button active"><a href="./projects/slashMC.html">
-            <p class="button-text prevent-select">Read more</p>
-          </a></div>
-      </div>
-    </div>
-
-    <div class="work-component">
-      <img class="work-image desktop-image border-rounded" src="./images/work-page/PROJECT-Alone/mockup.png">
-      <img class="work-image mobile-image border-rounded" src="./images/work-page/PROJECT-Alone/tabprev-noop.png">
-      <div class="work-textbox">
-        <p class="work-category">Web Design</p>
-        <h1 class="work-title">Interactive Music Site</h1>
-        <h5 class="lh">PROJECT: Alone is an interactive music website and a passion project of mine driven
-          out of
-          my personal love for music. I created the website with HTML/CSS and Bootstrap in a week as part of a UX class.
-        </h5>
-        <div class="button active"><a href="./projects/project-alone.html">
-            <p class="button-text prevent-select">Read more</p>
-          </a></div>
-      </div>
-    </div>
-
-    <div class="footer">
-      <h3 class="footer-text lh">Get in touch with
-        <a href="https://www.linkedin.com/in/brnwin/">LinkedIn</a> or
-        <a href="mailto:brandon.noel.win@gmail.com">brandon.noel.win@gmail.com</a>
-      </h3>
-      <h3 class="footer-text">© Brandon Win 2023</h3>
-    </div>
-  </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="./scripts/jquery.visible.min.js"></script>
-  <script src="./scripts/home-typewriter.js" defer></script>
-
-  <!-- TYPEWRITER SCRIPT -->
-  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
-  <!-- BOOTSTRAP SCRIPT -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>

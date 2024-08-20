@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../favicon.ico">
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/animations.css">
+
+    <title>Brandon Win | SureCost</title>
+</head>
+
+<style>
+    #compare-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem;
+        gap: 4rem;
+
+    }
+
+    #compare-images {
+        display: grid;
+        grid: auto / calc(50% - 4rem) calc(50% - 4rem);
+        gap: 2rem 8rem;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            gap: 1rem;
+
+            image {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1450px) {
+        #compare-box {
+            padding: 1rem;
+        }
+
+        #compare-images {
+            grid: auto / auto;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="navigation-container prevent-select transition-05">
+        <svg xmlns="http://www.w3.org/2000/svg" class="ham transition-05" onclick="myFunction()" width="2em" height="2em"
+            viewBox="0 0 24 24">
+            <path id="ham-path" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z" />
+        </svg>
+
+        <a class="mobile-hide transition-05" href="../index.html">
+            <p class="navigation-text no-margin transition-05">Home</p>
+        </a>
+        <a class="mobile-hide transition-05" href="./about.html">
+            <p class="navigation-text no-margin transition-05">About Me</p>
+        </a>
+        <a class="mobile-hide transition-05" href="./surecost.html">
+            <p class="navigation-text no-margin transition-05" id="current-page">SureCost</p>
+        </a>
+        <a class="mobile-hide transition-05" href="./fairchain.html">
+            <p class="navigation-text no-margin transition-05">Fairchain</p>
+        </a>
+        <a class="mobile-hide transition-05" href="./heebiekeebies.html">
+            <p class="navigation-text no-margin transition-05">heebie keebies</p>
+        </a>
+    </div>
+
+    <div id="body-content">
+
+        <h1 class="no-margin">
+            SureCost
+        </h1>
+
+        <p>
+            SureCost is a robust software solution that empowers pharmacies to save more money on
+            purchasing and seamlessly manage their inventory.
+        </p>
+
+        <div class="role-results">
+            <div>
+                <h3>My role</h3>
+                <p>Product Designer, 3 month contract</p>
+                <p>Redesign web interface</p>
+                <p>Find new, valuable affordances for users</p>
+            </div>
+
+            <div>
+                <h3>Results</h3>
+                <p>Designed an accessible, intuitive interface for users</p>
+                <p>Delivered a pitch deck to key stakeholders</p>
+                <p>Built 3 new product features within 2 months</p>
+            </div>
+        </div>
+
+        <video class="video-box span-width" autoplay muted loop preload>
+            <source src="../videos/surecost_hook.mp4" type="video/mp4">
+        </video>
+
+        <div class="content-box span-width" id="compare-box">
+            <div id="compare-images">
+                <div>
+                    <image src="../images/SureCost/original-layout.png"></image>
+                    <p class="no-margin">Original layout</p>
+                </div>
+
+                <div>
+                    <image src="../images/SureCost/revised-layout.png"></image>
+                    <p class="no-margin">Redesigned layout</p>
+                </div>
+            </div>
+
+            <div>
+                <h2>The process behind the redesign</h2>
+                <p>I designed a prototype of a dashboard interface for SureCost's web app as well as revamped
+                    navigational
+                    menus. The driving concept behind my design was to preserve the current ways users interact with the
+                    design (one notable interaction was keyboard shortcuts for Purchasing, Formulary, etc.) while adding
+                    new, useful affordances to streamline user workflows (eg. search bar, editable layouts, help
+                    wizard).
+                </p>
+            </div>
+
+        </div>
+
+        <image class="image-box span-width" src="../images/SureCost/content-box-1.png"></image>
+        <p class="caption">High-fidelity design of dashboard interface for SureCost web application. Left: desktop/tablet view. Right: mobile view.</p>
+
+        <image class="image-box span-width" src="../images/SureCost/content-box-2.png"></image>
+        <p class="caption">Desktop views of expanded data charts (line, bar, and pie graphs). Concept of a new feature in the SureCost web app, which previously only had limited bar graphs.</p>
+
+        <image class="image-box span-width" src="../images/SureCost/content-box-4.png"></image>
+        <p class="caption">Conceptual design token system I built for the light mode view of the app. All chosen colors meet WCAG AA guidelines.</p>
+
+        <image class="image-box span-width" src="../images/SureCost/content-box-5.png"></image>
+        <p class="caption">Conceptual design token system I built for teh dark mode view of the app. All chosen colors meet WCAG AA guidelines.</p>
+
+        <h2 class="content-cta">
+            Contact me below to see this case study.
+        </h2>
+
+        <div id="footer" class="span-width">
+            <h3 class="footer-item">Get in touch below or directly with me at <a
+                    href="mailto:brandon.noel.win@gmail.com"
+                    class="hyperlink-text-Mont transition-05">brandon.noel.win@gmail.com</a>!</h3>
+            <div class="footer-item footer-buttons">
+                <svg class="icon-fill no-margin transition-05" xmlns="http://www.w3.org/2000/svg" height="53" width="53"
+                    viewBox="0 0 72 72">
+                    <g id="linkedin-container">
+                        <path
+                            d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z"
+                            id="linkedin-fill" class="transition-05" />
+                        <path
+                            d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z"
+                            fill="#FFFFFF" />
+                    </g>
+                </svg>
+                <a class="button button-fill transition-05" target="_blank" href="..\resume\05202024.pdf"
+                    target="_blank">Resume</a>
+            </div>
+            <p class="footer-item">© Brandon Win 2024</p>
+        </div>
+
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName("mobile-hide");
+
+            Array.from(x).forEach((y) => {
+                if (y.style.display === "inline") {
+                    y.style.display = "none";
+                } else {
+                    y.style.display = "inline";
+                }
+            })
+
+        }
+    </script>
+
+</body>
+
+</html>
