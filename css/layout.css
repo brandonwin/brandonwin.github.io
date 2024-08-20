@@ -180,4 +180,8 @@ body {
     .role-results {
         grid-template-columns: auto;
     }
+
+    .footer-buttons {
+        gap: 2rem;
+    }
 }
