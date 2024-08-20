@@ -16,6 +16,13 @@
 </head>
 
 <style>
+
+    #compare-images {
+        display: grid;
+        grid: auto / calc(50% - 2rem) calc(50% - 2rem);
+        gap: 4rem 4rem;
+    }
+
     #compare-box {
         display: flex;
         flex-direction: column;
@@ -23,24 +30,6 @@
         padding: 4rem;
         gap: 4rem;
 
-    }
-
-    #compare-images {
-        display: grid;
-        grid: auto / calc(50% - 4rem) calc(50% - 4rem);
-        gap: 2rem 8rem;
-
-        div {
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            gap: 1rem;
-
-            image {
-                width: 100%;
-                object-fit: contain;
-            }
-        }
     }
 
     @media only screen and (max-width: 1450px) {
@@ -106,21 +95,21 @@
             </div>
         </div>
 
-        <video class="video-box span-width" autoplay muted loop preload>
+        <video class="video-box span-width" playsinline autoplay muted loop preload>
             <source src="../videos/surecost_hook.mp4" type="video/mp4">
         </video>
 
-        <div class="content-box span-width" id="compare-box">
-            <div id="compare-images">
+        <div class="span-width">
+            <div class="span-width" id="compare-images">
                 <div>
-                    <image src="../images/SureCost/original-layout.png"></image>
+                    <image class="span-width" src="../images/SureCost/original-layout.png"></image>
                     <p class="no-margin">Original layout</p>
                 </div>
 
                 <div>
-                    <image src="../images/SureCost/revised-layout.png"></image>
+                    <image class="span-width" src="../images/SureCost/revised-layout.png"></image>
                     <p class="no-margin">Redesigned layout</p>
-                </div>
+                </div>                    
             </div>
 
             <div>
@@ -133,7 +122,6 @@
                     wizard).
                 </p>
             </div>
-
         </div>
 
         <image class="image-box span-width" src="../images/SureCost/content-box-1.png"></image>
