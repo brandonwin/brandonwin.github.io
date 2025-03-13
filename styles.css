@@ -1407,8 +1407,12 @@ a:visited {
     }
 
     .work-image-container {
-        aspect-ratio: 1 / 1;
+        aspect-ratio: 1.8/1;
         min-height: 0px;
+    }
+
+    .work-container {
+        padding: 0.5rem;
     }
 
     .work-tag-flex {
