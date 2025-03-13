@@ -2,177 +2,295 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
-    <meta name="description" content="Brandon Win's portfolio. Project page showcasing designs at SureCost">
-    <meta name="keywords" content="product designer, UX, UI, user experience, design, product, Figma, Adobe XD, HTML, CSS, JavaScript">
-    <meta name="author" content="Brandon Win">
-    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <meta property="og:title" content="BNWIN Design | About Me" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bnwindesign.github.io/" />
+    <meta property="og:image" content="https://bnwindesign.github.io/logo_standardlarge.png" />
+    <meta property="og:description"
+        content="Design studio building delightful, accessible digital experiences for users." />
 
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="apple-touch-icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" href="./favicon.ico">
 
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../styles.css">
 
     <title>Brandon Win | SureCost</title>
 </head>
 
 <style>
 
-    #compare-images {
-        display: grid;
-        grid: auto / calc(50% - 2rem) calc(50% - 2rem);
-        gap: 4rem 4rem;
-    }
-
-    #compare-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 4rem;
-        gap: 4rem;
-
-    }
-
-    @media only screen and (max-width: 1450px) {
-        #compare-box {
-            padding: 1rem;
-        }
-
-        #compare-images {
-            grid: auto / auto;
-        }
-    }
 </style>
 
+<script>
+    window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader");
+
+        loader.classList.add("loader--hidden");
+
+        loader.addEventListener("transitionend", () => {
+            document.body.removeChild(loader);
+        });
+    });
+
+</script>
+
 <body>
+    <div class="loader">
+        <img id="loader-gif" src="../img/global/loader.gif" />
+    </div>
+    <div id="home" class="nav-container">
+        <div class="nav">
+            <div class="nav-leftflex">
+                <a href="https://brandonwin.github.io/" style="height: 48px;"> <img
+                        src="../img/global/logo_med_black.svg" alt="BNWIN Design Logo"
+                        style="margin-right: .5rem; width: 3rem; height: 3rem;" />
+                </a>
 
-    <div class="navigation-container prevent-select transition-05">
-        <svg xmlns="http://www.w3.org/2000/svg" class="ham transition-05" onclick="myFunction()" width="2em" height="2em"
-            viewBox="0 0 24 24">
-            <path id="ham-path" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z" />
-        </svg>
+                <a href="../index.html#home">
+                    <h5 class="nav-button transition nav-home">Home</h5>
+                </a>
+                <a href="../index.html#selected-works">
+                    <h5 class="nav-button transition nav-work">Work</h5>
+                </a>
+                <a href="./about.html">
+                    <h5 class="nav-button transition nav-about">About Me</h5>
+                </a>
+                <a target="_blank" href="https://bnwindesign.github.io/">
+                    <h5 class="nav-button transition nav-studio">Studio</h5>
+                </a>
+            </div>
 
-        <a class="mobile-hide transition-05" href="../index.html">
-            <p class="navigation-text no-margin transition-05">Home</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./about.html">
-            <p class="navigation-text no-margin transition-05">About Me</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./surecost.html">
-            <p class="navigation-text no-margin transition-05" id="current-page">SureCost</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./fairchain.html">
-            <p class="navigation-text no-margin transition-05">Fairchain</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./heebiekeebies.html">
-            <p class="navigation-text no-margin transition-05">heebie keebies</p>
-        </a>
+            <a target="_blank" href="https://calendly.com/brandon-noel-win">
+                <h5 class="nav-button transition nav-schedule">Get in touch</h5>
+            </a>
+        </div>
     </div>
 
-    <div id="body-content">
+    <div id="home" class="m-nav">
+        <div class="m-nav-bar">
+            <a href="https://brandonwin.github.io/" style="height: 3rem;"> <img src="../img/global/logo_med_black.svg"
+                    alt="BNWIN Design Logo" style="width: 3rem; height: 3rem;" />
+            </a>
 
-        <h1 class="no-margin">
-            SureCost
-        </h1>
-
-        <p>
-            SureCost is a robust software solution that empowers pharmacies to save more money on
-            purchasing and seamlessly manage their inventory.
-        </p>
-
-        <div class="role-results">
-            <div>
-                <h3>My role</h3>
-                <p>Product Designer, 3 month contract</p>
-                <p>Redesign web interface</p>
-                <p>Find new, valuable affordances for users</p>
-            </div>
-
-            <div>
-                <h3>Results</h3>
-                <p>Designed an accessible, intuitive interface for users</p>
-                <p>Delivered a pitch deck to key stakeholders</p>
-                <p>Built 3 new product features within 2 months</p>
-            </div>
+            <img onclick="myFunction()" src="../img/global/m-menu.svg" alt="Menu open/close"
+                style="width: 3rem; height: 3rem;" />
         </div>
 
-        <video class="video-box span-width" playsinline autoplay muted loop preload>
-            <source src="../videos/surecost_hook.mp4" type="video/mp4">
-        </video>
+        <div class="m-nav-flex">
+            <a class="m-nav-item transition m-nav-home" href="../index.html#home">
+                <h2 class="transition">Home</h2>
+            </a>
+            <a class="m-nav-item transition m-nav-work" href="../index.html#selected-works">
+                <h2 class="transition">Work</h2>
+            </a>
+            <a class="m-nav-item transition m-nav-about" href="../pages/about.html">
+                <h2 class="transition">About Me</h2>
+            </a>
+            <a target="_blank" class="m-nav-item transition m-nav-studio" href="https://bnwindesign.github.io/">
+                <h2 class="transition">Studio</h2>
+            </a>
+            <a target="_blank" class="m-nav-item transition m-nav-schedule"
+                href="https://calendly.com/brandon-noel-win">
+                <h2 class="transition">Get in touch</h2>
+            </a>
+        </div>
+    </div>
 
-        <div class="span-width">
-            <div class="span-width" id="compare-images">
-                <div>
-                    <image class="span-width" src="../images/SureCost/original-layout.png"></image>
-                    <p class="no-margin">Original layout</p>
+    <div class="content-width content-section page-abovefold">
+
+        <div class="page-image-container transition" id="sc-image-container">
+            <img class="work-image work-image-sc transition-sc" id="work-image-sc-L"
+                src="../img/index/index-sc-L.png" />
+            <img class="work-image work-image-sc transition-sc" id="work-image-sc-c"
+                src="../img/index/index-sc-c.png" />
+            <img class="work-image work-image-sc transition-sc" id="work-image-sc-R"
+                src="../img/index/index-sc-R.png" />
+            <img class="work-image work-image-sc transition" id="work-image-sc-main" src="../img/index/index-sc.png" />
+        </div>
+
+        <div class="page-header-container">
+            <div class="page-header-text">
+                <h1 class="page-work-header transition"><span id="page-sc-span">Modernizing Design</span> at SureCost
+                </h1>
+                <div class="column-50-50">
+                    <div class="column-50">
+                        <h4>In 2022, I joined SureCost to design and present a new dashboard interface and design system
+                            to key stakeholders, showcasing how my designs aligned to company goals.</h4>
+                        <h4>
+                            I spearheaded design at SureCost, facilitated cross-functional collaboration, and worked
+                            closely with engineers and product managers. </h4>
+                    </div>
+                    <div class="column-50">
+                        <h4>As the first design hire at SureCost, I was in charge of encouraging design thinking,
+                            growing the company’s design culture, uplifting best practices, and advocating for the user.
+                        </h4>
+                    </div>
                 </div>
+            </div>
 
+            <div class="page-tags-container">
+                <div class="page-tags-flex">
+                    <h5>Year</h5>
+                    <div class="page-tags">
+                        <h5>2022 - 2023</h5>
+                    </div>
+
+                </div>
+                <div class="page-tags-flex">
+                    <h5>Disciplines</h5>
+                    <div class="page-tags">
+                        <h5>Feature design</h5>
+                        <h5>Accessibility design</h5>
+                        <h5>Product strategy</h5>
+                        <h5>Design pitch</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-width content-section column-50-50">
+        <div class="column-50">
+            <h2>Background</h2>
+            <h4>
+                My favorite way to describe SureCost is "Costco for pharmacies".
+            </h4>
+            <h4>
+                SureCost is a powerful software that enables small to medium-size pharmices to save money on their
+                inventory through price watching, inventory management, and in-app coupons.
+            </h4>
+            <h4>
+                However, the company hasn't updated their web app's visuals since the early 2010s, causing the app to
+                face an issue of being incredibly dated in an evolving market.
+            </h4>
+        </div>
+        <div class="column-50">
+            <h2>My Role</h2>
+            <h4>
+                I led the design overhaul of SureCost, successfully conceptualizing and presenting a pitch deck to the CEO, my product manager, and head of engineering with my ideas and visual overhaul of the platform. Additionally, I delivered designs for features on the current product to meet FDA compliance and provide new affordances for users.
+            </h4>
+            <h4>
+                The version being showcased here was from February 2023.
+            </h4>
+        </div>
+    </div>
+
+    <div class="content-width content-section pages-fullsize">
+        <video class="video-fullsize" playsinline autoplay muted loop preload>
+            <source src="../img/pages/sc_hook.mp4" type="video/mp4">
+        </video>
+        <h2>The same shortcuts you know with all of the data you want to see.</h2>
+        <h4>Designing for SureCost provided a unique use case: most of our daily users were pharmacists, some of whom
+            only interact with the webpage via keyboard. Additionally, I had to design an interface that still had space
+            for the preexisting web layout but allows for new affordances such as badge alerts, a smoother login/logout
+            user flow, and a smarter help wizard.</h4>
+    </div>
+
+    <div class="content-width content-section pages-fullsize">
+        <img class="image-fullsize" src="../img/pages/sc_layout.png" />
+        <h2>See more by doing less.</h2>
+        <h4>Previously, users had to navigate through SureCost’s large information architecture to find urgent task.
+            With this new dashboard, users can take a glance at the dashboard on mobile or web and know what needs to be
+            done for the day, whether it’s refilling prescriptions or meeting FDA compliance guidelines.</h4>
+    </div>
+
+    <div class="content-width content-section column-50-50 column-image-container">
+        <div class="column-50">
+            <h2>Bringing SureCost into the modern era</h2>
+            <h4>
+                SureCost needed a new wardrobe, having not updated its visual language since the early 2010s. By
+                following brand guidelines set by marketing but still looking to innovate with fresh colors, I created a
+                tokenized design system that would help create the backbone for my visual redesign.
+            </h4>
+        </div>
+        <div class="column-50">
+            <img class="column-image" src="../img/pages/sc_tokens.png" />
+        </div>
+    </div>
+
+    <div class="column-impact">
+        <div class="content-width impact-content">
+            <h1>My impact within 3 months</h1>
+            <div class="impact-flex">
                 <div>
-                    <image class="span-width" src="../images/SureCost/revised-layout.png"></image>
-                    <p class="no-margin">Redesigned layout</p>
-                </div>                    
-            </div>
-
-            <div>
-                <h2>The process behind the redesign</h2>
-                <p>I designed a prototype of a dashboard interface for SureCost's web app as well as revamped
-                    navigational
-                    menus. The driving concept behind my design was to preserve the current ways users interact with the
-                    design (one notable interaction was keyboard shortcuts for Purchasing, Formulary, etc.) while adding
-                    new, useful affordances to streamline user workflows (eg. search bar, editable layouts, help
-                    wizard).
-                </p>
+                    <h4>Delivered</h4>
+                    <h1>3 new end-to-end processes</h1>
+                </div>
+                <div>
+                    <h4>Increased FDA compliance for</h4>
+                    <h1>4 new regulations</h1>
+                </div>
+                <div>
+                    <h4>Directed</h4>
+                    <h1>a strategic pitch deck</h1>
+                </div>
             </div>
         </div>
+    </div>
 
-        <image class="image-box span-width" src="../images/SureCost/content-box-1.png"></image>
-        <p class="caption">High-fidelity design of dashboard interface for SureCost web application. Left: desktop/tablet view. Right: mobile view.</p>
+    <div class="footer-container">
+        <div class="content-width footer">
 
-        <image class="image-box span-width" src="../images/SureCost/content-box-2.png"></image>
-        <p class="caption">Desktop views of expanded data charts (line, bar, and pie graphs). Concept of a new feature in the SureCost web app, which previously only had limited bar graphs.</p>
-
-        <image class="image-box span-width" src="../images/SureCost/content-box-4.png"></image>
-        <p class="caption">Conceptual design token system I built for the light mode view of the app. All chosen colors meet WCAG AA guidelines.</p>
-
-        <image class="image-box span-width" src="../images/SureCost/content-box-5.png"></image>
-        <p class="caption">Conceptual design token system I built for the dark mode view of the app. All chosen colors meet WCAG AA guidelines.</p>
-
-        <h2 class="content-cta">
-            Contact me below to see this case study.
-        </h2>
-
-        <div id="footer" class="span-width">
-            <h3 class="no-margin">Get in touch below or directly with me at <a
-                    href="mailto:brandon.noel.win@gmail.com"
-                    class="hyperlink-text-Mont transition-05">brandon.noel.win@gmail.com</a>!</h3>
-            <div class="footer-buttons">
-                <a class="button button-fill transition-05" target="_blank" href="https://www.linkedin.com/in/brnwin/"
-                    target="_blank">LinkedIn</a>
-                <a class="button button-fill transition-05" target="_blank" href="..\resume\05202024.pdf"
-                    target="_blank">Resume</a>
+            <div class="f-logo">
+                <svg class="transition" id="f-logo1" width="48" height="48" viewBox="0 0 48 48" fill="#000"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h9.6v48H0zm9.6 0h28.8v9.6H9.6zm0 19.2h28.8v9.6H9.6zm28.8-9.6H48v9.6h-9.6zM9.6 38.4h28.8V48H9.6zm28.8-9.6H48v9.6h-9.6z" />
+                </svg>
+                <svg class="transition" id="f-logo2" width="48" height="48" viewBox="0 0 48 48" fill="#000"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h9.6v48H0zm38.4 0H48v48h-9.6zM19.2 19.2h9.6v9.6h-9.6zM9.6 9.6h9.6v9.6H9.6zm19.2 19.2h9.6v9.6h-9.6z" />
+                </svg>
+                <svg class="transition" id="f-logo3" width="48" height="48" viewBox="0 0 48 48" fill="#000"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h9.6v38.4H0zm9.6 38.4h9.6V48H9.6zm9.6-9.6h9.6v9.6h-9.6zm9.6 9.6h9.6V48h-9.6zM38.4 0H48v38.4h-9.6z" />
+                </svg>
+                <svg class="transition" id="f-logo-arrow" width="48" height="48" viewBox="0 0 48 48" fill="#000"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h38.4v9.6H0zm38.4 9.6H48V48h-9.6zm-9.6 0h9.6v9.6h-9.6zM0 38.4h9.6V48H0zm9.6-9.6h9.6v9.6H9.6zm9.6-9.6h9.6v9.6h-9.6zm19.2-9.6H48V0h-9.6z" />
+                </svg>
             </div>
-            <p>© Brandon Win 2024</p>
-        </div>
 
+            <div class="f-row">
+                <a href="../index.html#home" class="f-link transition">
+                    <p style="width: auto;">Home</p>
+                </a>
+                <a href="../index.html#selected-works" class="f-link transition">
+                    <p style="width: auto;">Work</p>
+                </a>
+                <a href="../pages/about.html" class="f-link transition">
+                    <p style="width: auto;">About Me</p>
+                </a>
+                <a target="_blank" href="https://bnwindesign.github.io/" class="f-link transition">
+                    <p style="width: auto;">Studio</p>
+                </a>
+            </div>
+        </div>
     </div>
 
     <script>
         function myFunction() {
-            var x = document.getElementsByClassName("mobile-hide");
+            var x = document.getElementsByClassName("m-nav-flex");
 
             Array.from(x).forEach((y) => {
-                if (y.style.display === "inline") {
+                if (y.style.display === "flex") {
                     y.style.display = "none";
                 } else {
-                    y.style.display = "inline";
+                    y.style.display = "flex";
                 }
             })
 
         }
     </script>
 
+    <script src="../accordion.js"></script>
+
 </body>
+
 
 </html>

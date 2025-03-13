@@ -2,129 +2,305 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
-    <meta name="description" content="Brandon Win's portfolio. Project page showcasing designs at heebie keebies">
-    <meta name="keywords" content="product designer, UX, UI, user experience, design, product, Figma, Adobe XD, HTML, CSS, JavaScript">
-    <meta name="author" content="Brandon Win">
-    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <meta property="og:title" content="BNWIN Design | About Me" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bnwindesign.github.io/" />
+    <meta property="og:image" content="https://bnwindesign.github.io/logo_standardlarge.png" />
+    <meta property="og:description"
+        content="Design studio building delightful, accessible digital experiences for users." />
 
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="apple-touch-icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" href="./favicon.ico">
 
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../styles.css">
 
-    <title>Brandon Win | heebiekeebies</title>
+    <title>Brandon Win | Fairchain</title>
 </head>
 
 <style>
 
 </style>
 
-<body>
-    <div class="navigation-container prevent-select transition-05">
-        <svg xmlns="http://www.w3.org/2000/svg" class="ham transition-05" onclick="myFunction()" width="2em" height="2em"
-            viewBox="0 0 24 24">
-            <path id="ham-path" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z" />
-        </svg>
+<script>
+    window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader");
 
-        <a class="mobile-hide transition-05" href="../index.html">
-            <p class="navigation-text no-margin transition-05">Home</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./about.html">
-            <p class="navigation-text no-margin transition-05">About Me</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./surecost.html">
-            <p class="navigation-text no-margin transition-05">SureCost</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./fairchain.html">
-            <p class="navigation-text no-margin transition-05">Fairchain</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./heebiekeebies.html">
-            <p class="navigation-text no-margin transition-05" id="current-page">heebie keebies</p>
-        </a>
+        loader.classList.add("loader--hidden");
+
+        loader.addEventListener("transitionend", () => {
+            document.body.removeChild(loader);
+        });
+    });
+
+</script>
+
+<body>
+    <div class="loader">
+        <img id="loader-gif" src="../img/global/loader.gif" />
+    </div>
+    <div id="home" class="nav-container">
+        <div class="nav">
+            <div class="nav-leftflex">
+                <a href="https://brandonwin.github.io/" style="height: 48px;"> <img
+                        src="../img/global/logo_med_black.svg" alt="BNWIN Design Logo"
+                        style="margin-right: .5rem; width: 3rem; height: 3rem;" />
+                </a>
+
+                <a href="../index.html#home">
+                    <h5 class="nav-button transition nav-home">Home</h5>
+                </a>
+                <a href="../index.html#selected-works">
+                    <h5 class="nav-button transition nav-work">Work</h5>
+                </a>
+                <a href="./about.html">
+                    <h5 class="nav-button transition nav-about">About Me</h5>
+                </a>
+                <a target="_blank" href="https://bnwindesign.github.io/">
+                    <h5 class="nav-button transition nav-studio">Studio</h5>
+                </a>
+            </div>
+
+            <a target="_blank" href="https://calendly.com/brandon-noel-win">
+                <h5 class="nav-button transition nav-schedule">Get in touch</h5>
+            </a>
+        </div>
     </div>
 
-    <div id="body-content">
+    <div id="home" class="m-nav">
+        <div class="m-nav-bar">
+            <a href="https://brandonwin.github.io/" style="height: 3rem;"> <img src="../img/global/logo_med_black.svg"
+                    alt="BNWIN Design Logo" style="width: 3rem; height: 3rem;" />
+            </a>
 
-        <h1 class="no-margin">
-            heebie keebies
-        </h1>
-
-        <p>
-            heebie keebies is an online mechanical keyboard business that provides customers around
-            the world with high-quality products and a streamlined user experience.
-        </p>
-
-        <div class="role-results">
-            <div>
-                <h3>My role</h3>
-                <p>UX Designer, 5 month contract</p>
-                <p>Scale up business by building Shopify site</p>
-                <p>Define product vision and conduct customer research</p>
-            </div>
-
-            <div>
-                <h3>Results</h3>
-                <p>Fully launched Shopify site within a 3-month period</p>
-                <p>Improved product representation by conducting product photography</p>
-                <p>Interviewed 20 customers to facilitate a smooth platform transition to Shopify for users</p>
-            </div>
+            <img onclick="myFunction()" src="../img/global/m-menu.svg" alt="Menu open/close"
+                style="width: 3rem; height: 3rem;" />
         </div>
 
-        <image class="image-box span-width" src="../images/heebiekeebies/site.gif"></image>
+        <div class="m-nav-flex">
+            <a class="m-nav-item transition m-nav-home" href="../index.html#home">
+                <h2 class="transition">Home</h2>
+            </a>
+            <a class="m-nav-item transition m-nav-work" href="../index.html#selected-works">
+                <h2 class="transition">Work</h2>
+            </a>
+            <a class="m-nav-item transition m-nav-about" href="../pages/about.html">
+                <h2 class="transition">About Me</h2>
+            </a>
+            <a target="_blank" class="m-nav-item transition m-nav-studio" href="https://bnwindesign.github.io/">
+                <h2 class="transition">Studio</h2>
+            </a>
+            <a target="_blank" class="m-nav-item transition m-nav-schedule"
+                href="https://calendly.com/brandon-noel-win">
+                <h2 class="transition">Get in touch</h2>
+            </a>
+        </div>
+    </div>
 
-        <image class="image-box span-width" src="../images/heebiekeebies/fullsize.png"></image>
-        <p class="caption">Full-size image of the Shopify landing page. Sections in order: main CTA to view new
-            products, featured items, customer guarantees, about us, testimonials.</p>
+    <div class="content-width content-section page-abovefold">
 
-        <image class="image-box span-width" src="../images/heebiekeebies/mobile.png"></image>
-        <p class="caption">Mobile views of Shopify site. Left: landing page. Right: product page.</p>
-
-        <image class="image-box span-width" src="../images/heebiekeebies/product-single.png"></image>
-        <p class="caption">Desktop view of product page.</p>
-
-        <image class="image-box span-width" src="../images/heebiekeebies/catalogue.png"></image>
-        <p class="caption">Desktop view of catalogue page.</p>
-
-        <image class="image-box span-width" src="../images/heebiekeebies/checkout.png"></image>
-        <p class="caption">Desktop view of checkout page.</p>
-
-        <h2 class="content-cta">
-            Contact me below to see this case study.
-        </h2>
-
-        <div id="footer" class="span-width">
-            <h3 class="no-margin">Get in touch below or directly with me at <a
-                    href="mailto:brandon.noel.win@gmail.com"
-                    class="hyperlink-text-Mont transition-05">brandon.noel.win@gmail.com</a>!</h3>
-            <div class="footer-buttons">
-                <a class="button button-fill transition-05" target="_blank" href="https://www.linkedin.com/in/brnwin/"
-                    target="_blank">LinkedIn</a>
-                <a class="button button-fill transition-05" target="_blank" href="..\resume\05202024.pdf"
-                    target="_blank">Resume</a>
-            </div>
-            <p>© Brandon Win 2024</p>
+        <div class="page-image-container transition" id="hk-image-container">
+            <img class="work-image work-image-hk transition-hk" id="work-image-hk-L"
+                src="../img/index/index-hk-2.png" />
+            <img class="work-image work-image-hk transition-hk" id="work-image-hk-c"
+                src="../img/index/index-hk-1.png" />
+            <img class="work-image work-image-hk transition-hk" id="work-image-hk-R"
+                src="../img/index/index-hk-3.png" />
+            <img class="work-image work-image-hk transition-hk-fullsize" id="work-image-hk-fullsize"
+                src="../img/index/index-hk-fullsize.png" />
         </div>
 
+        <div class="page-header-container">
+            <div class="page-header-text">
+                <h1 class="page-work-header transition"><span id="page-hk-span">Building Design</span> at heebie keebies
+                </h1>
+                <div class="column-50-50">
+                    <div class="column-50">
+                        <h4>In 2021, I joined heebie keebies, a small mechanical keyboard business from my local area,
+                            to build their Shopify website and scale up their operations design-wise.</h4>
+                        <h4>
+                            During my time there, I helped expand the customer-facing side of the business and conducted
+                            user research to help facilitate the business's transition from Discord to Shopify.</h4>
+                    </div>
+                    <div class="column-50">
+                        <h4>
+                            As a designer in heebie keebies's earliest stages, I helped facilitate a culture of
+                            user-first and intentional design as well as building the foundation for the Shopify site.
+                        </h4>
+                        <h4>The version being showcased here was from August 2021.</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-tags-container">
+                <div class="page-tags-flex">
+                    <h5>Year</h5>
+                    <div class="page-tags">
+                        <h5>2021 - 2021</h5>
+                    </div>
+
+                </div>
+                <div class="page-tags-flex">
+                    <h5>Disciplines</h5>
+                    <div class="page-tags">
+                        <h5>Web design</h5>
+                        <h5>Product photography</h5>
+                        <h5>User research</h5>
+                        <h5>eCommerce design</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-width content-section column-50-50">
+        <div class="column-50">
+            <h2>Background</h2>
+            <h4>Heebie keebies is a small local business in Los Angeles County that aims to sell high-quality mechanical
+                keyboard prices at a reasonable price.</h4>
+            <h4>
+                Previously, heebie keebies operated on a word-of-mouth basis, using a Discord server to facilitate sales
+                with customers.
+            </h4>
+            <h4>
+                The company needed a designer to create the framework and basis for their business going forward.
+            </h4>
+            <h4>
+
+            </h4>
+        </div>
+        <div class="column-50">
+            <h2>My Role</h2>
+            <h4>
+                I was contracted to build the Shopify experience for heebie keebies and conduct user research to find
+                out our users' most urgent needs.
+            </h4>
+            <h4>
+                As this was my first job ever, I was excited to join the team and create a distinctive visual style for
+                the brand while making sure the user experience was bug-free and flawless.
+            </h4>
+            <h4>The version being showcased here was from September 2022.</h4>
+        </div>
+    </div>
+
+    <div class="content-width content-section pages-fullsize">
+        <img class="image-fullsize" src="../img/pages/hk_site.gif" />
+        <h2>A seamless shopping experience for you to get your most wanted keyboard parts.</h2>
+        <h4>I designed the site with a minimalist look to set the brand apart from other competitors, most of which
+            relied on flashy colors or gamer aesthetics. Additionally, product photography was a big emphasis of the
+            project, with the team deciding on a small product catalogue with large, well-edited photos.</h4>
+    </div>
+
+    <div class="content-width content-section column-50-50 column-image-container">
+        <div class="column-50">
+            <h2>A swift and responsive experience on all devices</h2>
+            <h4>
+                As this was my first contract EVER, I emphasized the mobile experience, making sure to customize and
+                modify the Shopify interface so that all customers could purchase our products on any platform without
+                any hiccups.
+            </h4>
+        </div>
+        <div class="column-50">
+            <img class="column-image" src="../img/pages/hk_mobile.png" />
+        </div>
+    </div>
+
+    <div class="content-width content-section column-50-50 column-image-container">
+        <div class="column-50">
+            <h2>Meticulously crafted product photography</h2>
+            <h4>
+                I spent a large amount of the project simply taking and editing high quality photos of each product in
+                Adobe Creative Suite, including cross-section shots of each keyboard switch to show the individual
+                pieces in a premium manner.
+            </h4>
+        </div>
+        <div class="column-50">
+            <img class="column-image" src="../img/pages/hk_catalogue.png" />
+        </div>
+    </div>
+
+    <div class="column-impact">
+        <div class="content-width impact-content">
+            <h1>My impact within 5 months</h1>
+            <div class="impact-flex">
+                <div>
+                    <h4>Increased user satisfaction by</h4>
+                    <h1>85%</h1>
+                </div>
+                <div>
+                    <h4>Increased conversions by</h4>
+                    <h1>60%</h1>
+                </div>
+                <div>
+                    <h4>Designed product presentation for</h4>
+                    <h1>18 new catalogue items</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="content-width footer">
+
+            <div class="f-logo">
+                <svg class="transition" id="f-logo1" width="48" height="48" viewBox="0 0 48 48" fill="#000"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h9.6v48H0zm9.6 0h28.8v9.6H9.6zm0 19.2h28.8v9.6H9.6zm28.8-9.6H48v9.6h-9.6zM9.6 38.4h28.8V48H9.6zm28.8-9.6H48v9.6h-9.6z" />
+                </svg>
+                <svg class="transition" id="f-logo2" width="48" height="48" viewBox="0 0 48 48" fill="#000"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h9.6v48H0zm38.4 0H48v48h-9.6zM19.2 19.2h9.6v9.6h-9.6zM9.6 9.6h9.6v9.6H9.6zm19.2 19.2h9.6v9.6h-9.6z" />
+                </svg>
+                <svg class="transition" id="f-logo3" width="48" height="48" viewBox="0 0 48 48" fill="#000"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h9.6v38.4H0zm9.6 38.4h9.6V48H9.6zm9.6-9.6h9.6v9.6h-9.6zm9.6 9.6h9.6V48h-9.6zM38.4 0H48v38.4h-9.6z" />
+                </svg>
+                <svg class="transition" id="f-logo-arrow" width="48" height="48" viewBox="0 0 48 48" fill="#000"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h38.4v9.6H0zm38.4 9.6H48V48h-9.6zm-9.6 0h9.6v9.6h-9.6zM0 38.4h9.6V48H0zm9.6-9.6h9.6v9.6H9.6zm9.6-9.6h9.6v9.6h-9.6zm19.2-9.6H48V0h-9.6z" />
+                </svg>
+            </div>
+
+            <div class="f-row">
+                <a href="../index.html#home" class="f-link transition">
+                    <p style="width: auto;">Home</p>
+                </a>
+                <a href="../index.html#selected-works" class="f-link transition">
+                    <p style="width: auto;">Work</p>
+                </a>
+                <a href="../pages/about.html" class="f-link transition">
+                    <p style="width: auto;">About Me</p>
+                </a>
+                <a target="_blank" href="https://bnwindesign.github.io/" class="f-link transition">
+                    <p style="width: auto;">Studio</p>
+                </a>
+            </div>
+        </div>
     </div>
 
     <script>
         function myFunction() {
-            var x = document.getElementsByClassName("mobile-hide");
+            var x = document.getElementsByClassName("m-nav-flex");
 
             Array.from(x).forEach((y) => {
-                if (y.style.display === "inline") {
+                if (y.style.display === "flex") {
                     y.style.display = "none";
                 } else {
-                    y.style.display = "inline";
+                    y.style.display = "flex";
                 }
             })
 
         }
     </script>
 
+    <script src="../accordion.js"></script>
+
 </body>
+
 
 </html>

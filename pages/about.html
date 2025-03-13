@@ -2,173 +2,210 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
-    <meta name="description" content="Brandon Win's portfolio. About me page">
-    <meta name="keywords" content="product designer, UX, UI, user experience, design, product, Figma, Adobe XD, HTML, CSS, JavaScript">
-    <meta name="author" content="Brandon Win">
-    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <meta property="og:title" content="BNWIN Design | About Me" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bnwindesign.github.io/" />
+    <meta property="og:image" content="https://bnwindesign.github.io/logo_standardlarge.png" />
+    <meta property="og:description"
+        content="Design studio building delightful, accessible digital experiences for users." />
 
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="apple-touch-icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" href="./favicon.ico">
 
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../styles.css">
 
     <title>Brandon Win | About Me</title>
 </head>
 
 <style>
-    #experience-header {
-        margin-top: 3rem;
-    }
 
-    #experience {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-
-        .experience-row {
-            display: grid;
-            grid: auto / 40% 60%;
-        }
-    }
-
-    @media only screen and (max-width: 1440px) {
-
-        #experience {
-
-            .experience-row {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-            }
-        }
-    }
 </style>
 
+<script>
+    window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader");
+
+        loader.classList.add("loader--hidden");
+
+        loader.addEventListener("transitionend", () => {
+            document.body.removeChild(loader);
+        });
+    });
+
+</script>
+
 <body>
+    <div class="loader">
+        <img id="loader-gif" src="../img/global/loader.gif" />
+    </div>
+    <div id="home" class="nav-container">
+        <div class="nav">
+            <div class="nav-leftflex">
+                <a href="https://brandonwin.github.io/" style="height: 48px;"> <img
+                        src="../img/global/logo_med_black.svg" alt="BNWIN Design Logo"
+                        style="margin-right: .5rem; width: 3rem; height: 3rem;" />
+                </a>
 
-    <div class="navigation-container prevent-select transition-05">
-        <svg xmlns="http://www.w3.org/2000/svg" class="ham transition-05" onclick="myFunction()" width="2em" height="2em"
-            viewBox="0 0 24 24">
-            <path id="ham-path" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z" />
-        </svg>
+                <a href="../index.html#home">
+                    <h5 class="nav-button transition nav-home">Home</h5>
+                </a>
+                <a href="../index.html#selected-works">
+                    <h5 class="nav-button transition nav-work">Work</h5>
+                </a>
+                <a href="./about.html">
+                    <h5 class="nav-button transition nav-about" id="nav-active">About Me</h5>
+                </a>
+                <a target="_blank" href="https://bnwindesign.github.io/">
+                    <h5 class="nav-button transition nav-studio">Studio</h5>
+                </a>
+            </div>
 
-        <a class="mobile-hide transition-05" href="../index.html">
-            <p class="navigation-text no-margin transition-05">Home</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./about.html">
-            <p class="navigation-text no-margin transition-05" id="current-page">About Me</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./surecost.html">
-            <p class="navigation-text no-margin transition-05">SureCost</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./fairchain.html">
-            <p class="navigation-text no-margin transition-05">Fairchain</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./heebiekeebies.html">
-            <p class="navigation-text no-margin transition-05">heebie keebies</p>
-        </a>
+            <a target="_blank" href="https://calendly.com/brandon-noel-win">
+                <h5 class="nav-button transition nav-schedule">Get in touch</h5>
+            </a>
+        </div>
     </div>
 
-    <div id="body-content">
-        <h1 class="no-margin">
-            Nice to meet you! I am Brandon, a product designer based in NYC.
-        </h1>
+    <div id="home" class="m-nav">
+        <div class="m-nav-bar">
+            <a href="https://brandonwin.github.io/" style="height: 3rem;"> <img src="../img/global/logo_med_black.svg"
+                    alt="BNWIN Design Logo" style="width: 3rem; height: 3rem;" />
+            </a>
 
-        <p>
-            I am a product designer who loves delivering pixel-perfect designs, and I excel at building wireframes
-            and design systems. I have had the opportunity to lead design processes at startups in both B2B and B2C
-            sectors with a focus
-            on scaling up user experiences and designing new features. In my free time, I enjoy keeping up with game
-            design trends and studying music production! I am currently seeking new long-term design opportunities, and
-            I would love to connect with you via LinkedIn
-            or email below!
-        </p>
-
-        <h2 id="experience-header">Experience</h2>
-        <div id="experience">
-            <div class="experience-row">
-                <h3 class="no-margin hyperlink-text-Mont transition-05"><a target="_blank"
-                        href="https://www.surecost.com/">SureCost</a></h3>
-                <div>
-                    <h3 class="no-margin">Product Designer (December 2022 - February 2023)</h3>
-                    <p>
-                        Created a new design system for SureCost's web interface and presented a pitch deck to the
-                        CEO and key stakeholders. Strategically aligned the design system's vision to the company's
-                        business goals and to ease user pains. Collaborated with engineers to build 3 new product
-                        features within 2 months.
-                    </p>
-                </div>
-            </div>
-            <div class="experience-row">
-                <h3 class="no-margin hyperlink-text-Mont transition-05"><a target="_blank"
-                        href="https://fairchain.art/">Fairchain</a></h3>
-                <div>
-                    <h3 class="no-margin">Product Designer (July 2022 - October 2022)</h3>
-                    <p>
-                        Built a comprehensive design system to increase parity between web and mobile apps.
-                        Increased brand visibility by designing a new marketing site within a 2 week period.
-                        Built 3 new features to reduce contract delays by 50%.
-                    </p>
-                </div>
-            </div>
-            <div class="experience-row">
-                <h3 class="no-margin hyperlink-text-Mont transition-05"><a target="_blank"
-                        href="https://heebiekeebies.com/">heebie keebies</a></h3>
-                <div>
-                    <h3 class="no-margin">UX Designer (June 2021 - October 2021)</h3>
-                    <p>
-                        Launched heebie keebies's Shopify store within 3 months, managing the project from
-                        inception to live deployment. Designed landing pages, catalogues and checkout
-                        process. Optimized user experience by conducting user interviews with customers
-                        via Discord.
-                    </p>
-                </div>
-            </div>
-            <div class="experience-row">
-                <h3 class="no-margin hyperlink-text-Mont transition-05"><a target="_blank"
-                        href="https://kingchildren.com/">King Children</a></h3>
-                <div>
-                    <h3 class="no-margin">Social Media Intern (January 2018 - May 2018)</h3>
-                    <p>
-                        Enhanced digital marketing effectiveness by creating graphics, assisting in
-                        product photography, and conducting market research during a 5-month social
-                        media internship.
-                    </p>
-                </div>
-            </div>
+            <img onclick="myFunction()" src="../img/global/m-menu.svg" alt="Menu open/close"
+                style="width: 3rem; height: 3rem;" />
         </div>
 
-        <div id="footer" class="span-width">
-            <h3 class="no-margin">Get in touch below or directly with me at <a
-                    href="mailto:brandon.noel.win@gmail.com"
-                    class="hyperlink-text-Mont transition-05">brandon.noel.win@gmail.com</a>!</h3>
-            <div class="footer-buttons">
-                <a class="button button-fill transition-05" target="_blank" href="https://www.linkedin.com/in/brnwin/"
-                    target="_blank">LinkedIn</a>
-                <a class="button button-fill transition-05" target="_blank" href="..\resume\05202024.pdf"
-                    target="_blank">Resume</a>
+        <div class="m-nav-flex">
+            <a class="m-nav-item transition m-nav-home" href="../index.html#home">
+                <h2 class="transition">Home</h2>
+            </a>
+            <a class="m-nav-item transition m-nav-work" href="../index.html#selected-works">
+                <h2 class="transition">Work</h2>
+            </a>
+            <a class="m-nav-item transition m-nav-about" href="../pages/about.html">
+                <h2 class="transition">About Me</h2>
+            </a>
+            <a target="_blank" class="m-nav-item transition m-nav-studio" href="https://bnwindesign.github.io/">
+                <h2 class="transition">Studio</h2>
+            </a>
+            <a target="_blank" class="m-nav-item transition m-nav-schedule"
+                href="https://calendly.com/brandon-noel-win">
+                <h2 class="transition">Get in touch</h2>
+            </a>
+        </div>
+    </div>
+
+    <div class="content-width content-section">
+        <div class="abt-flex">
+            <div class="abt-text">
+                <h1 style="font-weight:600;">Hi, I'm Brandon!</h1>
+                <h4>I'm a product designer with 3 years of experience. I chose to pursue product design (and design in a
+                    broader sense) because I love building and admiring intentionally crafted design, despite whether
+                    it's readily apparent to the user or not.</h4>
+                <h4>Since graduating from New York University in 2022, I've directed and shaped end-to-end user
+                    experiences at startups, sometimes even while being their first design hire. Additionally,
+                    I've started my
+                    own design studio, BNWIN Design, to branch out career-wise and design for those in my local
+                    community.</h4>
+                <h4>I love studying design in UX, video games, and the real world. In my spare time, I love watching
+                    video essays and eating shumai.</h4>
+                <div>
+                    <h4>If you want to start a great conversation with me, ask me about:</h4>
+                    <ul>
+                        <li>Accessibility design (especially in games!) 🧏</li>
+                        <li>My Burmese heritage 🇲🇲</li>
+                        <li>Video games from the 2000s 🎮</li>
+                        <li>Lowkey Asian food in Queens 🥟</li>
+                    </ul>
+                </div>
+
+                <h4>If you're interested in scaling up your design, feel free to contact below.</h4>
+                <div class="abt-button-flex">
+                    <a href="https://bnwindesign.github.io/" target="_blank" class="abt-button transition"
+                        id="abt-button-studio">
+                        <h4 class="transition">My super cool studio</h4>
+                    </a>
+                    <div class="abt-button-innerflex">
+                        <a href="mailto:brandon.noel.win@gmail.com" target="_blank" class="abt-button transition"
+                            id="abt-button-email">
+                            <h4 class="transition">Email</h4>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bnwin/" target="_blank" class="abt-button transition"
+                            id="abt-button-linkedin">
+                            <h4 class="transition">LinkedIn</h4>
+                        </a>
+                    </div>
+                </div>
+
             </div>
-            <p>© Brandon Win 2024</p>
+            <div id="abt-ee" class="abt-img-container transition">
+                <img class="abt-img" src="../img/about/pfp.jpg">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="content-width footer">
+
+            <div class="f-logo">
+                <svg class="transition" id="f-logo1" width="48" height="48" viewBox="0 0 48 48" fill="#000"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h9.6v48H0zm9.6 0h28.8v9.6H9.6zm0 19.2h28.8v9.6H9.6zm28.8-9.6H48v9.6h-9.6zM9.6 38.4h28.8V48H9.6zm28.8-9.6H48v9.6h-9.6z" />
+                </svg>
+                <svg class="transition" id="f-logo2" width="48" height="48" viewBox="0 0 48 48" fill="#000"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h9.6v48H0zm38.4 0H48v48h-9.6zM19.2 19.2h9.6v9.6h-9.6zM9.6 9.6h9.6v9.6H9.6zm19.2 19.2h9.6v9.6h-9.6z" />
+                </svg>
+                <svg class="transition" id="f-logo3" width="48" height="48" viewBox="0 0 48 48" fill="#000"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h9.6v38.4H0zm9.6 38.4h9.6V48H9.6zm9.6-9.6h9.6v9.6h-9.6zm9.6 9.6h9.6V48h-9.6zM38.4 0H48v38.4h-9.6z" />
+                </svg>
+                <svg class="transition" id="f-logo-arrow" width="48" height="48" viewBox="0 0 48 48" fill="#000" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h38.4v9.6H0zm38.4 9.6H48V48h-9.6zm-9.6 0h9.6v9.6h-9.6zM0 38.4h9.6V48H0zm9.6-9.6h9.6v9.6H9.6zm9.6-9.6h9.6v9.6h-9.6zm19.2-9.6H48V0h-9.6z" />
+                </svg>
+            </div>
+
+            <div class="f-row">
+                <a href="../index.html#home" class="f-link transition">
+                    <p style="width: auto;">Home</p>
+                </a>
+                <a href="../index.html#selected-works" class="f-link transition">
+                    <p style="width: auto;">Work</p>
+                </a>
+                <a href="../pages/about.html" class="f-link transition">
+                    <p style="width: auto;">About Me</p>
+                </a>
+                <a target="_blank" href="https://bnwindesign.github.io/" class="f-link transition">
+                    <p style="width: auto;">Studio</p>
+                </a>
+            </div>
         </div>
     </div>
 
     <script>
         function myFunction() {
-            var x = document.getElementsByClassName("mobile-hide");
+            var x = document.getElementsByClassName("m-nav-flex");
 
             Array.from(x).forEach((y) => {
-                if (y.style.display === "inline") {
+                if (y.style.display === "flex") {
                     y.style.display = "none";
                 } else {
-                    y.style.display = "inline";
+                    y.style.display = "flex";
                 }
             })
 
         }
     </script>
+
+    <script src="../accordion.js"></script>
 
 </body>
 

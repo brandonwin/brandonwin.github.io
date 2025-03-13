@@ -2,175 +2,372 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
-    <meta name="description" content="Brandon Win's portfolio. Home page showcasing major projects">
-    <meta name="keywords" content="product designer, UX, UI, user experience, design, product, Figma, Adobe XD, HTML, CSS, JavaScript">
-    <meta name="author" content="Brandon Win">
-    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <meta property="og:title" content="BNWIN Design" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bnwindesign.github.io/" />
+    <meta property="og:image" content="https://bnwindesign.github.io/logo_standardlarge.png" />
+    <meta property="og:description"
+        content="Design studio building delightful, accessible digital experiences for users." />
 
     <link rel="shortcut icon" href="./favicon.ico">
     <link rel="apple-touch-icon" href="./favicon.ico">
 
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./styles.css">
 
-    <title>Brandon Win</title>
+    <title>Brandon Win | Home</title>
 </head>
 
 <style>
-    .grid {
-        display: grid;
-        grid: auto / calc(50% - 1rem) calc(50% - 1rem);
-        gap: 4rem 2rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
 
-        .project-container {
-
-            .image-container {
-                aspect-ratio: 16 / 9;
-                overflow: hidden;
-                background-color: #202020;
-
-                image {
-                    object-fit: cover;
-                }
-            }
-
-            h2,
-            p {
-                color: #202020;
-                margin: 0;
-                margin-top: 1rem;
-            }
-
-            h2 {
-                font-weight: 700;
-            }
-        }
-    }
-
-    .project-container:hover {
-
-        .image-container {
-
-            .project-image {
-                scale: 1.02;
-                opacity: 0.92;
-            }
-
-        }
-    }
-
-    @media only screen and (max-width: 1450px) {
-
-        .grid {
-            grid: auto / auto;
-            gap: 3rem 2rem;
-        }
-    }
-
-    @media only screen and (max-width: 440px) {}
 </style>
 
+<script>
+    window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader");
+
+        loader.classList.add("loader--hidden");
+
+        loader.addEventListener("transitionend", () => {
+            document.body.removeChild(loader);
+        });
+    });
+</script>
+
 <body>
-
-    <div class="navigation-container prevent-select transition-05">
-        <svg xmlns="http://www.w3.org/2000/svg" class="ham transition-05" onclick="myFunction()" width="2em"
-            height="2em" viewBox="0 0 24 24">
-            <path id="ham-path" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z" />
-        </svg>
-
-        <a class="mobile-hide transition-05" href="./index.html">
-            <p class="navigation-text no-margin transition-05" id="current-page">Home</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./pages/about.html">
-            <p class="navigation-text no-margin transition-05">About Me</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./pages/surecost.html">
-            <p class="navigation-text no-margin transition-05">SureCost</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./pages/fairchain.html">
-            <p class="navigation-text no-margin transition-05">Fairchain</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./pages/heebiekeebies.html">
-            <p class="navigation-text no-margin transition-05">heebie keebies</p>
-        </a>
+    <div class="loader">
+        <img id="loader-gif" src="./img/global/loader.gif" />
     </div>
+    <div id="home" class="nav-container">
+        <div class="nav">
+            <div class="nav-leftflex">
+                <a href="https://brandonwin.github.io/" style="height: 48px;"> <img
+                        src="./img/global/logo_med_black.svg" alt="BNWIN Design Logo"
+                        style="margin-right: .5rem; width: 3rem; height: 3rem;" />
+                </a>
 
-    <div id="body-content">
+                <a href="./index.html#home">
+                    <h5 class="nav-button transition nav-home" id="nav-active">Home</h5>
+                </a>
+                <a href="./index.html#selected-works">
+                    <h5 class="nav-button transition nav-work">Work</h5>
+                </a>
+                <a href="./pages/about.html">
+                    <h5 class="nav-button transition nav-about">About Me</h5>
+                </a>
+                <a target="_blank" href="https://bnwindesign.github.io/">
+                    <h5 class="nav-button transition nav-studio">Studio</h5>
+                </a>
+            </div>
 
-        <h1 class="no-margin">
-            <a href="./pages/about.html" class="hyperlink-text-Mont transition-05">Hi, I'm Brandon</a> — a product
-            designer with a passion for
-            intuitive, accessible and scalable design.
-        </h1>
-
-        <p>Seeking my next design role. Previously worked at SureCost, Fairchain and other small businesses.</p>
-
-        <div class="grid span-width transition-05">
-            <a class="project-container span-width transition-05" href="pages/surecost.html">
-                <div class="image-container span-width transition-05">
-                    <image class="project-image span-width transition-05" src="./images/global/home-surecost.png">
-                    </image>
-                </div>
-                <h2>SureCost</h2>
-                <p>Design Systems • Mobile/Web</p>
-            </a>
-
-            <a class="project-container span-width transition-05" href="pages/fairchain.html">
-                <div class="image-container span-width transition-05">
-                    <image class="project-image span-width transition-05" src="./images/global/home-fairchain.png">
-                    </image>
-                </div>
-                <h2>Fairchain</h2>
-                <p>Feature Design • Web3</p>
-            </a>
-
-            <a class="project-container span-width transition-05" href="pages/heebiekeebies.html">
-                <div class="image-container span-width transition-05">
-                    <image class="project-image span-width transition-05" src="./images/global/home-heebiekeebies.png">
-                    </image>
-                </div>
-                <h2>heebie keebies</h2>
-                <p>Web Design • eCommerce</p>
+            <a target="_blank" href="https://calendly.com/brandon-noel-win">
+                <h5 class="nav-button transition nav-schedule">Get in touch</h5>
             </a>
         </div>
+    </div>
 
-        <div id="footer" class="span-width">
-            <h3 class="no-margin">Get in touch below or directly with me at <a href="mailto:brandon.noel.win@gmail.com"
-                    class="hyperlink-text-Mont transition-05">brandon.noel.win@gmail.com</a>!</h3>
-            <div class="footer-buttons">
-                <!-- <svg class="icon-fill transition-05" xmlns="http://www.w3.org/2000/svg" height="53" width="53"
-                    viewBox="0 0 72 72">
-                    <g id="linkedin-container">
-                        <path
-                            d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z"
-                            id="linkedin-fill" class="transition-05" />
-                        <path
-                            d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z"
-                            fill="#FFFFFF" />
-                    </g>
-                </svg> -->
-                <a class="button button-fill transition-05" target="_blank" href="https://www.linkedin.com/in/brnwin/"
-                    target="_blank">LinkedIn</a>
-                <a class="button button-fill transition-05" target="_blank" href=".\resume\05202024.pdf"
-                    target="_blank">Resume</a>
+    <div id="home" class="m-nav">
+        <div class="m-nav-bar">
+            <a href="https://brandonwin.github.io/" style="height: 3rem;"> <img src="./img/global/logo_med_black.svg"
+                    alt="BNWIN Design Logo" style="width: 3rem; height: 3rem;" />
+            </a>
+
+            <img onclick="myFunction()" src="./img/global/m-menu.svg" alt="Menu open/close"
+                style="width: 3rem; height: 3rem;" />
+        </div>
+
+        <div class="m-nav-flex">
+            <a class="m-nav-item transition m-nav-home" href="./index.html#home">
+                <h2 class="transition">Home</h2>
+            </a>
+            <a class="m-nav-item transition m-nav-work" href="./index.html#selected-works">
+                <h2 class="transition">Work</h2>
+            </a>
+            <a class="m-nav-item transition m-nav-about" href="./pages/about.html">
+                <h2 class="transition">About Me</h2>
+            </a>
+            <a target="_blank" class="m-nav-item transition m-nav-studio" href="https://bnwindesign.github.io/">
+                <h2 class="transition">Studio</h2>
+            </a>
+            <a target="_blank" class="m-nav-item transition m-nav-schedule"
+                href="https://calendly.com/brandon-noel-win">
+                <h2 class="transition">Get in touch</h2>
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-container transition-05">
+        <div class="content-width hero">
+            <h1 class="hero-header">Hi, I'm Brandon Win, and <span class="transition" id="hheader-1">I</span> <span
+                    class="transition" id="hheader-2">design</span> <span class="transition" id="hheader-3">for</span>
+                <span class="transition" id="hheader-4">humans.</span> <span class="transition" id="hheader-5">:)</span>
+            </h1>
+            <h2 class="hero-subhead">I'm a mid-level product designer who loves wearing many hats, having designed and
+                directed user
+                experiences at startups and small businesses. I design to help
+                people and create a more accessible digital world.</h2>
+        </div>
+
+        <div class="content-width hero-animation-flex">
+            <h4>Right now, I'm building design solutions at TreeTales.</h4>
+            <img id="pantheon" />
+        </div>
+
+    </div>
+
+    <div class="hero-quote-section">
+        <div class="content-width hero-quote-flex">
+            <div class="hero-quote">
+                <h4>
+                    “Brandon is the most talented product designer I’ve worked with in 10 years. <span
+                        style="font-weight: 700;">Technically skilled, good product
+                        sense, and my trusted go-to designer.</span> A sense of peace is what you get with Brandon
+                    on your side - you just know he will deliver every time.”
+                </h4>
+                <div class="quote-user">
+                    <img src="./img/index/oscar.png">
+                    <div>
+                        <h4>Oscar Garcia</h4>
+                        <h5>Founder at TreeTales</h5>
+                    </div>
+                </div>
             </div>
-            <p>© Brandon Win 2024</p>
+
+            <div class="hero-quote">
+                <h4>
+                    “Brandon is an excellent UX and brand designer; he has helped us with the interface on our Shopify
+                    storefront and has also taken and edited our product photos at launch. <span
+                        style="font-weight: 700;">All in all, his work allows us to
+                        clearly communicate our brand to our customers.</span>”
+                </h4>
+                <div class="quote-user">
+                    <img src="./img/index/aaron.png">
+                    <div>
+                        <h4>Aaron Wang</h4>
+                        <h5>Founder at heebie keebies</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="selected-works">
+
+        <div class="content-width">
+            <h2 style="margin-bottom: 1rem; font-weight: 700;">Selected Works</h2>
+
+            <div class="work-flex">
+
+                <a href="./pages/treetales.html" class="work-link">
+                    <div class="work-container transition">
+
+                        <div class="work-image-container transition" id="tt-image-container">
+                            <img class="work-image work-image-tt transition" id="work-image-tt-L"
+                                src="./img/index/index-tt-L.png" />
+                            <img class="work-image work-image-tt transition" id="work-image-tt-R"
+                                src="./img/index/index-tt-R.png" />
+                        </div>
+
+                        <div class="work-text-container">
+                            <div class="work-info">
+
+                                <div class="work-tag-flex">
+                                    <h4 class="work-tag transition" id="tt-tag1">B2C</h4>
+                                    <h4 class="work-tag transition" id="tt-tag2">Web Design</h4>
+                                    <h4 class="work-tag transition" id="tt-tag3">Brand Design</h4>
+                                </div>
+                                <p class="m-work-tag">B2C, Web Design, Brand Design</p>
+
+                                <h2>TreeTales</h2>
+                                <h3>Design lead for TreeTales. Designed branding, website, and conversion rate
+                                    optimization.
+                                </h3>
+
+                            </div>
+
+                            <div class="work-cta transition">
+                                <h5>See work →</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./pages/surecost.html" class="work-link">
+                    <div class="work-container transition">
+
+                        <div class="work-image-container transition" id="sc-image-container">
+                            <img class="work-image work-image-sc transition-sc" id="work-image-sc-L"
+                                src="./img/index/index-sc-L.png" />
+                            <img class="work-image work-image-sc transition-sc" id="work-image-sc-c"
+                                src="./img/index/index-sc-c.png" />
+                            <img class="work-image work-image-sc transition-sc" id="work-image-sc-R"
+                                src="./img/index/index-sc-R.png" />
+                            <img class="work-image work-image-sc transition" id="work-image-sc-main"
+                                src="./img/index/index-sc.png" />
+                        </div>
+
+                        <div class="work-text-container">
+                            <div class="work-info">
+
+                                <div class="work-tag-flex">
+                                    <h4 class="work-tag transition" id="sc-tag1">B2B</h4>
+                                    <h4 class="work-tag transition" id="sc-tag2">Design Systems</h4>
+                                    <h4 class="work-tag transition" id="sc-tag3">Mobile UX</h4>
+                                </div>
+                                <p class="m-work-tag">B2B, Design Systems, Mobile UX</p>
+
+                                <h2>SureCost</h2>
+                                <h3>Product designer contract. Delivered a pitch deck to key stakeholders showcasing
+                                    dashboard and web app redesigns.
+                                </h3>
+
+                            </div>
+
+                            <div class="work-cta transition">
+                                <h5>See work →</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./pages/fairchain.html" class="work-link">
+                    <div class="work-container transition">
+
+                        <div class="work-image-container transition" id="fc-image-container">
+                            <img class="work-image work-image-fc transition-fc" id="work-image-fc-L"
+                                src="./img/index/index-fc-L.png" />
+                            <img class="work-image work-image-fc transition-fc" id="work-image-fc-c"
+                                src="./img/index/index-fc-c.png" />
+                            <img class="work-image work-image-fc transition-fc" id="work-image-fc-R"
+                                src="./img/index/index-fc-R.png" />
+                        </div>
+
+                        <div class="work-text-container">
+                            <div class="work-info">
+
+                                <div class="work-tag-flex">
+                                    <h4 class="work-tag transition" id="fc-tag1">B2B2C</h4>
+                                    <h4 class="work-tag transition" id="fc-tag2">Feature Design</h4>
+                                    <h4 class="work-tag transition" id="fc-tag3">Web Design</h4>
+                                </div>
+                                <p class="m-work-tag">B2B2C, Feature Design, Web Design</p>
+
+                                <h2>Fairchain</h2>
+                                <h3>Product designer contract. Designed user payment flows and marketing site for
+                                    targeted
+                                    audiences.
+                                </h3>
+
+                            </div>
+
+                            <div class="work-cta transition">
+                                <h5>See work →</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./pages/heebiekeebies.html" class="work-link">
+                    <div class="work-container transition">
+
+                        <div class="work-image-container transition" id="hk-image-container">
+                            <img class="work-image work-image-hk transition-hk" id="work-image-hk-L"
+                                src="./img/index/index-hk-2.png" />
+                            <img class="work-image work-image-hk transition-hk" id="work-image-hk-c"
+                                src="./img/index/index-hk-1.png" />
+                            <img class="work-image work-image-hk transition-hk" id="work-image-hk-R"
+                                src="./img/index/index-hk-3.png" />
+                            <img class="work-image work-image-hk transition-hk-fullsize" id="work-image-hk-fullsize"
+                                src="./img/index/index-hk-fullsize.png" />
+                        </div>
+
+                        <div class="work-text-container">
+                            <div class="work-info">
+
+                                <div class="work-tag-flex">
+                                    <h4 class="work-tag transition" id="hk-tag1">B2C</h4>
+                                    <h4 class="work-tag transition" id="hk-tag2">eCommerce</h4>
+                                    <h4 class="work-tag transition" id="hk-tag3">Web Design</h4>
+                                </div>
+                                <p class="m-work-tag">B2C, eCommerce, Web Design</p>
+
+                                <h2>heebie keebies</h2>
+                                <h3>Served as founding UX designer. Conducted user research and designed ecommerce site
+                                    and
+                                    payment user flows.
+                                </h3>
+
+                            </div>
+
+                            <div class="work-cta transition">
+                                <h5>See work →</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-container">
+        <div class="content-width footer">
+
+            <div class="f-logo">
+                <svg class="transition" id="f-logo1" width="48" height="48" viewBox="0 0 48 48" fill="#000"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h9.6v48H0zm9.6 0h28.8v9.6H9.6zm0 19.2h28.8v9.6H9.6zm28.8-9.6H48v9.6h-9.6zM9.6 38.4h28.8V48H9.6zm28.8-9.6H48v9.6h-9.6z" />
+                </svg>
+                <svg class="transition" id="f-logo2" width="48" height="48" viewBox="0 0 48 48" fill="#000"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h9.6v48H0zm38.4 0H48v48h-9.6zM19.2 19.2h9.6v9.6h-9.6zM9.6 9.6h9.6v9.6H9.6zm19.2 19.2h9.6v9.6h-9.6z" />
+                </svg>
+                <svg class="transition" id="f-logo3" width="48" height="48" viewBox="0 0 48 48" fill="#000"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h9.6v38.4H0zm9.6 38.4h9.6V48H9.6zm9.6-9.6h9.6v9.6h-9.6zm9.6 9.6h9.6V48h-9.6zM38.4 0H48v38.4h-9.6z" />
+                </svg>
+                <svg class="transition" id="f-logo-arrow" width="48" height="48" viewBox="0 0 48 48" fill="#000"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h38.4v9.6H0zm38.4 9.6H48V48h-9.6zm-9.6 0h9.6v9.6h-9.6zM0 38.4h9.6V48H0zm9.6-9.6h9.6v9.6H9.6zm9.6-9.6h9.6v9.6h-9.6zm19.2-9.6H48V0h-9.6z" />
+                </svg>
+            </div>
+
+            <div class="f-row">
+                <a href="./index.html#home" class="f-link transition">
+                    <p style="width: auto;">Home</p>
+                </a>
+                <a href="./index.html#selected-works" class="f-link transition">
+                    <p style="width: auto;">Work</p>
+                </a>
+                <a href="./pages/about.html" class="f-link transition">
+                    <p style="width: auto;">About Me</p>
+                </a>
+                <a target="_blank" href="https://bnwindesign.github.io/" class="f-link transition">
+                    <p style="width: auto;">Studio</p>
+                </a>
+            </div>
         </div>
     </div>
 
     <script>
         function myFunction() {
-            var x = document.getElementsByClassName("mobile-hide");
+            var x = document.getElementsByClassName("m-nav-flex");
 
             Array.from(x).forEach((y) => {
-                if (y.style.display === "inline") {
+                if (y.style.display === "flex") {
                     y.style.display = "none";
                 } else {
-                    y.style.display = "inline";
+                    y.style.display = "flex";
                 }
             })
 
@@ -178,5 +375,6 @@
     </script>
 
 </body>
+
 
 </html>

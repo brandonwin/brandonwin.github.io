@@ -2,161 +2,310 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
-    <meta name="description" content="Brandon Win's portfolio. Project page showcasing designs at Fairchain">
-    <meta name="keywords" content="product designer, UX, UI, user experience, design, product, Figma, Adobe XD, HTML, CSS, JavaScript">
-    <meta name="author" content="Brandon Win">
-    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <meta property="og:title" content="BNWIN Design | About Me" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bnwindesign.github.io/" />
+    <meta property="og:image" content="https://bnwindesign.github.io/logo_standardlarge.png" />
+    <meta property="og:description"
+        content="Design studio building delightful, accessible digital experiences for users." />
 
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="apple-touch-icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" href="./favicon.ico">
 
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../styles.css">
 
     <title>Brandon Win | Fairchain</title>
 </head>
 
 <style>
-    #compare-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 4rem;
-        gap: 4rem;
 
-    }
-
-    #compare-images {
-        display: grid;
-        grid: auto / calc(50% - 4rem) calc(50% - 4rem);
-        gap: 2rem 8rem;
-
-        div {
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            gap: 1rem;
-
-            image {
-                width: 100%;
-                object-fit: contain;
-            }
-        }
-    }
-
-    @media only screen and (max-width: 1450px) {
-        #compare-box {
-            padding: 1rem;
-        }
-
-        #compare-images {
-            grid: auto / auto;
-        }
-    }
 </style>
 
-<body>
-    <div class="navigation-container prevent-select transition-05">
-        <svg xmlns="http://www.w3.org/2000/svg" class="ham transition-05" onclick="myFunction()" width="2em" height="2em"
-            viewBox="0 0 24 24">
-            <path id="ham-path" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z" />
-        </svg>
+<script>
+    window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader");
 
-        <a class="mobile-hide transition-05" href="../index.html">
-            <p class="navigation-text no-margin transition-05">Home</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./about.html">
-            <p class="navigation-text no-margin transition-05">About Me</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./surecost.html">
-            <p class="navigation-text no-margin transition-05">SureCost</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./fairchain.html">
-            <p class="navigation-text no-margin transition-05" id="current-page">Fairchain</p>
-        </a>
-        <a class="mobile-hide transition-05" href="./heebiekeebies.html">
-            <p class="navigation-text no-margin transition-05">heebie keebies</p>
-        </a>
+        loader.classList.add("loader--hidden");
+
+        loader.addEventListener("transitionend", () => {
+            document.body.removeChild(loader);
+        });
+    });
+
+</script>
+
+<body>
+    <div class="loader">
+        <img id="loader-gif" src="../img/global/loader.gif" />
+    </div>
+    <div id="home" class="nav-container">
+        <div class="nav">
+            <div class="nav-leftflex">
+                <a href="https://brandonwin.github.io/" style="height: 48px;"> <img
+                        src="../img/global/logo_med_black.svg" alt="BNWIN Design Logo"
+                        style="margin-right: .5rem; width: 3rem; height: 3rem;" />
+                </a>
+
+                <a href="../index.html#home">
+                    <h5 class="nav-button transition nav-home">Home</h5>
+                </a>
+                <a href="../index.html#selected-works">
+                    <h5 class="nav-button transition nav-work">Work</h5>
+                </a>
+                <a href="./about.html">
+                    <h5 class="nav-button transition nav-about">About Me</h5>
+                </a>
+                <a target="_blank" href="https://bnwindesign.github.io/">
+                    <h5 class="nav-button transition nav-studio">Studio</h5>
+                </a>
+            </div>
+
+            <a target="_blank" href="https://calendly.com/brandon-noel-win">
+                <h5 class="nav-button transition nav-schedule">Get in touch</h5>
+            </a>
+        </div>
     </div>
 
-    <div id="body-content">
+    <div id="home" class="m-nav">
+        <div class="m-nav-bar">
+            <a href="https://brandonwin.github.io/" style="height: 3rem;"> <img src="../img/global/logo_med_black.svg"
+                    alt="BNWIN Design Logo" style="width: 3rem; height: 3rem;" />
+            </a>
 
-        <h1 class="no-margin">
-            Fairchain
-        </h1>
-
-        <p>
-            Fairchain is a pre-seed startup that aims to build a platform that grants artists royalties on
-            future sales of their art through blockchain technology.
-        </p>
-
-        <div class="role-results">
-            <div>
-                <h3>My role</h3>
-                <p>Product Designer, 4 month contract</p>
-                <p>Design new features for users</p>
-                <p>Design marketing materials and company website</p>
-            </div>
-
-            <div>
-                <h3>Results</h3>
-                <p>Designed 5 new features over 4 months</p>
-                <p>Increased user engagement by 20% and reduced contract delays by 50%</p>
-                <p>Enhanced brand visibility by designing new company website</p>
-            </div>
+            <img onclick="myFunction()" src="../img/global/m-menu.svg" alt="Menu open/close"
+                style="width: 3rem; height: 3rem;" />
         </div>
 
-        <image class="image-box span-width" src="../images/Fairchain/register.gif"></image>
+        <div class="m-nav-flex">
+            <a class="m-nav-item transition m-nav-home" href="../index.html#home">
+                <h2 class="transition">Home</h2>
+            </a>
+            <a class="m-nav-item transition m-nav-work" href="../index.html#selected-works">
+                <h2 class="transition">Work</h2>
+            </a>
+            <a class="m-nav-item transition m-nav-about" href="../pages/about.html">
+                <h2 class="transition">About Me</h2>
+            </a>
+            <a target="_blank" class="m-nav-item transition m-nav-studio" href="https://bnwindesign.github.io/">
+                <h2 class="transition">Studio</h2>
+            </a>
+            <a target="_blank" class="m-nav-item transition m-nav-schedule"
+                href="https://calendly.com/brandon-noel-win">
+                <h2 class="transition">Get in touch</h2>
+            </a>
+        </div>
+    </div>
 
+    <div class="content-width content-section page-abovefold">
 
-        <image class="image-box span-width" src="../images/Fairchain/collection-web.png"></image>
-        <p class="caption">Desktop view of the collections page, where users can see their collected artworks.</p>
-
-        <image class="image-box span-width" src="../images/Fairchain/unfilled.png"></image>
-        <p class="caption">Desktop view of "Register Artwork" user flow. I designed the search function, Artlogic import feature, and checkbox feature for Edition/AP works.</p>
-
-        <image class="image-box span-width" src="../images/Fairchain/artwork-view.png"></image>
-        <p class="caption">View of "Artwork Details" page in desktop and mobile views. I helped build the design system, provenance, and certificate feature.</p>
-
-        <image class="image-box span-width" src="../images/Fairchain/mobile-gallery.png"></image>
-        <p class="caption">Multiple views of the "Artwork Details" page in mobile.</p>
-
-        <h2 class="content-cta">
-            Contact me below to see this case study.
-        </h2>
-
-        <div id="footer" class="span-width">
-            <h3 class="no-margin">Get in touch below or directly with me at <a
-                    href="mailto:brandon.noel.win@gmail.com"
-                    class="hyperlink-text-Mont transition-05">brandon.noel.win@gmail.com</a>!</h3>
-            <div class="footer-buttons">
-                <a class="button button-fill transition-05" target="_blank" href="https://www.linkedin.com/in/brnwin/"
-                    target="_blank">LinkedIn</a>
-                <a class="button button-fill transition-05" target="_blank" href="..\resume\05202024.pdf"
-                    target="_blank">Resume</a>
-            </div>
-            <p>© Brandon Win 2024</p>
+        <div class="page-image-container transition" id="fc-image-container">
+            <img class="work-image work-image-fc transition-fc" id="work-image-fc-L"
+                src="../img/index/index-fc-L.png" />
+            <img class="work-image work-image-fc transition-fc" id="work-image-fc-c"
+                src="../img/index/index-fc-c.png" />
+            <img class="work-image work-image-fc transition-fc" id="work-image-fc-R"
+                src="../img/index/index-fc-R.png" />
         </div>
 
+        <div class="page-header-container">
+            <div class="page-header-text">
+                <h1 class="page-work-header transition"><span id="page-fc-span">Scaling Design</span> at Fairchain</h1>
+                <div class="column-50-50">
+                    <div class="column-50">
+                        <h4>In 2022, I joined Fairchain to design new features, build more cohesion between web and
+                            mobile, scale up their marketing site, and provide guidance on best practices.</h4>
+                        <h4>
+                            I learned about design in an office at SureCost, learning to collaborate cross-functionally,
+                            advocate for the user at all times, and align my design to business goals. </h4>
+                    </div>
+                    <div class="column-50">
+                        <h4>As the first design hire at Fairchain, I was in charge of advocating for the user, care for
+                            user accessibility, and providing my design vision for new features.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-tags-container">
+                <div class="page-tags-flex">
+                    <h5>Year</h5>
+                    <div class="page-tags">
+                        <h5>2022 - 2022</h5>
+                    </div>
+
+                </div>
+                <div class="page-tags-flex">
+                    <h5>Disciplines</h5>
+                    <div class="page-tags">
+                        <h5>Feature design</h5>
+                        <h5>Design systems</h5>
+                        <h5>Web design</h5>
+                        <h5>Mobile design</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-width content-section column-50-50">
+        <div class="column-50">
+            <h2>Background</h2>
+            <h4>Fairchain was a web3 startup that provides blockchain-enforced contracts that allows artists to receive
+                a percentage of any future sale of their artwork.</h4>
+            <h4>
+                Fairchain was a pre-seed startup looking to quickly build new features to show to more investors.
+                However, the company was suffering from tech debt due to building more features at such a rapid pace,
+                especially in the design space.
+            </h4>
+            <h4>
+                The company needed a designer to create a cohesive structure and system while delivering designs to
+                engineering for new features.
+            </h4>
+            <h4>
+
+            </h4>
+        </div>
+        <div class="column-50">
+            <h2>My Role</h2>
+            <h4>
+                Joining Fairchain as their first UX designer, I sought to design a more cohesive digital experience
+                while quickly iterating and building new features for users.
+            </h4>
+            <h4>
+                During my 3-month contract at Fairchain, I designed several new app features, such as push notifications
+                and Stripe integration. Additionally, I built a design system and a marketing website to create a more
+                cohesive end-to-end experience for all target audiences, from first impression to contract signing.
+            </h4>
+            <h4>The version being showcased here was from September 2022.</h4>
+        </div>
+    </div>
+
+    <div class="content-width content-section pages-fullsize">
+        <img class="image-fullsize" src="../img/pages/fc_mobile-gallery.png" />
+        <h2>The premium place to store and buy your art, all through the blockchain.</h2>
+        <h4>I designed Fairchain to act as a seamless and premium experience that blends seamlessly between mobile and
+            web. As the company's first UX design hire, I created an unofficial design system that I used to bridge the
+            gap between engineering and design while creating a more cohesive digital experience.</h4>
+    </div>
+
+    <div class="content-width content-section pages-fullsize">
+        <img class="image-fullsize" src="../img/pages/fc_register.gif" />
+        <h2>A clear and seamless onboarding experience for art</h2>
+        <h4>For new users, it might be difficult to know where to start. To rectify this, I designed a streamlined
+            user flow that clearly instructs the user on how to upload their first artwork to the platform.</h4>
+    </div>
+
+    <div class="content-width content-section column-50-50-r column-image-container">
+        <div class="column-50">
+            <img class="column-image" src="../img/pages/fc_artwork.png" />
+        </div>
+        <div class="column-50">
+            <h2>Complete parity between mobile and web</h2>
+            <h4>
+                Facing cohesion issues between mobile and web, I built an impromptu design system that helped solve
+                design disparities between the two platforms, allowing users to fully experience Fairchain equally on
+                both platforms.
+            </h4>
+        </div>
+    </div>
+
+    <div class="content-width content-section column-50-50 column-image-container">
+        <div class="column-50">
+            <h2>An elegant place for users to store and admire their art</h2>
+            <h4>
+                When tackling how to design users' art collections, I streamlined navigational menus and icons to show
+                art in a minimalist aesthetic that retained a visual style that you'd see most similarly in art
+                musuems.
+            </h4>
+        </div>
+        <div class="column-50">
+            <img class="column-image" src="../img/pages/fc-collection.png" />
+        </div>
+    </div>
+
+    <div class="column-impact">
+        <div class="content-width impact-content">
+            <h1>My impact within 3 months</h1>
+            <div class="impact-flex">
+                <div>
+                    <h4>Reduced contract signing delays by</h4>
+                    <h1>50%</h1>
+                </div>
+                <div>
+                    <h4>Increased user engagement by</h4>
+                    <h1>20%</h1>
+                </div>
+                <div>
+                    <h4>Increased platform parity by</h4>
+                    <h1>45%</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="content-width footer">
+
+            <div class="f-logo">
+                <svg class="transition" id="f-logo1" width="48" height="48" viewBox="0 0 48 48" fill="#000"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h9.6v48H0zm9.6 0h28.8v9.6H9.6zm0 19.2h28.8v9.6H9.6zm28.8-9.6H48v9.6h-9.6zM9.6 38.4h28.8V48H9.6zm28.8-9.6H48v9.6h-9.6z" />
+                </svg>
+                <svg class="transition" id="f-logo2" width="48" height="48" viewBox="0 0 48 48" fill="#000"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h9.6v48H0zm38.4 0H48v48h-9.6zM19.2 19.2h9.6v9.6h-9.6zM9.6 9.6h9.6v9.6H9.6zm19.2 19.2h9.6v9.6h-9.6z" />
+                </svg>
+                <svg class="transition" id="f-logo3" width="48" height="48" viewBox="0 0 48 48" fill="#000"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h9.6v38.4H0zm9.6 38.4h9.6V48H9.6zm9.6-9.6h9.6v9.6h-9.6zm9.6 9.6h9.6V48h-9.6zM38.4 0H48v38.4h-9.6z" />
+                </svg>
+                <svg class="transition" id="f-logo-arrow" width="48" height="48" viewBox="0 0 48 48" fill="#000"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0h38.4v9.6H0zm38.4 9.6H48V48h-9.6zm-9.6 0h9.6v9.6h-9.6zM0 38.4h9.6V48H0zm9.6-9.6h9.6v9.6H9.6zm9.6-9.6h9.6v9.6h-9.6zm19.2-9.6H48V0h-9.6z" />
+                </svg>
+            </div>
+
+            <div class="f-row">
+                <a href="../index.html#home" class="f-link transition">
+                    <p style="width: auto;">Home</p>
+                </a>
+                <a href="../index.html#selected-works" class="f-link transition">
+                    <p style="width: auto;">Work</p>
+                </a>
+                <a href="../pages/about.html" class="f-link transition">
+                    <p style="width: auto;">About Me</p>
+                </a>
+                <a target="_blank" href="https://bnwindesign.github.io/" class="f-link transition">
+                    <p style="width: auto;">Studio</p>
+                </a>
+            </div>
+        </div>
     </div>
 
     <script>
         function myFunction() {
-            var x = document.getElementsByClassName("mobile-hide");
+            var x = document.getElementsByClassName("m-nav-flex");
 
             Array.from(x).forEach((y) => {
-                if (y.style.display === "inline") {
+                if (y.style.display === "flex") {
                     y.style.display = "none";
                 } else {
-                    y.style.display = "inline";
+                    y.style.display = "flex";
                 }
             })
 
         }
     </script>
 
+    <script src="../accordion.js"></script>
+
 </body>
+
 
 </html>
