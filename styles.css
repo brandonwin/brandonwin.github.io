@@ -1287,6 +1287,12 @@ a:visited {
         flex-direction: column;
     }
 
+    .work-image-container {
+        width: 100%;
+        aspect-ratio: auto;
+        min-height: 0px;
+    }
+
     .column-image-container-r {
         flex-direction: column-reverse;
     }
@@ -1354,7 +1360,7 @@ a:visited {
     .work-image-container {
         width: 100%;
         aspect-ratio: 2 / 1;
-        min-height: 400px;
+        min-height: 0px;
     }
 
     .work-text-container {
